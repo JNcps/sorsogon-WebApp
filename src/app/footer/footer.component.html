@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StickyMobile BootStrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="app/icons/icon-192x192.png"
+    />
+
+  </head>
+  <div class="wrapper"><a routerLink="/booking"
+    ><i class="fa fa-map" style="font-size:24px"></i><br /><span>Book Now!</span></a
+  ></div>
+  <div id="footer-bar" class="footer-bar-1">
+    <a routerLink="/sign-in">
+      <i class="fa fa-cloud" style="font-size: 30px; color: white" (click)="toogleTag"></i
+      ><br /><span>Weather</span></a
+    >
+    <a routerLink="/event"
+      ><i class="fa fa-archive" style="font-size: 30px; color: white"></i
+      ><br /><span>Events</span></a
+    >
+    <div class="logo"><a routerLink="/booking"
+      ><i class="" style="font-size:24px"></i><br /><span></span></a
+    ></div>
+
+    <a routerLink="/activities"
+      ><i class="fa fa-list-ul" style="font-size:30px;color:white"></i><span>Activities</span></a
+    >
+    <a routerLink="/others"  (click)="toogleTag()"
+      ><i class="fa fa-info-circle" style="font-size: 30px; color: white"></i
+      ><br /><span>Others</span></a
+    >
+  </div>
+
+</html>
+<router-outlet></router-outlet>
+
+<app-header *ngIf="showMe"></app-header>
+
+
+<!--
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <i class="fa fa-heartbeat" style="font-size:48px;color:red"></i> heart icon
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <i class="fa fa-street-view" style="font-size:48px;color:red"></i> visit icon
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <i class="fa fa-cutlery" style="font-size:48px;color:red"></i> utensil icon
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <i class="fa fa-bed" style="font-size:48px;color:red"></i> bed icon
+
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <i class="fa fa-lock" style="font-size:48px;color:red"></i> lock icon
+
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <i class="fa fa-building-o" style="font-size:48px;color:red"></i> building  venie icon
+-->

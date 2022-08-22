@@ -1,0 +1,30 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 40px;
+  max-width: 300px;
+  min-height: 220px;
+  margin: 200px auto;
+  padding: 10px 10px -20px 10px; /* top, ,right ,left*/
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-left: 20px auto;
+  background-color: #34292971;
+  border-radius: 15px;
+  /* box-shadow:-13px -13px 20px rgba(54, 47, 47, 0.539); */
+  text-align: center;
+}
+.wrapper a i{
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+}
+
+
+
+.wrapper a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fefefe;
+}
+
