@@ -10,25 +10,24 @@ import { BookingComponent } from './booking/booking.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { OthersComponent } from './others/others.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-//import { BackgroundComponent } from './background/background.component';
+import { BackgroundComponent } from './background/background.component';
 import { EatComponent } from './eat/eat.component';
 import { ProductComponent } from './product/product.component';
 import { StayComponent } from './stay/stay.component';
 import { VenuesComponent } from './venues/venues.component';
 import { VisitComponent } from './visit/visit.component';
 
-const routes: Routes = [{
-    path: 'sign-in',
-    redirectTo: '/sign-in',
-    pathMatch: 'full',},
+const routes: Routes = [
+  {path:'', redirectTo:'sign-in', pathMatch:'full'},
+  {path:'sign-in', component:SignInComponent},
   {path:'weather', component:WeatherComponent},
   {path:'event', component:EventComponent},
   {path:'booking', component:BookingComponent},
   {path:'activities', component:ActivitiesComponent},
   {path:'others', component:OthersComponent},
   {path:'sign-up', component:SignUpComponent},
-  {path:'sign-in', component:SignInComponent},
-  //{path:'background', component:BackgroundComponent},
+
+  {path:'background', component:BackgroundComponent},
   {path:'eat', component:EatComponent},
   {path:'product', component:ProductComponent},
   {path:'stay', component:StayComponent},

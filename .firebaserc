@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "sorsogon-db-system"
+  },
+  "targets": {
+    "sorsogon-db-system": {
+      "hosting": {
+        "frontend": [
+          "sorsogon-db-system"
+        ]
+      }
+    }
   }
 }

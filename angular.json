@@ -51,7 +51,9 @@
               "src/styles.css",
               "node_modules/ngx-toastr/toastr.css"
             ],
-            "scripts": ["src/app/sign-in/sign-in.js" ]
+            "scripts": [
+              "src/app/sign-in/sign-in.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +121,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "frontend:build:production",
+            "firebaseProject": "sorsogon-db-system",
+            "firebaseHostingSite": "sorsogon-db-system"
           }
         }
       }
