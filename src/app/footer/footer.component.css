@@ -58,7 +58,6 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  border-radius: 20px;
   background-color: rgba(56, 48, 48, 0.393);
   box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.06);
   min-height: 60px;
@@ -102,7 +101,11 @@
   background-color: rgba(210, 0, 0, 0);
 }
 
-
+.wrapper1 ul li a{
+  margin: 10rem auto;
+  list-style: none;
+  color: white;
+}
 
 /*
 #footer-bar .logo{

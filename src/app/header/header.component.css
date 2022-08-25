@@ -1,10 +1,11 @@
+
 .wrapper {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 40px;
-  max-width: 300px;
+  width: 18rem; /* width: 300px to 18rem;  */
   min-height: 220px;
-  margin: 200px auto;
+  margin: 20rem auto;    /* change the 200px to 20rem   */
   padding: 10px 10px -20px 10px; /* top, ,right ,left*/
   padding-top: 20px;
   padding-left: 20px;

@@ -26,7 +26,7 @@
     ><i class="fa fa-map" style="font-size:24px"></i><br /><span>Book Now!</span></a
   ></div>
   <div id="footer-bar" class="footer-bar-1">
-    <a routerLink="/sign-in">
+    <a routerLink="/weather">
       <i class="fa fa-cloud" style="font-size: 30px; color: white" (click)="toogleTag"></i
       ><br /><span>Weather</span></a
     >
@@ -41,16 +41,24 @@
     <a routerLink="/activities"
       ><i class="fa fa-list-ul" style="font-size:30px;color:white"></i><span>Activities</span></a
     >
-    <a routerLink="/others"  (click)="toogleTag()"
-      ><i class="fa fa-info-circle" style="font-size: 30px; color: white"></i
-      ><br /><span>Others</span></a
-    >
+    <a (click)="toogleTag()">
+      <i class="fa fa-info-circle" style="font-size: 30px; color: white"></i><br />
+      <span>Others</span></a>
+
+  </div>
+  <div class="wrapper1">
+    <ul *ngIf="showMe">
+      <li><a href="">Privacy policy</a></li>
+      <li><a href="">Terms & conditions</a></li>
+      <li><a href="">Credits & sponsors</a></li>
+      <li><a href="">Contact us</a></li>
+    </ul>
   </div>
 
 </html>
 <router-outlet></router-outlet>
 
-<app-header *ngIf="showMe"></app-header>
+<app-header></app-header>  <!--   <app-header *ngIf="showMe"></app-header>   -->
 
 
 <!--

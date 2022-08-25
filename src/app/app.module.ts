@@ -28,6 +28,12 @@ import { BghomeComponent } from './bghome/bghome.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 //import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
+import { HealthComponent } from './health/health.component';
+import { HikingComponent } from './hiking/hiking.component';
+import { RiverComponent } from './river/river.component';
+import { NatureComponent } from './nature/nature.component';
+import { MoseumComponent } from './moseum/moseum.component';
+import { Visit1Component } from './visit1/visit1.component';
 //import { provideAuth,getAuth } from '@angular/fire/auth';
 //import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
@@ -52,6 +58,12 @@ import { environment } from '../environments/environment';
     WeatherComponent,
     BghomeComponent,
     SignUpComponent,
+    HealthComponent,
+    HikingComponent,
+    RiverComponent,
+    NatureComponent,
+    MoseumComponent,
+    Visit1Component,
   ],
 
   imports: [

@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html, body{
+  height: 100%;
+}
+
+.header {
+  overflow: hidden;
+  background: linear-gradient(#5650a4, #407ed7);
+  padding: 10px 10px;
+}
+
+.header a i{
+  padding-left: 10px;
+}
+.header span{
+  text-align: center;
+  padding-left: 20px;
+  color: white;
+  font-weight: 550;
+}
+.container {
+  height: 100vh;
+  background-image: url('src/assets/image/map2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container .btn1 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(15, 12, 12, 0.358);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn1:hover {
+  background-color: black;
+}
+
+.container .btn2 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(15, 12, 12, 0.358);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn2:hover {
+  background-color: black;
+}
+
+.container .btn3 {
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(15, 12, 12, 0.358);
+  color: white;
+  font-size: 16px;
+  padding: 12px 29px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn3:hover {
+  background-color: black;
+}
+
+.container .btn4 {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(15, 12, 12, 0.358);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn4:hover {
+  background-color: black;
+}
+
+.container .btn5 {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(15, 12, 12, 0.358);
+  color: white;
+  font-size: 16px;
+  padding: 12px 19px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn5:hover {
+  background-color: black;
+}

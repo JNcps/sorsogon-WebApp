@@ -1,41 +1,52 @@
-<div class="container" *ngIf="showMe">
-  <div class="wrapper">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container" *ngIf="showMe">
+    <div class="wrapper">
 
-    <div (click)="toogleTag()">
-      <a routerLink="/visit">
-        <i class="fa fa-street-view" style="font-size:40px;color:rgb(255, 255, 255)"></i><br/>
-        <span>Places to Visit</span>
-      </a><br><br>
-      <a routerLink="/venues" id="meet" >
-        <i class="fa fa-building-o" style="font-size:40px;color:rgb(255, 255, 255)"></i><br/>
-        <span>Meetings Venues</span>
-      </a>
-
-    </div>
-
-    <div (click)="toogleTag()">
-      <a routerLink="/stay">
-        <i class="fa fa-bed" style="font-size:40px;color:rgb(255, 255, 255)"></i><br/>
-        <span>Where to Sta</span>
-      </a><br><br>
-        <a routerLink="/others">
-          <i class="fa fa-heartbeat" style="font-size:40px;color:rgb(255, 255, 255)"></i><br/>
-          <span>Health & Wellness</span>
+      <div (click)="toogleTag()">
+        <a routerLink="/visit">
+          <i class="fa fa-street-view" style="font-size:40px;color:rgb(255, 255, 255)"></i><br/>
+          <span>Places to Visit</span>
+        </a><br><br>
+        <a routerLink="/venues" id="meet" >
+          <i class="fa fa-building-o" style="font-size:40px;color:rgb(255, 255, 255)"></i><br/>
+          <span>Meetings Venues</span>
         </a>
 
-    </div>
-    <div (click)="toogleTag()">
-      <a routerLink="/eat">
-        <i class="fa fa-cutlery" style="font-size:40px;color:rgb(255, 255, 255)"></i> <br/>
-        <span>Where to Eat</span>
-      </a><br><br>
-        <a routerLink="/product">
-          <i class="fa fa-lock" style="font-size:40px;color:rgb(255, 255, 255)"></i><br/>
-          <span>Local Product</span>
-        </a>
+      </div>
+
+      <div (click)="toogleTag()">
+        <a routerLink="/stay">
+          <i class="fa fa-bed" style="font-size:40px;color:rgb(255, 255, 255)"></i><br/>
+          <span>Where to Stay</span>
+        </a><br><br>
+          <a routerLink="/health">
+            <i class="fa fa-heartbeat" style="font-size:40px;color:rgb(255, 255, 255)"></i><br/>
+            <span>Health & Wellness</span>
+          </a>
+
+      </div>
+      <div (click)="toogleTag()">
+        <a routerLink="/eat">
+          <i class="fa fa-cutlery" style="font-size:40px;color:rgb(255, 255, 255)"></i> <br/>
+          <span>Where to Eat</span>
+        </a><br><br>
+          <a routerLink="/product">
+            <i class="fa fa-lock" style="font-size:40px;color:rgb(255, 255, 255)"></i><br/>
+            <span>Local Product</span>
+          </a>
 
 
+      </div>
     </div>
   </div>
-</div>
 
+
+</body>
+</html>
