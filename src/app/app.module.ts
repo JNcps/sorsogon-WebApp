@@ -34,6 +34,11 @@ import { RiverComponent } from './river/river.component';
 import { NatureComponent } from './nature/nature.component';
 import { MoseumComponent } from './moseum/moseum.component';
 import { Visit1Component } from './visit1/visit1.component';
+import { WhaleComponent } from './whale/whale.component';
+import { TiklingComponent } from './tikling/tikling.component';
+import { PaguriranComponent } from './paguriran/paguriran.component';
+import { BaybayComponent } from './baybay/baybay.component';
+import { MalawmawanComponent } from './malawmawan/malawmawan.component';
 //import { provideAuth,getAuth } from '@angular/fire/auth';
 //import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
@@ -64,6 +69,11 @@ import { Visit1Component } from './visit1/visit1.component';
     NatureComponent,
     MoseumComponent,
     Visit1Component,
+    WhaleComponent,
+    TiklingComponent,
+    PaguriranComponent,
+    BaybayComponent,
+    MalawmawanComponent,
   ],
 
   imports: [

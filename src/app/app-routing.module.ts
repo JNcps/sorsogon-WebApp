@@ -22,6 +22,12 @@ import { HikingComponent } from './hiking/hiking.component';
 import { RiverComponent } from './river/river.component';
 import { NatureComponent } from './nature/nature.component';
 import { MoseumComponent } from './moseum/moseum.component';
+import { Visit1Component } from './visit1/visit1.component';
+import { WhaleComponent } from './whale/whale.component';
+import { TiklingComponent } from './tikling/tikling.component';
+import { PaguriranComponent } from './paguriran/paguriran.component';
+import { BaybayComponent } from './baybay/baybay.component';
+import { MalawmawanComponent } from './malawmawan/malawmawan.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'sign-in', pathMatch:'full'},
@@ -43,7 +49,13 @@ const routes: Routes = [
   {path:'hiking', component:HikingComponent},
   {path:'river', component:RiverComponent},
   {path:'nature', component:NatureComponent},
-  {path:'moseum', component:MoseumComponent}
+  {path:'moseum', component:MoseumComponent},
+  {path:'visit1', component:Visit1Component},
+  {path:'whale', component:WhaleComponent},
+  {path:'tikling', component:TiklingComponent},
+  {path:'paguriran', component:PaguriranComponent},
+  {path:'malawmawan', component:MalawmawanComponent},
+  {path:'baybay', component:BaybayComponent},
 ];
 
 @NgModule({
