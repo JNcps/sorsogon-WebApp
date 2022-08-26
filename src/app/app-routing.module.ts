@@ -36,7 +36,7 @@ import { BulusanComponent } from './bulusan/bulusan.component';
 import { RompeComponent } from './rompe/rompe.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'sign-in', pathMatch:'full'},
+  {path:'', redirectTo:'', pathMatch:'full'},
   {path:'sign-in', component:SignInComponent},
   {path:'health', component:HealthComponent},
   {path:'weather', component:WeatherComponent},
