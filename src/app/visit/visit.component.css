@@ -32,7 +32,7 @@ html, body{
 
 .container .btn1 {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 20%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -52,7 +52,7 @@ html, body{
 
 .container .btn2 {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 20%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -129,3 +129,25 @@ html, body{
 .container .btn5:hover {
   background-color: black;
 }
+
+
+.container .btn6 {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(15, 12, 12, 0.358);
+  color: white;
+  font-size: 16px;
+  padding: 12px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn6:hover {
+  background-color: black;
+}
+

@@ -28,6 +28,12 @@ import { TiklingComponent } from './tikling/tikling.component';
 import { PaguriranComponent } from './paguriran/paguriran.component';
 import { BaybayComponent } from './baybay/baybay.component';
 import { MalawmawanComponent } from './malawmawan/malawmawan.component';
+import { Visit2Component } from './visit2/visit2.component';
+import { PulogComponent } from './pulog/pulog.component';
+import { Visit3Component } from './visit3/visit3.component';
+import { Visit4Component } from './visit4/visit4.component';
+import { BulusanComponent } from './bulusan/bulusan.component';
+import { RompeComponent } from './rompe/rompe.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'sign-in', pathMatch:'full'},
@@ -51,11 +57,17 @@ const routes: Routes = [
   {path:'nature', component:NatureComponent},
   {path:'moseum', component:MoseumComponent},
   {path:'visit1', component:Visit1Component},
+  {path:'visit2', component:Visit2Component},
+  {path:'visit3', component:Visit3Component},
+  {path:'visit4', component:Visit4Component},
   {path:'whale', component:WhaleComponent},
   {path:'tikling', component:TiklingComponent},
   {path:'paguriran', component:PaguriranComponent},
   {path:'malawmawan', component:MalawmawanComponent},
   {path:'baybay', component:BaybayComponent},
+  {path:'pulog', component:PulogComponent},
+  {path:'bulusan', component:BulusanComponent},
+  {path:'rompe', component:RompeComponent},
 ];
 
 @NgModule({

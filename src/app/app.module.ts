@@ -39,6 +39,12 @@ import { TiklingComponent } from './tikling/tikling.component';
 import { PaguriranComponent } from './paguriran/paguriran.component';
 import { BaybayComponent } from './baybay/baybay.component';
 import { MalawmawanComponent } from './malawmawan/malawmawan.component';
+import { Visit2Component } from './visit2/visit2.component';
+import { PulogComponent } from './pulog/pulog.component';
+import { Visit3Component } from './visit3/visit3.component';
+import { Visit4Component } from './visit4/visit4.component';
+import { BulusanComponent } from './bulusan/bulusan.component';
+import { RompeComponent } from './rompe/rompe.component';
 //import { provideAuth,getAuth } from '@angular/fire/auth';
 //import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
@@ -74,6 +80,12 @@ import { MalawmawanComponent } from './malawmawan/malawmawan.component';
     PaguriranComponent,
     BaybayComponent,
     MalawmawanComponent,
+    Visit2Component,
+    PulogComponent,
+    Visit3Component,
+    Visit4Component,
+    BulusanComponent,
+    RompeComponent,
   ],
 
   imports: [
