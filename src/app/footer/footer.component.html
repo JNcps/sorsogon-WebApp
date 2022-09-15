@@ -46,13 +46,39 @@
       <span>Others</span></a>
 
   </div>
-  <div class="wrapper1">
-    <ul *ngIf="showMe">
-      <li><a href="">Privacy policy</a></li>
-      <li><a href="">Terms & conditions</a></li>
-      <li><a href="">Credits & sponsors</a></li>
-      <li><a href="">Contact us</a></li>
+  <div class="wrapper1" *ngIf="showMe">
+    <div class="logo">
+      <img src="assets/image/logo2.jpg" alt="">
+    </div>
+    <ul>
+      <li><i class="material-icons" style="font-size:20px">language</i><a routerLink="/talk">Sorsogon Talk</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">directions_car</i><a routerLink="/transport">Transport Services</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">forward</i><a routerLink="/goingto">Going to Sorsogon</a></li><br>
+
+      <label>Requires Data/Internet</label><br><br>
+      <li><i class="material-icons" style="font-size:20px">event_note</i><a routerLink="/calendar">Calendar of Events</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">collections</i><a routerLink="/gallary">Event Gallery</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">video_library</i><a routerLink="/videos">Videos</a></li><br>
+
+      <label>Others</label><br><br>
+      <li><i class="material-icons" style="font-size:20px">vpn_key</i><a routerLink="/terms">Terms & conditions</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">people</i><a routerLink="/credits">Credits & sponsors</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">lock</i><a routerLink="/privacy">Privacy policy</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">perm_phone_msg</i><a routerLink="/contact">Contact Us</a></li><br>
+
+      <label>Informations</label><br><br>
+      <li><i class="material-icons" style="font-size:20px">error_outline</i><a routerLink="/about">About</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">help_outline</i><a routerLink="/help1">Help</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">settings</i><a routerLink="/settings">Settings</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">arrow_forward</i><a routerLink="/sign-in">Log Out</a></li><br>
     </ul>
+  </div>
+
+  <div class="wrapper2" *ngIf="logout"><br>
+    <span>Are you sure you want to Log Out?</span><br><br>
+    <a routerLink="/sign-in"><button class="btn1">Yes</button></a>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    <button class="btn2" *ngIf="showMe">No</button>
   </div>
 
 </html>
@@ -61,23 +87,3 @@
 <app-header></app-header>  <!--   <app-header *ngIf="showMe"></app-header>   -->
 
 
-<!--
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <i class="fa fa-heartbeat" style="font-size:48px;color:red"></i> heart icon
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <i class="fa fa-street-view" style="font-size:48px;color:red"></i> visit icon
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <i class="fa fa-cutlery" style="font-size:48px;color:red"></i> utensil icon
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <i class="fa fa-bed" style="font-size:48px;color:red"></i> bed icon
-
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <i class="fa fa-lock" style="font-size:48px;color:red"></i> lock icon
-
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <i class="fa fa-building-o" style="font-size:48px;color:red"></i> building  venie icon
--->

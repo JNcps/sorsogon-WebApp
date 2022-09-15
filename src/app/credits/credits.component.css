@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html, body{
+  height: 100%;
+}
+
+.header {
+  overflow: hidden;
+  background: linear-gradient(#5650a4, #407ed7);
+  padding: 10px 10px;
+}
+
+.header a i{
+  padding-left: 10px;
+}
+.header span{
+  text-align: center;
+  padding-left: 20px;
+  color: white;
+  font-weight: 550;
+}
+
+.navbar {
+  background: linear-gradient(#5650a4, #407ed7);
+  padding: 10px 10px;
+}
+.navbar span {
+  padding-left: 20px;
+  color: white;
+  font-weight: 550;
+  font-size: 17px;
+}

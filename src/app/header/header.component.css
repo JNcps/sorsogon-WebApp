@@ -1,31 +1,45 @@
 
 .wrapper {
+  position: relative;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 40px;
-  width: 18rem; /* width: 300px to 18rem;  */
-  min-height: 220px;
-  margin: 30rem auto;    /* change the 200px to 20rem   */
-  padding: 10px 10px -20px 10px; /* top, ,right ,left*/
-  padding-top: 20px;
-  padding-left: 20px;
-  margin-left: 20px auto;
-  background-color: #34292971;
-  border-radius: 15px;
-  /* box-shadow:-13px -13px 20px rgba(54, 47, 47, 0.539); */
+  grid-gap: 15px;
+  width: 20rem; /* width: 300px to 18rem;  */
+  min-height: 200px;
+  margin: 0rem auto;    /* change the 200px to 20rem   */
+  bottom: -10px;
+  border-radius: 15px;/* box-shadow:-13px -13px 20px rgba(54, 47, 47, 0.539); */
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.279);
+  align-items: center;
 }
-.wrapper a i{
-  width:50%;
-  margin-left:25%;
-  margin-right:25%;
+.wrapper button{
+  width:100%;
+  height: 35%;
+  /* background:  linear-gradient(#9d50a4, #d74061); */
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 
 .wrapper a {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #fefefe;
+}
+
+.wrapper  span{
+  text-align: center;
+}
+
+.logo img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 5%;
 }
 

@@ -7,12 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   showMe:boolean=false
+  logout:boolean=false
   constructor() { }
 
   ngOnInit(): void {
   }
   toogleTag(){
     this.showMe=!this.showMe
+   }
+   toogleTag2(){
+    this.logout=!this.logout
    }
 
 }

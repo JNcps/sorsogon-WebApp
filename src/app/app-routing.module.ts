@@ -34,9 +34,24 @@ import { Visit3Component } from './visit3/visit3.component';
 import { Visit4Component } from './visit4/visit4.component';
 import { BulusanComponent } from './bulusan/bulusan.component';
 import { RompeComponent } from './rompe/rompe.component';
+import { CodeComponent } from './code/code.component';
+
+import { TalkComponent } from './talk/talk.component';
+import { TransportComponent } from './transport/transport.component';
+import { GoingtoComponent } from './goingto/goingto.component';
+import { GallaryComponent } from './gallary/gallary.component';
+import { VideosComponent } from './videos/videos.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { AboutComponent } from './about/about.component';
+import { Help1Component } from './help1/help1.component';
+import { SettingsComponent } from './settings/settings.component';
+import { TermsComponent } from './terms/terms.component';
+import { CreditsComponent } from './credits/credits.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'', pathMatch:'full'},
+  {path:'', redirectTo:'sign-in', pathMatch:'full'},
   {path:'sign-in', component:SignInComponent},
   {path:'health', component:HealthComponent},
   {path:'weather', component:WeatherComponent},
@@ -68,6 +83,20 @@ const routes: Routes = [
   {path:'pulog', component:PulogComponent},
   {path:'bulusan', component:BulusanComponent},
   {path:'rompe', component:RompeComponent},
+  {path:'code', component:CodeComponent},
+  {path:'talk', component:TalkComponent},
+  {path:'transport', component:TransportComponent},
+  {path:'goingto', component:GoingtoComponent},
+  {path:'gallary', component:GallaryComponent},
+  {path:'videos', component:VideosComponent},
+  {path:'calendar', component:CalendarComponent},
+  {path:'about', component:AboutComponent},
+  {path:'help1', component:Help1Component},
+  {path:'terms', component:TermsComponent},
+  {path:'credits', component:CreditsComponent},
+  {path:'privacy', component:PrivacyComponent},
+  {path:'settings', component:SettingsComponent},
+  {path:'contact', component:ContactComponent},
 ];
 
 @NgModule({

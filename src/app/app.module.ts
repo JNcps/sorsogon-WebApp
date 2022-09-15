@@ -45,6 +45,19 @@ import { Visit3Component } from './visit3/visit3.component';
 import { Visit4Component } from './visit4/visit4.component';
 import { BulusanComponent } from './bulusan/bulusan.component';
 import { RompeComponent } from './rompe/rompe.component';
+import { TalkComponent } from './talk/talk.component';
+import { TransportComponent } from './transport/transport.component';
+import { GoingtoComponent } from './goingto/goingto.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { GallaryComponent } from './gallary/gallary.component';
+import { VideosComponent } from './videos/videos.component';
+import { TermsComponent } from './terms/terms.component';
+import { CreditsComponent } from './credits/credits.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { Help1Component } from './help1/help1.component';
+import { SettingsComponent } from './settings/settings.component';
 //import { provideAuth,getAuth } from '@angular/fire/auth';
 //import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
@@ -86,6 +99,19 @@ import { RompeComponent } from './rompe/rompe.component';
     Visit4Component,
     BulusanComponent,
     RompeComponent,
+    TalkComponent,
+    TransportComponent,
+    GoingtoComponent,
+    CalendarComponent,
+    GallaryComponent,
+    VideosComponent,
+    TermsComponent,
+    CreditsComponent,
+    PrivacyComponent,
+    ContactComponent,
+    AboutComponent,
+    Help1Component,
+    SettingsComponent,
   ],
 
   imports: [
