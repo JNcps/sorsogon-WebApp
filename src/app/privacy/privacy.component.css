@@ -23,12 +23,7 @@ html, body{
   font-weight: 550;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
+
 .navbar {
   background: linear-gradient(#5650a4, #407ed7);
   padding: 10px 10px;
@@ -44,6 +39,7 @@ h3 {
 }
 p {
   color: gray;
+  font-size: medium;
 }
 .container {
   margin: 5px 5px;

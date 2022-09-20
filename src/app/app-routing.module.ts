@@ -49,6 +49,8 @@ import { TermsComponent } from './terms/terms.component';
 import { CreditsComponent } from './credits/credits.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ContactComponent } from './contact/contact.component';
+import { ItemsComponent } from './items/items.component';
+import { AddItemComponent } from './add-item/add-item.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'sign-in', pathMatch:'full'},
@@ -97,6 +99,8 @@ const routes: Routes = [
   {path:'privacy', component:PrivacyComponent},
   {path:'settings', component:SettingsComponent},
   {path:'contact', component:ContactComponent},
+  {path:'items', component:ItemsComponent},
+  {path:'add-item', component:AddItemComponent},
 ];
 
 @NgModule({

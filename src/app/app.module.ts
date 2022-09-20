@@ -58,12 +58,14 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { Help1Component } from './help1/help1.component';
 import { SettingsComponent } from './settings/settings.component';
+import { BeachComponent } from './beach/beach.component';
 //import { provideAuth,getAuth } from '@angular/fire/auth';
 //import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 
 @NgModule({
   declarations: [
+    BeachComponent,
     AppComponent,
     HomeComponent,
     HeaderComponent,
