@@ -41,10 +41,11 @@
 }
 
 .logo img{
-  display: block;
+  position: fixed;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  bottom: 45%;
 }
 
 .container i{

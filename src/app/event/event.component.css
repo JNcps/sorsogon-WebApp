@@ -22,3 +22,69 @@ html, body{
   color: white;
   font-weight: 550;
 }
+
+body {
+  position: fixed;
+  display: block;
+  background-image: url("src/assets/image/image4.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: scroll;
+ }
+
+ .img{
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+
+ * {
+  box-sizing: border-box;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px 0px 0px 20px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.row{
+  display: block;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 90%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row h3{
+  color: white;
+}
+
+.row p{
+  color: white;
+}

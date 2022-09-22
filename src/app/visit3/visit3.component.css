@@ -7,6 +7,20 @@ html, body{
   height: 100%;
 }
 
+
+body {
+  position: fixed;
+  display: block;
+  background-image: url("src/assets/image/bulusan6.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: scroll;
+ }
+
+
 .header {
   overflow: hidden;
   background: linear-gradient(#5650a4, #407ed7);
@@ -24,14 +38,35 @@ html, body{
 }
 
 
-.img1 {
+.img2{
   display: block;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  height: 200px;
-  margin-top: 5%;
-  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.box{
+  display: block;
+}
+
+.box .box2{
+  background-color: rgba(0, 0, 0, 0);
+  width: 55%;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+  float: right;
+}
+.container{
+  background-color: rgba(2, 2, 2, 0);
+}
+.img1 {
+  width: 30%;
+  height: 100%;
+  margin-left: 20px;
+  border-radius: 0px 100px 100px 100px;
 }
 
 button {
@@ -41,7 +76,6 @@ button {
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
   margin-bottom: 50px;
   border: none;
   background: linear-gradient(#5650a4, #407ed7);

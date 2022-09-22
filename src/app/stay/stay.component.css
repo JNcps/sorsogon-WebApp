@@ -7,6 +7,19 @@ html, body{
   height: 100%;
 }
 
+
+body {
+  position: fixed;
+  display: block;
+  background-image: url("src/assets/image/beach.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: scroll;
+ }
+
 .header {
   overflow: hidden;
   background: linear-gradient(#5650a4, #407ed7);
@@ -22,3 +35,40 @@ html, body{
   color: white;
   font-weight: 550;
 }
+
+.img{
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.container{
+  display: block;
+}
+
+.box{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  height: 70px;
+  width: 90%;
+  background-color: #00000076;
+  border-radius: 10px;
+}
+
+.box .img1{
+  display: block;
+  width: 30%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.box h5{
+  margin-top: 10px;
+  margin-left: 20px;
+  color: rgba(255, 255, 255, 0.737);
+}
+

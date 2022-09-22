@@ -90,17 +90,18 @@ button {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-	height: 400px;
+	height: 300px;
 	overflow: hidden;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 	padding: 1rem;
+  border-radius: 10px;
 }
 
 .wrapper picture img{
   width: 100%;
-  height: 100%;
+  height: 60%;
 }
 input {
 	appearance: none;
@@ -108,10 +109,14 @@ input {
 	margin-right: 1rem;
 	width: 1rem;
 	height: 1rem;
-	background: dodgerblue;
+	background: rgba(210, 202, 202, 0.58);
 	border-radius: 50%;
-	cursor: pointer;
 }
+.wrapper p{
+  z-index: 100;
+  margin-bottom: 20px;
+}
+
 
 input:last-of-type {
 	margin: 0;
@@ -122,7 +127,7 @@ input:focus {
 }
 
 input:checked {
-	background: rgb(255, 0, 0);
+	background: rgba(36, 34, 34, 0.694);
 }
 
 input + * {
