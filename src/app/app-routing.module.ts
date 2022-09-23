@@ -51,6 +51,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { ContactComponent } from './contact/contact.component';
 import { ItemsComponent } from './items/items.component';
 import { AddItemComponent } from './add-item/add-item.component';
+import { PhoneComponent } from './phone/phone.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'sign-in', pathMatch:'full'},
@@ -101,6 +102,7 @@ const routes: Routes = [
   {path:'contact', component:ContactComponent},
   {path:'items', component:ItemsComponent},
   {path:'add-item', component:AddItemComponent},
+  {path:'phone', component:PhoneComponent},
 ];
 
 @NgModule({

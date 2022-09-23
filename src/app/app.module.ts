@@ -61,6 +61,7 @@ import { AboutComponent } from './about/about.component';
 import { Help1Component } from './help1/help1.component';
 import { SettingsComponent } from './settings/settings.component';
 import { BeachComponent } from './beach/beach.component';
+import { PhoneComponent } from './phone/phone.component';
 
 //import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 //import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -119,6 +120,7 @@ import { BeachComponent } from './beach/beach.component';
     AboutComponent,
     Help1Component,
     SettingsComponent,
+    PhoneComponent,
   ],
 
   imports: [

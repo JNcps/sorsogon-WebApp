@@ -22,3 +22,49 @@ html, body{
   color: white;
   font-weight: 550;
 }
+
+.container{
+  margin-top: 10px;
+}
+.container h3{
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.container p{
+  font-size: 15px;
+  color: gray;
+  margin-left: 10px;
+}
+
+
+.box{
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.gallery {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  float: left;
+  width: 30%;
+  background:linear-gradient(rgba(255, 0, 238, 0.792),rgba(9, 169, 237, 0.692));
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100px;
+}
+
+div.desc {
+  padding: 10px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.696);
+}
