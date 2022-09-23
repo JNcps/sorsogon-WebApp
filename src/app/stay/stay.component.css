@@ -29,6 +29,7 @@ body {
 .header a i{
   padding-left: 10px;
 }
+
 .header span{
   text-align: center;
   padding-left: 20px;
@@ -44,6 +45,7 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .container{
   display: block;
 }
@@ -54,21 +56,24 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
-  height: 70px;
+  height: 90px;
   width: 90%;
-  background-color: #00000076;
+  background-color: #ffffff9c;
   border-radius: 10px;
 }
 
 .box .img1{
   display: block;
   width: 30%;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   border-radius: 10px 0px 0px 10px;
 }
 
 .box h5{
   margin-top: 10px;
   margin-left: 20px;
-  color: rgba(255, 255, 255, 0.737);
+  color: rgba(5, 5, 5, 0.731);
 }
 

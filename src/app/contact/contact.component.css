@@ -58,6 +58,12 @@ span {
   position: absolute;
 }
 
+h3 {
+  font-size: 25px;
+  font-weight:400;
+  margin-left: 10px;
+}
+
 p {
   margin: 10px 10px;
   color: gray;

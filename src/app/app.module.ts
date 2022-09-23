@@ -3,17 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularFireModule } from '@angular/fire/compat';
+import { FormsModule } from '@angular/forms';
 
+//angular
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { BackgroundComponent } from './background/background.component';
-import { FormsModule } from '@angular/forms';
-//import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ActivitiesComponent } from './activities/activities.component';
 import { OthersComponent } from './others/others.component';
 import { EventComponent } from './event/event.component';
@@ -26,8 +30,6 @@ import { VisitComponent } from './visit/visit.component';
 import { WeatherComponent } from './weather/weather.component';
 import { BghomeComponent } from './bghome/bghome.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-//import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
 import { HealthComponent } from './health/health.component';
 import { HikingComponent } from './hiking/hiking.component';
 import { RiverComponent } from './river/river.component';
@@ -59,6 +61,9 @@ import { AboutComponent } from './about/about.component';
 import { Help1Component } from './help1/help1.component';
 import { SettingsComponent } from './settings/settings.component';
 import { BeachComponent } from './beach/beach.component';
+
+//import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+//import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //import { provideAuth,getAuth } from '@angular/fire/auth';
 //import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
@@ -122,6 +127,8 @@ import { BeachComponent } from './beach/beach.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    AngularFireAuthModule,
+    AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],

@@ -11,7 +11,7 @@ html, body{
 body {
   position: fixed;
   display: block;
-  background-image: url("src/assets/image/beach.jpg");
+  /* background-image: url("src/assets/image/beach.jpg"); */
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -54,21 +54,22 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
-  height: 70px;
+  margin-bottom: 40px;
+  height: 90px;
   width: 90%;
-  background-color: #00000076;
-  border-radius: 40px 0px  40px  0px;
+  background: linear-gradient(rgba(0, 213, 255, 0.868),rgba(0, 0, 0, 0.18));
+  border-radius: 40px 0px  40px  40px;
 }
 
 .box .img1{
   display: block;
   width: 30%;
-  border-radius: 40px 40px 40px 0px;
+  border-radius: 0px 0px 0px 0px;
 }
 
 .box h5{
   margin-top: 10px;
   margin-left: 20px;
-  color: rgba(255, 255, 255, 0.737);
+  color: rgba(0, 0, 0, 0.737);
 }
 

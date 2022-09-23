@@ -8,10 +8,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <div class="header">
@@ -21,202 +17,56 @@
       ></a>
       <span>Activities</span>
     </div>
-
-    <!---->
-    <div class="container">
-      <div class="wrapper">
-        <div class="logo">
-         <img src="assets/image/activity.png" alt="">
+<div class="logo">
+  <img src="assets/image/activity5.jpg" alt="" class="img">
+<img src="assets/image/logo3.png" alt="" class="img2">
+</div>
+<div class="gal">
+  <h4 style="font-weight: 900;color:rgba(0, 0, 0, 0.546)">ACTIVITY LIST</h4>
+</div>
+    <a>
+      <div class="container">
+        <div class="box">
+          <img src="assets/image/activity1.jpg" alt="" class="img1" >
+          <h5>BASKETBALL
+            <p><em> Insert details about basketball...</em></p>
+          </h5>
         </div>
-
-        <div class="shadow2">
-          <h5>Activity Example</h5>
-          </div>
-          <div class="shadow2">
-            <h5>Activity Example</h5>
-            </div>
-
-        <!--  EDIT -->
-
       </div>
+    </a>
+    <a>
+      <div class="container">
+        <div class="box">
+          <img src="assets/image/activity2.png" alt="" class="img1" >
+          <h5>VOLLEYBALL
+            <p><em> Insert details about volleyball...</em></p>
+          </h5>
+        </div>
+      </div>
+    </a>
+    <a>
+      <div class="container">
+        <div class="box">
+          <img src="assets/image/activity3.jpg" alt="" class="img1" >
+          <h5>BADMINTON
+            <p><em> Insert details about badminton...</em></p>
+          </h5>
+        </div>
+      </div>
+    </a>
+    <a>
+      <div class="container">
+        <div class="box">
+          <img src="assets/image/activity6.jpg" alt="" class="img1" >
+          <h5>ZUMBA
+            <p><em> Insert details about zumba...</em></p>
+          </h5>
+        </div>
+      </div>
+    </a>
+      <br>
+    <div class="bottom">
+      <img src="" alt="" class="img2">
     </div>
   </body>
 </html>
-
-
-
-
-<!--
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="header">
-
-      <a routerLink="/background"
-        ><i class="fa fa-arrow-left" style="font-size: 20px; color: white"></i
-      ></a>
-      <span>Activities</span>
-    </div>
-
-
-    <div class="container">
-      <div class="wrapper">
-        <div class="logo">
-         <img src="assets/image/activity.png" alt="">
-        </div>
-
-        <div class="shadow">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Add Activity"
-            name="task"
-            [(ngModel)]="addTaskValue"
-          />
-          <button class="btn1" (click)="addTask()">ADD</button>
-        </div>
-
-        <h5 style="font-size:15px;color: rgba(255, 0, 0, 0.726);">List of Activity: </h5>
-
-        <div class="shadow2" *ngFor="let task of taskArr">
-          <h5>{{ task.task_name }}</h5>
-          <button
-            (click)="toogleTag()"
-            class="btn2"
-            data-bs-toggle="modal"
-            type="button"
-            data-bs-target="#exampleModal"
-            (click)="call(task)"
-          >
-          <i class="fa fa-pencil" style="font-size:20px;color:rgb(25, 164, 239)"></i>
-          </button>
-          <button class="btn3" (click)="deleteTask(task)"><i class="fa fa-trash-o" style="font-size:20px;color:rgb(232, 16, 16)"></i></button>
-        </div>
-
-
-        <div class="container-2" *ngIf="edit">
-          <div class="edit">
-            <h5 style="color:white;">Edit Activity</h5>
-            <button
-              class="btn4"
-              type="button"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-              (click)="toogleTag()"
-            >
-            <h2 style="color:white;">&times;</h2>
-            </button>
-          </div>
-          <div class="shadow3">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="New Activity"
-                name="task"
-                [(ngModel)]="editTaskValue"
-              />
-              <button
-                class="btn5"
-                type="button"
-                data-bs-dismiss="modal"
-                (click)="editTask()"
-              >
-                Update
-              </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
-
-----------------------------------------------------------------------------------------------------------------------
-
-import { Component, OnInit } from '@angular/core';
-import { Task } from '../model/task';
-import { CrudService } from '../service/crud.service';
-
-
-@Component({
-  selector: 'app-activities',
-  templateUrl: './activities.component.html',
-  styleUrls: ['./activities.component.css'],
-})
-export class ActivitiesComponent implements OnInit {
-
-  taskObj : Task = new Task();
-  taskArr : Task[] = [];
-
-  addTaskValue : string = '';
-  editTaskValue : string = '';
-  edit:boolean=false
-
-  constructor(private crudService : CrudService) { }
-
-  ngOnInit(): void {
-    this.editTaskValue = '';
-    this.addTaskValue = '';
-    this.taskObj = new Task();
-    this.taskArr = [];
-    this.getAllTask();
-  }
-  getAllTask() {
-    this.crudService.getAllTask().subscribe(res => {
-      this.taskArr = res;
-
-    })
-  }
-
-  addTask() {
-    this.taskObj.task_name = this.addTaskValue;
-    this.crudService.addTask(this.taskObj).subscribe(res => {
-      this.ngOnInit();
-      this.addTaskValue = '';
-    console.warn(res)
-
-    })
-  }
-
-  editTask() {
-    this.taskObj.task_name = this.editTaskValue;
-    this.crudService.editTask(this.taskObj).subscribe(res => {
-      this.ngOnInit();
-      console.warn(res)
-    })
-    this.edit=!this.edit
-  }
-
-  deleteTask(etask : Task) {
-    this.crudService.deleteTask(etask).subscribe(res => {
-      this.ngOnInit();
-      console.warn(res)
-    });
-  }
-
-  call(etask : Task) {
-    this.taskObj = etask;
-    this.editTaskValue = etask.task_name;
-  }
-
-  toogleTag(){
-    this.edit=!this.edit
-   }
-
-
-}
-
-
- -->

@@ -22,3 +22,134 @@ html, body{
   color: white;
   font-weight: 550;
 }
+
+.img{
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img1{
+  display: block;
+  width: 15%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  background: linear-gradient( rgba(0, 200, 255, 0.847),rgba(255, 89, 0, 0.466));
+}
+
+
+h3 {
+  font-size: 20px;
+}
+p {
+  font-size: 15px;
+  color: gray;
+}
+.container {
+  margin: 8px 8px;
+  margin-bottom: 50px;
+}
+button{
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  background-color:grey;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid black;
+}
+
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px 0px 0px 20px;
+  height: 230px; /* Should be removed. Only for demonstration */
+  border-right: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-radius: 0px 20px 20px 0px;
+  height: 230px; /* Should be removed. Only for demonstration */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.row{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row p{
+  color: rgba(0, 0, 0, 0.58);
+}
+
+table, td {
+  border-right-width: 1px solid black;
+  border-collapse: collapse;
+  padding:10px;
+  font-size: 15px;
+}
+
+.status{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #407ed7;
+  height: auto;
+  width: 100%;
+}
+
+.stat1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 80px; /* Should be removed. Only for demonstration */
+}
+
+.stat2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 80px; /* Should be removed. Only for demonstration */
+}
+
+.stat2 p{
+  background-color: #a7a0a089;
+  color: rgb(118, 104, 104);
+  height: 70%;
+  width: 60%;
+  float: right;
+  text-align: center;
+  padding-top: 15px;
+}
+
+a{
+  color:black;
+  text-decoration: none;
+}
+h2{
+  border-bottom: 1px solid black;
+  padding-bottom:5px;
+}
