@@ -29,39 +29,23 @@
             <div class="logo2">SORSOGON</div>
             <b>"Its more FUN  register"</b>
           </div>
-          <form>
-            <input
-              type="email"
-              id="inputEmail"
-              name="email"
-              placeholder=" &#xf023; Input valid email"
-              class="form-control"
-              [(ngModel)]="email">
-            <input
-              type="number"
-              id="inputPassword"
-              name="password"
-              placeholder=" &#xf023; Input valid number"
-              class="form-control"
-              [(ngModel)]="password">
-              <!--
-                <div class="alert alert-danger" role="alert" *ngIf="isFormValid">
-                Please fill all fields.
-            </div>
-            <div class="alert alert-danger" role="alert" *ngIf="areCredentialsInvalid">
-                Invalid user or password.
-            </div>
-              -->
-
-            <div class="flex-container">
-              <div>
-                <a href="sign-in">Sign In?</a>
+          <form class="col-md-6">
+            <div class="card px-5 py-5">
+              <div class="form-input">
+                <input type="text" name="phoneNumber" placeholder="Phone Number" class="form-control"
+                  placeholder="Enter Phone Number" [(ngModel)]="phoneNumber" min="10" max="15">
               </div>
-              <div>
-                <a href="others">Forgot Credentials</a>
+              <div class="flex-container">
+                <div>
+                  <a href="/phone">Have an Account?</a>
+                </div>
+                <div>
+                  <a href="/sign-up">Forgot Credentials</a>
+                </div>
               </div>
+              <button class="btn btn-success mt-4 signup" (click)="getOTP()">Get OTP</button>
+              <div id="sign-in-button"></div>
             </div>
-            <button  type="button" (click)="register()">SIGN UP</button>
           </form>
         </div>
       </div>

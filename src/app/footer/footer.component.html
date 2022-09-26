@@ -26,8 +26,8 @@
     ><i class="fa fa-map" style="font-size:24px"></i><br /><span>Book Now!</span></a
   ></div>
   <div id="footer-bar" class="footer-bar-1">
-    <a routerLink="/weather">
-      <i class="fa fa-cloud" style="font-size: 30px; color: white" (click)="toogleTag"></i
+    <a routerLink="/weather2">
+      <i class="fa fa-cloud" style="font-size: 30px; color: white"></i
       ><br /><span>Weather</span></a
     >
     <a routerLink="/event"
@@ -70,7 +70,7 @@
       <li><i class="material-icons" style="font-size:20px">error_outline</i><a routerLink="/about">About</a></li><br>
       <li><i class="material-icons" style="font-size:20px">help_outline</i><a routerLink="/help1">Help</a></li><br>
       <li><i class="material-icons" style="font-size:20px">settings</i><a routerLink="/settings">Settings</a></li><br>
-      <li><i class="material-icons" style="font-size:20px">arrow_forward</i><a routerLink="/sign-in">Log Out</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">arrow_forward</i><a (click)="logOut()">Log Out</a></li><br>
     </ul>
   </div>
 

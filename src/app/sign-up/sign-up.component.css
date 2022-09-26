@@ -66,19 +66,18 @@ body,html{
 input {
   height: 40px;
   width: 100%;
-  margin: 20px auto;
   border-left: none;
   border-right: none;
   border-top: none;
   color: white;
   background: #93939300;
-  padding-left: 5px;
-  font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
   outline: none;
+  font-size: 20px;
 }
+
 .logo{
 
   text-shadow: -8px 12px 12px rgba(12, 11, 11, 0.943);

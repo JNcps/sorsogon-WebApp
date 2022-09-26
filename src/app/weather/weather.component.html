@@ -1,27 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title></title>
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
+
   <body>
-    <div class="header">
-      <!-- onclick="history.back()" -->
-      <a routerLink="/background"
-        ><i class="fa fa-arrow-left" style="font-size: 20px; color: white"></i
-      ></a>
-      <span>Weather</span>
+    <div class="wrapper box">
+      <div class="single-box"><img alt="" src="assets/image/image1.jpg" /></div>
+      <div class="single-box">
+        <img alt="" src="assets/image/image7.webp" />
+      </div>
+      <div class="single-box"><img alt="" src="assets/image/image6.jpg" /></div>
+      <div class="single-box">
+        <img alt="" src="assets/image/image5.webp" />
+      </div>
+      <div class="text-block">
+        <div class="myform">
+          <div class="logo">
+            WOW!
+            <div class="logo2">SORSOGON</div>
+            <b>"Its more FUN in Sorsogon"</b>
+          </div>
+
+          <div class="container">
+            <div class="otp">
+              <ng-otp-input
+              class="otpinput"
+                #ngOtpInput
+                (onInputChange)="onOtpChange($event)"
+                [config]="config"
+              ></ng-otp-input>
+              <button (click)="handleClick()">
+                Verify OTP
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--
-        <a class="weatherwidget-io" href="https://forecast7.com/en/12d76123d93/sorsogon/" data-label_1="SORSOGON" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="original" >SORSOGON WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
-      -->
   </body>
 </html>

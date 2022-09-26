@@ -1,16 +1,18 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
-//angular
+
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { NgOtpInputModule } from 'ng-otp-input';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -62,6 +64,7 @@ import { Help1Component } from './help1/help1.component';
 import { SettingsComponent } from './settings/settings.component';
 import { BeachComponent } from './beach/beach.component';
 import { PhoneComponent } from './phone/phone.component';
+import { Weather2Component } from './weather2/weather2.component';
 
 //import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 //import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -121,6 +124,7 @@ import { PhoneComponent } from './phone/phone.component';
     Help1Component,
     SettingsComponent,
     PhoneComponent,
+    Weather2Component,
   ],
 
   imports: [
@@ -129,11 +133,14 @@ import { PhoneComponent } from './phone/phone.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    NgOtpInputModule,
+    ReactiveFormsModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

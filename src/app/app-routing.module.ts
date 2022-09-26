@@ -35,7 +35,6 @@ import { Visit4Component } from './visit4/visit4.component';
 import { BulusanComponent } from './bulusan/bulusan.component';
 import { RompeComponent } from './rompe/rompe.component';
 import { CodeComponent } from './code/code.component';
-
 import { TalkComponent } from './talk/talk.component';
 import { TransportComponent } from './transport/transport.component';
 import { GoingtoComponent } from './goingto/goingto.component';
@@ -52,9 +51,10 @@ import { ContactComponent } from './contact/contact.component';
 import { ItemsComponent } from './items/items.component';
 import { AddItemComponent } from './add-item/add-item.component';
 import { PhoneComponent } from './phone/phone.component';
+import { Weather2Component } from './weather2/weather2.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'sign-in', pathMatch:'full'},
+  {path:'', redirectTo:'phone', pathMatch:'full'},
   {path:'sign-in', component:SignInComponent},
   {path:'health', component:HealthComponent},
   {path:'weather', component:WeatherComponent},
@@ -103,6 +103,7 @@ const routes: Routes = [
   {path:'items', component:ItemsComponent},
   {path:'add-item', component:AddItemComponent},
   {path:'phone', component:PhoneComponent},
+  {path:'weather2', component:Weather2Component},
 ];
 
 @NgModule({
