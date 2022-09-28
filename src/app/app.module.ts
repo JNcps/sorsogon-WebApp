@@ -6,6 +6,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import {VgCoreModule} from '@videogular/ngx-videogular/core';
+import {VgControlsModule} from '@videogular/ngx-videogular/controls';
+import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
+import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
+
 
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
@@ -128,6 +133,10 @@ import { Weather2Component } from './weather2/weather2.component';
   ],
 
   imports: [
+    VgControlsModule,
+    VgBufferingModule,
+    VgOverlayPlayModule,
+    VgCoreModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,

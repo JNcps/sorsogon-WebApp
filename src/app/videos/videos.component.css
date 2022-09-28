@@ -22,3 +22,30 @@ html, body{
   color: white;
   font-weight: 550;
 }
+
+.container{
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.container h3{
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline;
+   color: rgb(255, 102, 0);
+}
+
+.container p{
+  font-size: 15px;
+  color: gray;
+}
+
+video{
+  display: block;
+  width: 100%;
+  height: 100%;
+}

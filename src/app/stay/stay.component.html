@@ -18,7 +18,12 @@
       <span>Where to Stay</span>
     </div>
 <img src="assets/image/logo3.png" alt="" class="img">
-    <a>
+
+
+<!-------------------------------------  HOTEL  1    ----------------------------------------->
+
+
+    <a (click)="toogleTag()">
       <div class="container">
         <div class="box">
           <img src="assets/image/hotel1.jpg" alt="" class="img1" >
@@ -28,7 +33,139 @@
         </div>
       </div>
     </a>
-    <a>
+    <div class="hotel1" *ngIf="hotel1">
+      <div class="box1">
+        <a (click)="toogleTag()">
+          <h3 style="text-align: right;padding-right: 20px; padding-bottom: 20px;padding-top: 10px;">X</h3>
+        </a>
+        <img src="assets/image/hotel1.jpg" alt="" class="img2" >
+      </div><br>
+      <div class="room">
+        <a target="_blank" href="assets/image/bed1.jpg">
+          <img src="assets/image/bed1.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed2.jpg">
+          <img src="assets/image/bed2.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed3.jpg">
+          <img src="assets/image/bed3.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed4.jpg">
+          <img src="assets/image/bed4.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed5.jpg">
+          <img src="assets/image/bed5.jpg" alt="" >
+        </a>
+      </div><br>
+      <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;">
+        ROOM FEATURES
+      </h3>
+      <div class="row">
+        <div class="column1">
+          <li>36 sqm</li>
+          <li> Mayon view</li>
+          <li>King-sized bed</li>
+        </div>
+        <div class="column2">
+          <li>Air-conditioned room</li>
+          <li>Non- smoking </li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;padding-bottom: 20px;">
+          AMENITIES
+        </h3>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Comfort
+        </h3>
+        <div class="column1-1">
+          <li>Toilet amenities</li>
+          <li>Bath linen & towels</li>
+          <li>Hairdryer</li>
+        </div>
+        <div class="column2-2">
+          <li>Hot & cold shower</li>
+          <li>Bidet</li>
+          <li>Slippers</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Indulgence
+        </h3>
+        <div class="column1">
+          <li>40” LED flat-screen</li>
+          <li>Cable/Satellite TV</li>
+          <li>Internet access</li>
+          <li>Coffee/tea facilities</li>
+          <li>Bottled water</li>
+        </div>
+        <div class="column2">
+          <li>Mini-refrigerator</li>
+          <li>Dining service</li>
+          <li>Working station</li>
+          <li>Stationery set</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Safety and Convenience
+        </h3>
+        <div class="column1-1">
+          <li>Safety deposit box</li>
+          <li>Security key card</li>
+        </div>
+        <div class="column2-2">
+          <li>Elevator access</li>
+          <li>24-hour Front desk</li>
+        </div>
+      </div>
+      <a routerLink="/booking">
+        <button>BOOK NOW</button>
+      </a>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;">
+        CHECK IN :       2:00 PM
+      </h3>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 10px;">
+        CHECK OUT:   12:00 PM
+      </h3><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul><br><br>
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" >
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" >
+        <img src="assets/image/payment3.jpg" alt="" class="visa" >
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" >
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" >
+      </div><br><br>
+    </div>
+
+
+    <!-------------------------------------  HOTEL  2    ----------------------------------------->
+    <a (click)="toogleTag2()">
       <div class="container">
         <div class="box">
           <img src="assets/image/hotel2.jpg" alt="" class="img1" >
@@ -38,7 +175,144 @@
         </div>
       </div>
     </a>
-    <a>
+
+    <div class="hotel1" *ngIf="hotel2">
+      <div class="box1">
+        <a (click)="toogleTag2()">
+          <h3 style="text-align: right;padding-right: 20px; padding-bottom: 20px;padding-top: 10px;">X</h3>
+        </a>
+        <img src="assets/image/hotel2.jpg" alt="" class="img2" >
+      </div><br>
+      <div class="room">
+        <a target="_blank" href="assets/image/bed1.jpg">
+          <img src="assets/image/bed1.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed2.jpg">
+          <img src="assets/image/bed2.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed3.jpg">
+          <img src="assets/image/bed3.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed4.jpg">
+          <img src="assets/image/bed4.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed5.jpg">
+          <img src="assets/image/bed5.jpg" alt="" >
+        </a>
+      </div>
+      <br>
+      <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;">
+        ROOM FEATURES
+      </h3>
+      <div class="row">
+        <div class="column1">
+          <li>36 sqm</li>
+          <li> Mayon view</li>
+          <li>King-sized bed</li>
+        </div>
+        <div class="column2">
+          <li>Air-conditioned room</li>
+          <li>Non- smoking </li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;padding-bottom: 20px;">
+          AMENITIES
+        </h3>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Comfort
+        </h3>
+        <div class="column1-1">
+          <li>Toilet amenities</li>
+          <li>Bath linen & towels</li>
+          <li>Hairdryer</li>
+        </div>
+        <div class="column2-2">
+          <li>Hot & cold shower</li>
+          <li>Bidet</li>
+          <li>Slippers</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Indulgence
+        </h3>
+        <div class="column1">
+          <li>40” LED flat-screen</li>
+          <li>Cable/Satellite TV</li>
+          <li>Internet access</li>
+          <li>Coffee/tea facilities</li>
+          <li>Bottled water</li>
+        </div>
+        <div class="column2">
+          <li>Mini-refrigerator</li>
+          <li>Dining service</li>
+          <li>Working station</li>
+          <li>Stationery set</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Safety and Convenience
+        </h3>
+        <div class="column1-1">
+          <li>Safety deposit box</li>
+          <li>Security key card</li>
+        </div>
+        <div class="column2-2">
+          <li>Elevator access</li>
+          <li>24-hour Front desk</li>
+        </div>
+      </div>
+      <a routerLink="/booking">
+        <button>BOOK NOW</button>
+      </a>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;">
+        CHECK IN :       2:00 PM
+      </h3>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 10px;">
+        CHECK OUT:   12:00 PM
+      </h3><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul><br><br>
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" >
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" >
+        <img src="assets/image/payment3.jpg" alt="" class="visa" >
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" >
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" >
+      </div><br><br>
+    </div>
+
+
+
+       <!-------------------------------------  HOTEL  3    ----------------------------------------->
+
+
+    <a (click)="toogleTag3()">
       <div class="container">
         <div class="box">
           <img src="assets/image/hotel3.jpg" alt="" class="img1" >
@@ -48,7 +322,141 @@
         </div>
       </div>
     </a>
-    <a>
+
+    <div class="hotel1" *ngIf="hotel3">
+      <div class="box1">
+        <a (click)="toogleTag3()">
+          <h3 style="text-align: right;padding-right: 20px; padding-bottom: 20px;padding-top: 10px;">X</h3>
+        </a>
+        <img src="assets/image/hotel3.jpg" alt="" class="img2" >
+      </div><br>
+      <div class="room">
+        <a target="_blank" href="assets/image/bed1.jpg">
+          <img src="assets/image/bed1.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed2.jpg">
+          <img src="assets/image/bed2.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed3.jpg">
+          <img src="assets/image/bed3.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed4.jpg">
+          <img src="assets/image/bed4.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed5.jpg">
+          <img src="assets/image/bed5.jpg" alt="" >
+        </a>
+      </div><br>
+      <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;">
+        ROOM FEATURES
+      </h3>
+      <div class="row">
+        <div class="column1">
+          <li>36 sqm</li>
+          <li> Mayon view</li>
+          <li>King-sized bed</li>
+        </div>
+        <div class="column2">
+          <li>Air-conditioned room</li>
+          <li>Non- smoking </li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;padding-bottom: 20px;">
+          AMENITIES
+        </h3>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Comfort
+        </h3>
+        <div class="column1-1">
+          <li>Toilet amenities</li>
+          <li>Bath linen & towels</li>
+          <li>Hairdryer</li>
+        </div>
+        <div class="column2-2">
+          <li>Hot & cold shower</li>
+          <li>Bidet</li>
+          <li>Slippers</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Indulgence
+        </h3>
+        <div class="column1">
+          <li>40” LED flat-screen</li>
+          <li>Cable/Satellite TV</li>
+          <li>Internet access</li>
+          <li>Coffee/tea facilities</li>
+          <li>Bottled water</li>
+        </div>
+        <div class="column2">
+          <li>Mini-refrigerator</li>
+          <li>Dining service</li>
+          <li>Working station</li>
+          <li>Stationery set</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Safety and Convenience
+        </h3>
+        <div class="column1-1">
+          <li>Safety deposit box</li>
+          <li>Security key card</li>
+        </div>
+        <div class="column2-2">
+          <li>Elevator access</li>
+          <li>24-hour Front desk</li>
+        </div>
+      </div>
+      <a routerLink="/booking">
+        <button>BOOK NOW</button>
+      </a>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;">
+        CHECK IN :       2:00 PM
+      </h3>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 10px;">
+        CHECK OUT:   12:00 PM
+      </h3><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul><br><br>
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" >
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" >
+        <img src="assets/image/payment3.jpg" alt="" class="visa" >
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" >
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" >
+      </div><br><br>
+    </div>
+
+
+
+       <!-------------------------------------  HOTEL  4    ----------------------------------------->
+    <a (click)="toogleTag4()">
       <div class="container">
         <div class="box">
           <img src="assets/image/hotel4.jpg" alt="" class="img1" >
@@ -58,7 +466,142 @@
         </div>
       </div>
     </a>
-    <a>
+
+    <div class="hotel1" *ngIf="hotel4">
+      <div class="box1">
+        <a (click)="toogleTag4()">
+          <h3 style="text-align: right;padding-right: 20px; padding-bottom: 20px;padding-top: 10px;">X</h3>
+        </a>
+        <img src="assets/image/hotel4.jpg" alt="" class="img2" >
+      </div><br>
+      <div class="room">
+        <a target="_blank" href="assets/image/bed1.jpg">
+          <img src="assets/image/bed1.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed2.jpg">
+          <img src="assets/image/bed2.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed3.jpg">
+          <img src="assets/image/bed3.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed4.jpg">
+          <img src="assets/image/bed4.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed5.jpg">
+          <img src="assets/image/bed5.jpg" alt="" >
+        </a>
+      </div><br>
+      <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;">
+        ROOM FEATURES
+      </h3>
+      <div class="row">
+        <div class="column1">
+          <li>36 sqm</li>
+          <li> Mayon view</li>
+          <li>King-sized bed</li>
+        </div>
+        <div class="column2">
+          <li>Air-conditioned room</li>
+          <li>Non- smoking </li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;padding-bottom: 20px;">
+          AMENITIES
+        </h3>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Comfort
+        </h3>
+        <div class="column1-1">
+          <li>Toilet amenities</li>
+          <li>Bath linen & towels</li>
+          <li>Hairdryer</li>
+        </div>
+        <div class="column2-2">
+          <li>Hot & cold shower</li>
+          <li>Bidet</li>
+          <li>Slippers</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Indulgence
+        </h3>
+        <div class="column1">
+          <li>40” LED flat-screen</li>
+          <li>Cable/Satellite TV</li>
+          <li>Internet access</li>
+          <li>Coffee/tea facilities</li>
+          <li>Bottled water</li>
+        </div>
+        <div class="column2">
+          <li>Mini-refrigerator</li>
+          <li>Dining service</li>
+          <li>Working station</li>
+          <li>Stationery set</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Safety and Convenience
+        </h3>
+        <div class="column1-1">
+          <li>Safety deposit box</li>
+          <li>Security key card</li>
+        </div>
+        <div class="column2-2">
+          <li>Elevator access</li>
+          <li>24-hour Front desk</li>
+        </div>
+      </div>
+      <a routerLink="/booking">
+        <button>BOOK NOW</button>
+      </a>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;">
+        CHECK IN :       2:00 PM
+      </h3>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 10px;">
+        CHECK OUT:   12:00 PM
+      </h3><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul><br><br>
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" >
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" >
+        <img src="assets/image/payment3.jpg" alt="" class="visa" >
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" >
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" >
+      </div><br><br>
+    </div>
+
+
+
+
+   <!-------------------------------------  HOTEL  5    ----------------------------------------->
+    <a (click)="toogleTag5()">
       <div class="container">
         <div class="box">
           <img src="assets/image/hotel5.jpg" alt="" class="img1" >
@@ -68,7 +611,142 @@
         </div>
       </div>
     </a>
-    <a>
+
+    <div class="hotel1" *ngIf="hotel5">
+      <div class="box1">
+        <a (click)="toogleTag5()">
+          <h3 style="text-align: right;padding-right: 20px; padding-bottom: 20px;padding-top: 10px;">X</h3>
+        </a>
+        <img src="assets/image/hotel5.jpg" alt="" class="img2" >
+      </div><br>
+      <div class="room">
+        <a target="_blank" href="assets/image/bed1.jpg">
+          <img src="assets/image/bed1.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed2.jpg">
+          <img src="assets/image/bed2.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed3.jpg">
+          <img src="assets/image/bed3.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed4.jpg">
+          <img src="assets/image/bed4.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed5.jpg">
+          <img src="assets/image/bed5.jpg" alt="" >
+        </a>
+      </div><br>
+      <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;">
+        ROOM FEATURES
+      </h3>
+      <div class="row">
+        <div class="column1">
+          <li>36 sqm</li>
+          <li> Mayon view</li>
+          <li>King-sized bed</li>
+        </div>
+        <div class="column2">
+          <li>Air-conditioned room</li>
+          <li>Non- smoking </li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;padding-bottom: 20px;">
+          AMENITIES
+        </h3>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Comfort
+        </h3>
+        <div class="column1-1">
+          <li>Toilet amenities</li>
+          <li>Bath linen & towels</li>
+          <li>Hairdryer</li>
+        </div>
+        <div class="column2-2">
+          <li>Hot & cold shower</li>
+          <li>Bidet</li>
+          <li>Slippers</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Indulgence
+        </h3>
+        <div class="column1">
+          <li>40” LED flat-screen</li>
+          <li>Cable/Satellite TV</li>
+          <li>Internet access</li>
+          <li>Coffee/tea facilities</li>
+          <li>Bottled water</li>
+        </div>
+        <div class="column2">
+          <li>Mini-refrigerator</li>
+          <li>Dining service</li>
+          <li>Working station</li>
+          <li>Stationery set</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Safety and Convenience
+        </h3>
+        <div class="column1-1">
+          <li>Safety deposit box</li>
+          <li>Security key card</li>
+        </div>
+        <div class="column2-2">
+          <li>Elevator access</li>
+          <li>24-hour Front desk</li>
+        </div>
+      </div>
+      <a routerLink="/booking">
+        <button>BOOK NOW</button>
+      </a>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;">
+        CHECK IN :       2:00 PM
+      </h3>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 10px;">
+        CHECK OUT:   12:00 PM
+      </h3><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul><br><br>
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" >
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" >
+        <img src="assets/image/payment3.jpg" alt="" class="visa" >
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" >
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" >
+      </div><br><br>
+    </div>
+
+
+
+
+   <!-------------------------------------  HOTEL  6    ----------------------------------------->
+    <a (click)="toogleTag6()">
       <div class="container">
         <div class="box">
           <img src="assets/image/hotel6.jpg" alt="" class="img1" >
@@ -78,7 +756,143 @@
         </div>
       </div>
     </a>
-    <a>
+
+    <div class="hotel1" *ngIf="hotel6">
+      <div class="box1">
+        <a (click)="toogleTag6()">
+          <h3 style="text-align: right;padding-right: 20px; padding-bottom: 20px;padding-top: 10px;">X</h3>
+        </a>
+        <img src="assets/image/hotel6.jpg" alt="" class="img2" >
+      </div><br>
+      <div class="room">
+        <a target="_blank" href="assets/image/bed1.jpg">
+          <img src="assets/image/bed1.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed2.jpg">
+          <img src="assets/image/bed2.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed3.jpg">
+          <img src="assets/image/bed3.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed4.jpg">
+          <img src="assets/image/bed4.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed5.jpg">
+          <img src="assets/image/bed5.jpg" alt="" >
+        </a>
+      </div><br>
+      <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;">
+        ROOM FEATURES
+      </h3>
+      <div class="row">
+        <div class="column1">
+          <li>36 sqm</li>
+          <li> Mayon view</li>
+          <li>King-sized bed</li>
+        </div>
+        <div class="column2">
+          <li>Air-conditioned room</li>
+          <li>Non- smoking </li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;padding-bottom: 20px;">
+          AMENITIES
+        </h3>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Comfort
+        </h3>
+        <div class="column1-1">
+          <li>Toilet amenities</li>
+          <li>Bath linen & towels</li>
+          <li>Hairdryer</li>
+        </div>
+        <div class="column2-2">
+          <li>Hot & cold shower</li>
+          <li>Bidet</li>
+          <li>Slippers</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Indulgence
+        </h3>
+        <div class="column1">
+          <li>40” LED flat-screen</li>
+          <li>Cable/Satellite TV</li>
+          <li>Internet access</li>
+          <li>Coffee/tea facilities</li>
+          <li>Bottled water</li>
+        </div>
+        <div class="column2">
+          <li>Mini-refrigerator</li>
+          <li>Dining service</li>
+          <li>Working station</li>
+          <li>Stationery set</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Safety and Convenience
+        </h3>
+        <div class="column1-1">
+          <li>Safety deposit box</li>
+          <li>Security key card</li>
+        </div>
+        <div class="column2-2">
+          <li>Elevator access</li>
+          <li>24-hour Front desk</li>
+        </div>
+      </div>
+      <a routerLink="/booking">
+        <button>BOOK NOW</button>
+      </a>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;">
+        CHECK IN :       2:00 PM
+      </h3>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 10px;">
+        CHECK OUT:   12:00 PM
+      </h3><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul><br><br>
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" >
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" >
+        <img src="assets/image/payment3.jpg" alt="" class="visa" >
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" >
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" >
+      </div><br><br>
+    </div>
+
+
+
+
+
+    <!-------------------------------------  HOTEL  7    ----------------------------------------->
+    <a (click)="toogleTag7()">
       <div class="container">
         <div class="box">
           <img src="assets/image/hotel7.jpg" alt="" class="img1" >
@@ -88,7 +902,142 @@
         </div>
       </div>
     </a>
-    <a>
+
+    <div class="hotel1" *ngIf="hotel7">
+      <div class="box1">
+        <a (click)="toogleTag7()">
+          <h3 style="text-align: right;padding-right: 20px; padding-bottom: 20px;padding-top: 10px;">X</h3>
+        </a>
+        <img src="assets/image/hotel7.jpg" alt="" class="img2" >
+      </div><br>
+      <div class="room">
+        <a target="_blank" href="assets/image/bed1.jpg">
+          <img src="assets/image/bed1.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed2.jpg">
+          <img src="assets/image/bed2.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed3.jpg">
+          <img src="assets/image/bed3.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed4.jpg">
+          <img src="assets/image/bed4.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed5.jpg">
+          <img src="assets/image/bed5.jpg" alt="" >
+        </a>
+      </div><br>
+      <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;">
+        ROOM FEATURES
+      </h3>
+      <div class="row">
+        <div class="column1">
+          <li>36 sqm</li>
+          <li> Mayon view</li>
+          <li>King-sized bed</li>
+        </div>
+        <div class="column2">
+          <li>Air-conditioned room</li>
+          <li>Non- smoking </li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;padding-bottom: 20px;">
+          AMENITIES
+        </h3>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Comfort
+        </h3>
+        <div class="column1-1">
+          <li>Toilet amenities</li>
+          <li>Bath linen & towels</li>
+          <li>Hairdryer</li>
+        </div>
+        <div class="column2-2">
+          <li>Hot & cold shower</li>
+          <li>Bidet</li>
+          <li>Slippers</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Indulgence
+        </h3>
+        <div class="column1">
+          <li>40” LED flat-screen</li>
+          <li>Cable/Satellite TV</li>
+          <li>Internet access</li>
+          <li>Coffee/tea facilities</li>
+          <li>Bottled water</li>
+        </div>
+        <div class="column2">
+          <li>Mini-refrigerator</li>
+          <li>Dining service</li>
+          <li>Working station</li>
+          <li>Stationery set</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Safety and Convenience
+        </h3>
+        <div class="column1-1">
+          <li>Safety deposit box</li>
+          <li>Security key card</li>
+        </div>
+        <div class="column2-2">
+          <li>Elevator access</li>
+          <li>24-hour Front desk</li>
+        </div>
+      </div>
+      <a routerLink="/booking">
+        <button>BOOK NOW</button>
+      </a>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;">
+        CHECK IN :       2:00 PM
+      </h3>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 10px;">
+        CHECK OUT:   12:00 PM
+      </h3><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul><br><br>
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" >
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" >
+        <img src="assets/image/payment3.jpg" alt="" class="visa" >
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" >
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" >
+      </div><br><br>
+    </div>
+
+
+
+
+   <!-------------------------------------  HOTEL  8    ----------------------------------------->
+    <a (click)="toogleTag8()">
       <div class="container">
         <div class="box">
           <img src="assets/image/hotel8.jpg" alt="" class="img1" >
@@ -98,5 +1047,135 @@
         </div>
       </div>
     </a><br>
+
+    <div class="hotel1" *ngIf="hotel8">
+      <div class="box1">
+        <a (click)="toogleTag8()">
+          <h3 style="text-align: right;padding-right: 20px; padding-bottom: 20px;padding-top: 10px;">X</h3>
+        </a>
+        <img src="assets/image/hotel8.jpg" alt="" class="img2" >
+      </div><br>
+      <div class="room">
+        <a target="_blank" href="assets/image/bed1.jpg">
+          <img src="assets/image/bed1.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed2.jpg">
+          <img src="assets/image/bed2.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed3.jpg">
+          <img src="assets/image/bed3.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed4.jpg">
+          <img src="assets/image/bed4.jpg" alt="" >
+        </a>
+        <a target="_blank" href="assets/image/bed5.jpg">
+          <img src="assets/image/bed5.jpg" alt="" >
+        </a>
+      </div><br>
+      <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;">
+        ROOM FEATURES
+      </h3>
+      <div class="row">
+        <div class="column1">
+          <li>36 sqm</li>
+          <li> Mayon view</li>
+          <li>King-sized bed</li>
+        </div>
+        <div class="column2">
+          <li>Air-conditioned room</li>
+          <li>Non- smoking </li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;padding-bottom: 20px;">
+          AMENITIES
+        </h3>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Comfort
+        </h3>
+        <div class="column1-1">
+          <li>Toilet amenities</li>
+          <li>Bath linen & towels</li>
+          <li>Hairdryer</li>
+        </div>
+        <div class="column2-2">
+          <li>Hot & cold shower</li>
+          <li>Bidet</li>
+          <li>Slippers</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Indulgence
+        </h3>
+        <div class="column1">
+          <li>40” LED flat-screen</li>
+          <li>Cable/Satellite TV</li>
+          <li>Internet access</li>
+          <li>Coffee/tea facilities</li>
+          <li>Bottled water</li>
+        </div>
+        <div class="column2">
+          <li>Mini-refrigerator</li>
+          <li>Dining service</li>
+          <li>Working station</li>
+          <li>Stationery set</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Safety and Convenience
+        </h3>
+        <div class="column1-1">
+          <li>Safety deposit box</li>
+          <li>Security key card</li>
+        </div>
+        <div class="column2-2">
+          <li>Elevator access</li>
+          <li>24-hour Front desk</li>
+        </div>
+      </div>
+      <a routerLink="/booking">
+        <button>BOOK NOW</button>
+      </a>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;">
+        CHECK IN :       2:00 PM
+      </h3>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 10px;">
+        CHECK OUT:   12:00 PM
+      </h3><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul><br><br>
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" >
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" >
+        <img src="assets/image/payment3.jpg" alt="" class="visa" >
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" >
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" >
+      </div><br><br>
+    </div>
   </body>
 </html>

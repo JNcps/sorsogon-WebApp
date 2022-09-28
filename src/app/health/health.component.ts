@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HealthComponent implements OnInit {
 
+  venue1:boolean=false
+
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
+  toogleTag(){
+    this.venue1=!this.venue1
+   }
 }

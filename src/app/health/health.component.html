@@ -1,39 +1,165 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-</head>
-<body>
-  <div class="header">
-    <!-- onclick="history.back()" -->
-    <a routerLink="/background"
-      ><i class="fa fa-arrow-left" style="font-size: 20px; color: white"></i
-    ></a>
-    <span>Health and Wellness</span>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <!-- onclick="history.back()" -->
+      <a routerLink="/background"
+        ><i class="fa fa-arrow-left" style="font-size: 20px; color: white"></i
+      ></a>
+      <span>Health & Wellness</span>
+    </div>
 
-  <div class="container">
-    <div class="wrapper">
-      <div class="logo">
-       <img src="assets/image/health2.png" alt="">
+
+
+  <!-------------------------------------------      venue1        ----------------------------------------------->
+
+    <div class="imgbox">
+      <div class="box2">
+        <img src="assets/image/gym1.jpg" alt="" class="img" (click)="toogleTag()"/>
+        <div class="bottom">GYM COMPANY NAME</div>
+        <a>
+        <div class="right">View Map</div>
+        </a>
+        <div class="center" (click)="toogleTag()">View More</div>
+      </div>
+    </div>
+
+    <div class="venue" *ngIf="venue1">
+      <a (click)="toogleTag()">
+        <h3 style="text-align: right;padding-right: 20px;padding-top: 10px;">X</h3>
+      </a>
+      <div class="content">
+        <h4>GYM COMPANY NAME</h4>
+        <h5><em>Insert address</em></h5>
       </div>
 
-      <div class="shadow2">
-        <h5>Health Example</h5>
+      <div class="gal">
+        <h4 style="font-weight: bolder;color:rgba(0, 0, 0, 0.546)">GALLERY</h4>
+      </div>
+      <div class="wrapper">
+        <input type="radio" name="image-slide" checked="checked" />
+
+        <img src="assets/image/gym1.jpg" alt="Random Picture 1" />
+
+        <input type="radio" name="image-slide" />
+
+        <img src="assets/image/gym2.jpg" alt="" />
+
+        <input type="radio" name="image-slide" />
+
+        <img src="assets/image/gym3.jpg" alt="" />
+
+        <input type="radio" name="image-slide" />
+
+        <img src="assets/image/gym4.jpg" alt="" />
+
+        <input type="radio" name="image-slide" />
+
+        <img src="assets/image/gym5.jpg" alt="" />
+      </div><br><br>
+
+      <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;">
+        ROOM FEATURES
+      </h3>
+      <div class="row">
+        <div class="column1">
+          <li>36 sqm</li>
+          <li> Mayon view</li>
+          <li>Dis-enfect after used</li>
         </div>
-        <div class="shadow2">
-          <h5>Health Example</h5>
-          </div>
+        <div class="column2">
+          <li>Air-conditioned room</li>
+          <li>Non- smoking </li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;padding-bottom: 20px;">
+          ACTIVITIES
+        </h3>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          Arm Exercise
+        </h3>
+        <div class="column1-1">
+          <li>Squat rack</li>
+          <li>Barbells</li>
+          <li>Bench Press</li>
+        </div>
+        <div class="column2-2">
+          <li>Incline Bench Press</li>
+          <li>Hammer Strength Machine</li>
+          <li>Cables & Pulleys</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          Others
+        </h3>
+        <div class="column1">
+          <li>Dumbells</li>
+          <li>Pullup Bar</li>
+          <li>Lat Pulldown</li>
+          <li>Leg Extension</li>
+          <li>Leg Curl</li>
+        </div>
+        <div class="column2">
+          <li>Hyper Extension</li>
+          <li>Dipping Bars</li>
+          <li>Smith Machine</li>
+          <li>Preacher Bench</li>
+        </div>
+      </div>
+      <a routerLink="/booking">
+        <button>BOOK NOW</button>
+      </a>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul><br>
 
-      <!--  EDIT -->
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul><br>
 
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;">
+        CHECK IN :       2:00 PM
+      </h3>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 10px;">
+        CHECK OUT:   12:00 PM
+      </h3><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul><br><br>
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" >
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" >
+        <img src="assets/image/payment3.jpg" alt="" class="visa" >
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" >
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" >
+      </div><br><br>
     </div>
-  </div>
-</body>
+  </body>
 </html>

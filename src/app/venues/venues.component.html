@@ -17,78 +17,158 @@
       ></a>
       <span>Meeting Venues</span>
     </div>
+
+
+
+  <!-------------------------------------------      venue1        ----------------------------------------------->
+
     <div class="box2">
+      <img src="assets/image/meeting2.jpg" alt="" class="img" (click)="toogleTag()"/>
+      <div class="bottom">Emerald Boutique Hotel</div>
       <a href="https://www.google.com/maps/place/Emerald+Boutique+Hotel/@13.137106,123.7331553,17z/data=!4m8!3m7!1s0x33a103db5479a843:0x58e3a49bc0e38b07!5m2!4m1!1i2!8m2!3d13.137106!4d123.735344">
-        <img src="assets/image/meeting2.jpg" alt="" class="img" />
-      <div class="bottom">Title of the Meeting</div>
       <div class="right">View Map</div>
       </a>
+      <div class="center" (click)="toogleTag()">Learn More</div>
     </div>
-    <div class="content">
-      <h4>Emerald Boutique Hotel</h4>
-      <h5><em>Lead by:</em></h5>
-      <br />
-      <p>17 December 2030</p>
-      <p>544 Opium Road</p>
-      <p>Huntington Beach, NJ 67568</p>
-      <p>Dear Mr. Campbell,</p><br>
-      <p>I am happy to announce that RT Solutions is launching a new application software: The Clientrack. As a newly established company and our loyal client, we would like to invite you to our official launch meeting, which will be held at RTS headquarters on 24 December 2030 from 8 AM to 12 PM.</p>
-      <br>
-      <p>Sincerely,</p>
-    </div>
-    <div class="container">
-      <h4>Meet the Team:</h4>
-      <br />
-      <div class="box">
-        <img src="assets/image/person.jpg" alt="" class="img1" />
 
-        <h5 style="color: rgba(255, 255, 255, 0.808); font-size: 18px">
-          President: Juan Dela Cruz
-          <p style="font-size: 15px; font-weight: 200">
-            <em
-              >I am happy to announce that RT Solutions is launching a new application software: </em
-            >
-          </p>
-        </h5>
+    <div class="venue" *ngIf="venue1">
+      <a (click)="toogleTag()">
+        <h3 style="text-align: right;padding-right: 20px;padding-top: 10px;">X</h3>
+      </a>
+      <div class="content">
+        <h4>Emerald Boutique Hotel</h4>
+        <h5><em>Insert address</em></h5>
       </div>
-    </div>
-    <div class="container">
-      <div class="box">
-        <img src="assets/image/person1.jpg" alt="" class="img1" />
 
-        <h5 style="color: rgba(255, 255, 255, 0.808); font-size: 18px">
-          Secretary: Mary D. Matuto
-          <p style="font-size: 15px; font-weight: 200">
-            <em
-              >I am happy to announce that RT Solutions is launching a new application software: </em
-            >
-          </p>
-        </h5>
+      <div class="gal">
+        <h4 style="font-weight: bolder;color:rgba(0, 0, 0, 0.546)">GALLERY</h4>
       </div>
+      <div class="wrapper">
+        <input type="radio" name="image-slide" checked="checked" />
+
+        <img src="assets/image/hotel2.jpg" alt="Random Picture 1" />
+
+        <input type="radio" name="image-slide" />
+
+        <img src="assets/image/hotel1.jpg" alt="" />
+
+        <input type="radio" name="image-slide" />
+
+        <img src="assets/image/hotel3.jpg" alt="" />
+
+        <input type="radio" name="image-slide" />
+
+        <img src="assets/image/hotel5.jpg" alt="" />
+
+        <input type="radio" name="image-slide" />
+
+        <img src="assets/image/hotel6.jpg" alt="" />
+      </div><br><br>
+
+      <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;">
+        ROOM FEATURES
+      </h3>
+      <div class="row">
+        <div class="column1">
+          <li>36 sqm</li>
+          <li> Mayon view</li>
+          <li>King-sized bed</li>
+        </div>
+        <div class="column2">
+          <li>Air-conditioned room</li>
+          <li>Non- smoking </li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(243, 202, 148);font-size: 20px;text-decoration: underline;padding-bottom: 20px;">
+          AMENITIES
+        </h3>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Comfort
+        </h3>
+        <div class="column1-1">
+          <li>Toilet amenities</li>
+          <li>Bath linen & towels</li>
+          <li>Hairdryer</li>
+        </div>
+        <div class="column2-2">
+          <li>Hot & cold shower</li>
+          <li>Bidet</li>
+          <li>Slippers</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Indulgence
+        </h3>
+        <div class="column1">
+          <li>40” LED flat-screen</li>
+          <li>Cable/Satellite TV</li>
+          <li>Internet access</li>
+          <li>Coffee/tea facilities</li>
+          <li>Bottled water</li>
+        </div>
+        <div class="column2">
+          <li>Mini-refrigerator</li>
+          <li>Dining service</li>
+          <li>Working station</li>
+          <li>Stationery set</li>
+        </div>
+        <h3 style="padding-left: 20px; font-weight: 400;color: rgb(0, 0, 0);font-size: 15px;">
+          For your Safety and Convenience
+        </h3>
+        <div class="column1-1">
+          <li>Safety deposit box</li>
+          <li>Security key card</li>
+        </div>
+        <div class="column2-2">
+          <li>Elevator access</li>
+          <li>24-hour Front desk</li>
+        </div>
+      </div>
+      <a routerLink="/booking">
+        <button>BOOK NOW</button>
+      </a>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;">
+        CHECK IN :       2:00 PM
+      </h3>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 10px;">
+        CHECK OUT:   12:00 PM
+      </h3><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul><br><br>
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" >
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" >
+        <img src="assets/image/payment3.jpg" alt="" class="visa" >
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" >
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" >
+      </div><br><br>
     </div>
-    <div class="gal">
-      <h4 style="font-weight: bolder;color:rgba(0, 0, 0, 0.546)">GALLERY</h4>
-    </div>
-    <div class="wrapper">
-      <input type="radio" name="image-slide" checked="checked" />
-
-      <img src="assets/image/hotel2.jpg" alt="Random Picture 1" />
-
-      <input type="radio" name="image-slide" />
-
-      <img src="assets/image/hotel1.jpg" alt="" />
-
-      <input type="radio" name="image-slide" />
-
-      <img src="assets/image/hotel3.jpg" alt="" />
-
-      <input type="radio" name="image-slide" />
-
-      <img src="assets/image/hotel5.jpg" alt="" />
-
-      <input type="radio" name="image-slide" />
-
-      <img src="assets/image/hotel6.jpg" alt="" />
-    </div><br><br>
   </body>
 </html>

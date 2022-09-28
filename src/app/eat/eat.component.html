@@ -19,12 +19,13 @@
       <span>Where to Eat</span>
     </div>
     <div class="box2">
-      <img src="assets/image/eat1.jpg" alt="" class="img" />
-      <a href="https://www.google.com/maps/place/Emerald+Boutique+Hotel/@13.137106,123.7331553,17z/data=!4m8!3m7!1s0x33a103db5479a843:0x58e3a49bc0e38b07!5m2!4m1!1i2!8m2!3d13.137106!4d123.735344">
-
+      <img src="assets/image/eat1.jpg" alt="" class="img" (click)="toogleTag1()"/>
       <div class="bottom">Emerald Boutique Hotel</div>
+      <a href="https://www.google.com/maps/place/Emerald+Boutique+Hotel/@13.137106,123.7331553,17z/data=!4m8!3m7!1s0x33a103db5479a843:0x58e3a49bc0e38b07!5m2!4m1!1i2!8m2!3d13.137106!4d123.735344">
       <div class="right">View Map</div>
       </a>
+      <div class="center" (click)="toogleTag1()">Learn More</div>
+
 
       <!--
         <button class="btn1" onclick="plusDivs(-1)">&#10094;</button>
@@ -35,109 +36,163 @@
       <h4> Marquez Street, Old Albay District, Albay, 4500 Legazpi, Philippines – Great location - show map Boutique Hotel &nbsp;<i class="fa fa-map-marker" style="font-size: 20px; color: red"></i></h4>
       <h5><em>courtesy by:</em></h5>
       <br />
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Set in Legazpi, 6.7 km from Cagsawa Ruins, Emerald Boutique Hotel offers accommodation with a restaurant, free private parking, a shared lounge and a garden. Boasting a concierge service, this property also provides guests with a terrace. The accommodation features a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.</p><br>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;At the hotel, the rooms come with a desk, a flat-screen TV, a private bathroom, bed linen and towels. All guest rooms at Emerald Boutique Hotel feature air conditioning and a wardrobe.</p><br>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Popular points of interest near Emerald Boutique Hotel include Ibalong Centrum for Recreation, Bariw and Legazpi. The nearest airport is Naga Airport, 83 km from the hotel.</p><br>
+      <p style="text-indent: 50px;">Set in Legazpi, 6.7 km from Cagsawa Ruins, Emerald Boutique Hotel offers accommodation with a restaurant, free private parking, a shared lounge and a garden. Boasting a concierge service, this property also provides guests with a terrace. The accommodation features a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.</p><br>
+      <p style="text-indent: 50px;">At the hotel, the rooms come with a desk, a flat-screen TV, a private bathroom, bed linen and towels. All guest rooms at Emerald Boutique Hotel feature air conditioning and a wardrobe.</p><br>
+      <p style="text-indent: 50px;">Popular points of interest near Emerald Boutique Hotel include Ibalong Centrum for Recreation, Bariw and Legazpi. The nearest airport is Naga Airport, 83 km from the hotel.</p><br>
     </div>
-    <div class="gal">
-      <h4 style="font-weight: bolder;color:rgba(0, 0, 0, 0.546)">GALLERY</h4>
-    </div>
-    <div class="wrapper">
-      <input type="radio" name="image-slide" checked="checked" />
 
-      <img src="assets/image/eat1.jpg" alt="Random Picture 1" />
 
-      <input type="radio" name="image-slide" />
-
-      <img src="assets/image/eat2.jpg" alt="" />
-
-      <input type="radio" name="image-slide" />
-
-      <img src="assets/image/eat3.jpg" alt="" />
-
-      <input type="radio" name="image-slide" />
-
-      <img src="assets/image/eat4.jpg" alt="" />
-
-      <input type="radio" name="image-slide" />
-
-      <img src="assets/image/eat5.jpg" alt="" />
-    </div> <br>
-    <div class="container">
-      <h3 style="font-weight: bold;color:rgba(255, 0, 60, 0.648)">MENU LIST:</h3>
-      <br />
-      <div class="box">
-        <img src="assets/image/food1.jpg" alt="" class="img1" />
-
-        <h5 style="color: rgba(3, 3, 3, 0.808); font-size: 18px">
-          Food Name
-          <p style="font-size: 15px; font-weight: 200">
-            <em
-              >Food Descriptions/Info... </em
-            >
-          </p>
-        </h5>
+    <div class="eat" *ngIf="show1">
+      <a (click)="toogleTag1()">
+        <h3 style="text-align: right;padding-right: 20px;padding-top: 10px;">X</h3>
+      </a>
+      <div class="gal">
+        <h4 style="font-weight: bolder;color:rgba(0, 0, 0, 0.546)">GALLERY</h4>
       </div>
-    </div>
-    <div class="container">
-      <div class="box">
-        <img src="assets/image/food2.jpg" alt="" class="img1" />
+      <div class="wrapper">
+        <input type="radio" name="image-slide" checked="checked" />
 
-        <h5 style="color: rgba(6, 6, 6, 0.808); font-size: 18px">
-          Food Name
-          <p style="font-size: 15px; font-weight: 200">
-            <em
-              >Food Descriptions/Info...  </em
-            >
-          </p>
-        </h5>
-      </div>
-    </div>
-    <div class="container">
-      <div class="box">
-        <img src="assets/image/food3.jpg" alt="" class="img1" />
+        <img src="assets/image/eat1.jpg" alt="Random Picture 1" />
 
-        <h5 style="color: rgba(0, 0, 0, 0.808); font-size: 18px">
-          Food Name
-          <p style="font-size: 15px; font-weight: 200">
-            <em
-              >Food Descriptions/Info...   </em
-            >
-          </p>
-        </h5>
-      </div>
-    </div>
-    <div class="container">
-      <div class="box">
-        <img src="assets/image/food4.jpg" alt="" class="img1" />
+        <input type="radio" name="image-slide" />
 
-        <h5 style="color: rgba(0, 0, 0, 0.808); font-size: 18px">
-          Food Name
-          <p style="font-size: 15px; font-weight: 200">
-            <em
-              >Food Descriptions/Info...  </em
-            >
-          </p>
-        </h5>
-      </div>
-    </div>
-    <div class="container">
-      <div class="box">
-        <img src="assets/image/food5.jpg" alt="" class="img1" />
+        <img src="assets/image/eat2.jpg" alt="" />
 
-        <h5 style="color: rgba(0, 0, 0, 0.808); font-size: 18px">
-          Food Name
-          <p style="font-size: 15px; font-weight: 200">
-            <em
-              >Food Descriptions/Info...  </em
-            >
-          </p>
-        </h5>
+        <input type="radio" name="image-slide" />
+
+        <img src="assets/image/eat3.jpg" alt="" />
+
+        <input type="radio" name="image-slide" />
+
+        <img src="assets/image/eat4.jpg" alt="" />
+
+        <input type="radio" name="image-slide" />
+
+        <img src="assets/image/eat5.jpg" alt="" />
+      </div> <br>
+      <div class="container">
+        <h3 style="font-weight: bold;color:rgba(255, 0, 60, 0.648)">MENU LIST:</h3>
+        <br />
+        <div class="box">
+          <img src="assets/image/food1.jpg" alt="" class="img1" />
+
+          <h5 style="color: rgba(3, 3, 3, 0.808); font-size: 18px">
+            Food Name
+            <p style="font-size: 15px; font-weight: 200">
+              <em
+                >Food Descriptions/Info... </em
+              >
+            </p>
+          </h5>
+        </div>
       </div>
-    </div>
-    <div class="content">
-      <p>&nbsp;&nbsp;&nbsp;&nbsp; At the hotel, the rooms come with a desk, a flat-screen TV, a private bathroom, bed linen and towels. All guest rooms at Emerald Boutique Hotel feature air conditioning and a wardrobe.</p><br>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp; Guests at the accommodation can enjoy a buffet or an Asian breakfast.</p><br>
+      <div class="container">
+        <div class="box">
+          <img src="assets/image/food2.jpg" alt="" class="img1" />
+
+          <h5 style="color: rgba(6, 6, 6, 0.808); font-size: 18px">
+            Food Name
+            <p style="font-size: 15px; font-weight: 200">
+              <em
+                >Food Descriptions/Info...  </em
+              >
+            </p>
+          </h5>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box">
+          <img src="assets/image/food3.jpg" alt="" class="img1" />
+
+          <h5 style="color: rgba(0, 0, 0, 0.808); font-size: 18px">
+            Food Name
+            <p style="font-size: 15px; font-weight: 200">
+              <em
+                >Food Descriptions/Info...   </em
+              >
+            </p>
+          </h5>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box">
+          <img src="assets/image/food4.jpg" alt="" class="img1" />
+
+          <h5 style="color: rgba(0, 0, 0, 0.808); font-size: 18px">
+            Food Name
+            <p style="font-size: 15px; font-weight: 200">
+              <em
+                >Food Descriptions/Info...  </em
+              >
+            </p>
+          </h5>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box">
+          <img src="assets/image/food5.jpg" alt="" class="img1" />
+
+          <h5 style="color: rgba(0, 0, 0, 0.808); font-size: 18px">
+            Food Name
+            <p style="font-size: 15px; font-weight: 200">
+              <em
+                >Food Descriptions/Info...  </em
+              >
+            </p>
+          </h5>
+        </div>
+      </div>
+      <div class="content">
+        <p style="text-indent: 50px;">At the hotel, the rooms come with a desk, a flat-screen TV, a private bathroom, bed linen and towels. All guest rooms at Emerald Boutique Hotel feature air conditioning and a wardrobe.</p><br>
+        <p style="text-indent: 50px;">Guests at the accommodation can enjoy a buffet or an Asian breakfast.</p><br>
+      </div>
+      <a routerLink="/booking">
+        <button>BOOK NOW</button>
+      </a>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;">
+        CHECK IN :       2:00 PM
+      </h3>
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 10px;">
+        CHECK OUT:   12:00 PM
+      </h3><br>
+
+      <h3 style="padding-left: 20px; font-weight: 600;color: rgb(0, 0, 0);font-size: 15px;padding-bottom: 5px;">
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul><br><br>
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" >
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" >
+        <img src="assets/image/payment3.jpg" alt="" class="visa" >
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" >
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" >
+      </div>
     </div>
   </body>
 </html>

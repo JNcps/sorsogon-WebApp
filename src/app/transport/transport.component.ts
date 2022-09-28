@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransportComponent implements OnInit {
 
+  show1:boolean=false
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toogleTag1(){
+    this.show1=!this.show1
   }
 
 }

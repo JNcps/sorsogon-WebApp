@@ -23,6 +23,20 @@ html, body{
   font-weight: 550;
 }
 
+.venue{
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  bottom: 5%;
+  background-color: aliceblue;
+  position: fixed;
+  border-radius: 10px;
+  margin: 0 auto;
+  z-index: 1;
+  overflow: scroll;
+}
+
 .img{
   display: block;
   width: 90%;
@@ -91,6 +105,26 @@ html, body{
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 20px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(255, 252, 252, 0);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.center:hover {
+  background-color: rgba(43, 223, 58, 0.651);
 }
 
 .container .box .img1{
@@ -275,3 +309,117 @@ input:last-of-type:before {
 	background: green;
 }
 
+.img2{
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+}
+
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px 0px 0px 20px;
+  height: 100px; /* Should be removed. Only for demonstration */
+  margin-bottom: 30px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding-top: 10px;
+  border-radius: 0px 20px 20px 0px;
+  height: 100px; /* Should be removed. Only for demonstration */
+  margin-bottom: 30px;
+}
+
+.column1-1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px 0px 0px 20px;
+  height: 50px; /* Should be removed. Only for demonstration */
+  margin-bottom: 30px;
+}
+
+.column2-2{
+  float: left;
+  width: 50%;
+  padding-top: 10px;
+  border-radius: 0px 20px 20px 0px;
+  height: 50px; /* Should be removed. Only for demonstration */
+  margin-bottom: 30px;
+}
+.row{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 100%;
+}
+
+.row li{
+  font-size: 15px;
+  color: gray;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.venue a button{
+  color: green;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #ffffff00;
+  border-radius: 20px;
+  border-color: rgb(210, 138, 45);
+  text-align: center;
+}
+
+.venue ul li{
+  padding-left: 20px;
+  color: gray;
+  font-size: 15px;
+}
+
+.venue .payment{
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gcash{
+  width: 20%;
+  border-radius: 10px;
+}
+
+.bdo{
+  width: 20%;
+  border-radius: 10px;
+}
+
+.visa{
+  width: 20%;
+  border-radius: 10px;
+}
+
+.paypal{
+  width: 20%;
+  border-radius: 10px;
+}
+
+.paymaya{
+  width: 20%;
+  border-radius: 10px;
+}

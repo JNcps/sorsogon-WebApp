@@ -33,3 +33,39 @@ html, body{
   font-weight: 550;
   font-size: 17px;
 }
+
+.container{
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box{
+  align-items: center;
+}
+.img1{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2{
+  font-size:23px;
+  margin-left: 10px;
+  font-weight:400;
+}
+h3 {
+  font-size: 15px;
+  font-weight:400;
+  margin-left: 10px;
+}
+p {
+  margin-left:10px;
+  color: gray;
+  font-size: 15px;
+}
