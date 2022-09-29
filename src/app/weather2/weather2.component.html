@@ -1,21 +1,49 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-</head>
-<body>
-  <div class="header">
-    <!-- onclick="history.back()" -->
-    <a routerLink="/background"
-      ><i class="fa fa-arrow-left" style="font-size: 20px; color: white"></i
-    ></a>
-    <span>Weather</span>
-  </div>
-</body>
+  </head>
+  <body>
+    <div class="header">
+      <!-- onclick="history.back()" -->
+      <a routerLink="/background"
+        ><i class="fa fa-arrow-left" style="font-size: 20px; color: white"></i
+      ></a>
+      <span>Weather</span>
+    </div>
+    <img src="assets/image/logo3.png" alt="" class="img" />
+
+    <a
+      class="weatherwidget-io"
+      href="https://forecast7.com/en/12d99124d01/sorsogon-city/"
+      data-label_1="SORSOGON CITY"
+      data-label_2="WEATHER"
+      data-theme="original"
+    >
+      <div class="container">
+        <h3>SORSOGON CITY</h3>
+        <h4>
+          VIEW WEATHER
+        </h4>
+      </div>
+    </a>
+    <script>
+      !(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://weatherwidget.io/js/widget.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      })(document, "script", "weatherwidget-io-js");
+    </script>
+  </body>
 </html>

@@ -8,11 +8,12 @@ html, body{
 }
 
 .header {
-  overflow: hidden;
   background: linear-gradient(#5650a4, #407ed7);
+  position: fixed;
+  width: 100%;
+  top: 0;
   padding: 10px 10px;
 }
-
 .header a i{
   padding-left: 10px;
 }
