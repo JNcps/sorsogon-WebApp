@@ -25,16 +25,6 @@ html, body{
   font-weight: 550;
 }
 
-.navbar {
-  background: linear-gradient(#5650a4, #407ed7);
-  padding: 10px 10px;
-}
-.navbar span {
-  padding-left: 20px;
-  color: white;
-  font-weight: 550;
-  font-size: 17px;
-}
 
 h3 {
   font-size: 20px;
@@ -48,7 +38,7 @@ p {
 }
 .container {
   margin: 5px 5px;
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .button {
   background-color: #4caf50; /* Green */
