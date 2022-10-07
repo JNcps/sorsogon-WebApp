@@ -25,27 +25,22 @@
       <div class="single-box">
         <img alt="" src="assets/image/image5.webp" />
       </div>
-      <div class="text-block">
-        <div class="myform">
-          <div class="logo">
+      <!--
+            <div class="logo">
             WOW!
             <div class="logo2">SORSOGON</div>
             <b>"Its more FUN in Sorsogon"</b>
           </div>
-
-          <div class="container">
-            <div class="otp">
-              <ng-otp-input
-              class="otpinput"
-                #ngOtpInput
-                (onInputChange)="onOtpChange($event)"
-                [config]="config"
-              ></ng-otp-input>
-              <button (click)="handleClick()">
-                Verify OTP
-              </button>
-            </div>
-          </div>
+          -->
+      <div class="container">
+        <div class="otp">
+          <ng-otp-input
+            class="otpinput"
+            #ngOtpInput
+            (onInputChange)="onOtpChange($event)"
+            [config]="config"
+          ></ng-otp-input>
+          <button (click)="handleClick()">Verify OTP</button>
         </div>
       </div>
     </div>

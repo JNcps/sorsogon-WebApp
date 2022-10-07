@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaguriranComponent implements OnInit {
 
+  map:boolean=false
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  toogleTagmap(){
+    this.map=!this.map
+   }
 }

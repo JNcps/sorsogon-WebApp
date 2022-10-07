@@ -26,11 +26,11 @@ html, body{
 }
 
 .venue{
-  width: 90%;
-  left: 5%;
-  right: 5%;
-  top: 5%;
-  bottom: 5%;
+  width: 96%;
+  left: 2%;
+  right: 2%;
+  top: 2%;
+  bottom: 1%;
   background-color: aliceblue;
   position: fixed;
   border-radius: 10px;

@@ -31,7 +31,6 @@ html, body{
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .content{
@@ -98,6 +97,20 @@ html, body{
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 20px;
+}
+
+.map{
+  width: 96%;
+  left: 2%;
+  right: 2%;
+  top: 1%;
+  bottom: 1%;
+  background-color: rgba(0, 0, 0, 0.452);
+  position: fixed;
+  border-radius: 10px;
+  margin: 0 auto;
+  z-index: 1;
+  overflow: scroll;
 }
 
 .center {
@@ -341,11 +354,11 @@ input:last-of-type:before {
 
 
 .eat{
-  width: 90%;
-  left: 5%;
-  right: 5%;
-  top: 5%;
-  bottom: 5%;
+  width: 96%;
+  left: 2%;
+  right: 2%;
+  top: 2%;
+  bottom: 1%;
   background-color: aliceblue;
   position: fixed;
   border-radius: 10px;
@@ -354,6 +367,37 @@ input:last-of-type:before {
   overflow: scroll;
 }
 
+.content1{
+  background: linear-gradient(rgb(121, 175, 220), rgba(216, 188, 160, 0.537));
+  padding: 10px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.content1{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+
+.content1 h4{
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 700;
+
+}
+ .content1 h5{
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  font-size: 10px;
+  text-align: center;
+}
+ .content1 p{
+  color: rgba(39, 32, 32, 0.938);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+}
 
 .eat a button{
   color: green;

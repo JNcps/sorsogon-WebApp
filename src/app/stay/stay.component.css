@@ -52,6 +52,24 @@ body {
   display: block;
 }
 
+.viewpic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.836);
+  position: fixed;
+  z-index: 1;
+}
+
+.viewpic .bed{
+  width: 100%;
+}
+
 .box{
   display: flex;
   flex-wrap: nowrap;
@@ -60,7 +78,7 @@ body {
   margin-top: 5%;
   height: 90px;
   width: 90%;
-  background-color: #ffffff9c;
+  background: linear-gradient(rgb(121, 175, 220), rgba(216, 188, 160, 0.537));
   border-radius: 10px;
 }
 
@@ -80,11 +98,11 @@ body {
 }
 
 .hotel1{
-  width: 90%;
-  left: 5%;
-  right: 5%;
-  top: 5%;
-  bottom: 5%;
+  width: 96%;
+  left: 2%;
+  right: 2%;
+  top: 2%;
+  bottom: 1%;
   background-color: aliceblue;
   position: fixed;
   border-radius: 10px;

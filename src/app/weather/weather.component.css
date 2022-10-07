@@ -129,6 +129,7 @@ input:focus {
   margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
+  background-color: #407ed7;
 }
 
 
@@ -168,9 +169,18 @@ input:focus {
   }
 }
 
+.container{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .otp{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20em;
+  width: 100%;
+  height: 150px;
 }
+

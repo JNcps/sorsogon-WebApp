@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class EatComponent implements OnInit {
 
   show1:boolean=false
-
+  map:boolean=false
   constructor() { }
 
   ngOnInit(): void {
@@ -17,4 +17,8 @@ export class EatComponent implements OnInit {
   toogleTag1(){
     this.show1=!this.show1
   }
+
+  toogleTagmap(){
+    this.map=!this.map
+   }
 }

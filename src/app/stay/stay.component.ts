@@ -15,6 +15,11 @@ export class StayComponent implements OnInit {
   hotel6:boolean=false
   hotel7:boolean=false
   hotel8:boolean=false
+  img1:boolean=false
+  img2:boolean=false
+  img3:boolean=false
+  img4:boolean=false
+  img5:boolean=false
 
   constructor() { }
 
@@ -45,5 +50,21 @@ export class StayComponent implements OnInit {
    toogleTag8(){
     this.hotel8=!this.hotel8
    }
+
+   toogleTagimg1(){
+    this.img1=!this.img1
+  }
+  toogleTagimg2(){
+    this.img2=!this.img2
+  }
+  toogleTagimg3(){
+    this.img3=!this.img3
+  }
+  toogleTagimg4(){
+    this.img4=!this.img4
+  }
+  toogleTagimg5(){
+    this.img5=!this.img5
+  }
 }
 

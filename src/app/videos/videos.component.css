@@ -31,6 +31,12 @@ html, body{
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  background: linear-gradient(rgb(121, 175, 220), rgba(216, 188, 160, 0.537));
+  border-radius: 10px 10px 10px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .container h3{

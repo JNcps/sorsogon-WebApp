@@ -1,11 +1,12 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { NgxMaskModule, IConfig } from 'ngx-mask';
 import {VgCoreModule} from '@videogular/ngx-videogular/core';
 import {VgControlsModule} from '@videogular/ngx-videogular/controls';
 import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
@@ -70,12 +71,16 @@ import { SettingsComponent } from './settings/settings.component';
 import { BeachComponent } from './beach/beach.component';
 import { PhoneComponent } from './phone/phone.component';
 import { Weather2Component } from './weather2/weather2.component';
+import { LoadingComponent } from './loading/loading.component';
+import { LoadingInterceptor } from './shared/loading.interceptor';
 
 //import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 //import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //import { provideAuth,getAuth } from '@angular/fire/auth';
 //import { provideFirestore,getFirestore } from '@angular/fire/firestore';
-
+const maskConfig: Partial<IConfig> = {
+  validation: false,
+};
 
 @NgModule({
   declarations: [
@@ -130,6 +135,7 @@ import { Weather2Component } from './weather2/weather2.component';
     SettingsComponent,
     PhoneComponent,
     Weather2Component,
+    LoadingComponent,
   ],
 
   imports: [
@@ -146,9 +152,12 @@ import { Weather2Component } from './weather2/weather2.component';
     ReactiveFormsModule,
     AngularFireAuthModule,
     AngularFirestoreModule,
+    NgxMaskModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [],
+  providers: [
+    {provide:HTTP_INTERCEPTORS, useClass:LoadingInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

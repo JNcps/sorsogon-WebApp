@@ -1,0 +1,72 @@
+.container{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffea;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+
+img{
+  width: 50px;
+  height: 50px;
+}
+
+h1{
+color: rgb(83, 164, 207);
+text-transform: lowercase;
+}
+
+
+.loader-wheel {
+  animation: spin 1s infinite linear;
+  border-radius: 50%;
+  height: 50px;
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+.loader-text {
+  color: rgb(83, 164, 207);
+  text-transform: lowercase;
+  font-size: 5vw;
+}
+
+.loader-text:after {
+  content: 'Loading';
+  animation: load 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load {
+  0% {
+    content: 'please wait';
+  }
+  33% {
+    content: 'please wait.';
+  }
+  67% {
+    content: 'please wait..';
+  }
+  100% {
+    content: 'please wait...';
+  }
+}

@@ -35,7 +35,19 @@
 
     <div class="venue" *ngIf="venue1">
       <a (click)="toogleTag()">
-        <h3 style="text-align: right;padding-right: 20px;padding-top: 10px;">X</h3>
+        <h3 style="
+        text-align: right;
+        padding-right: 20px;
+        padding-top: 10px;
+        background: linear-gradient(
+          aliceblue,
+          rgba(240, 248, 255, 0.338)
+        );
+        position: fixed;
+        width: 96%;
+        height: 3%;
+        border-radius: 10px 10px 0px 0px;
+      ">x</h3><br><br>
       </a>
       <div class="content">
         <h4>GYM COMPANY NAME</h4>

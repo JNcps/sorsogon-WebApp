@@ -54,12 +54,14 @@ body {
 }
 
 .box .box2{
-  background-color: rgba(0, 0, 0, 0);
-  width: 55%;
-  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0.445);
+  width: 50%;
+  margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
+  padding: 10px;
   float: right;
+  border-radius: 10px;
 }
 .container{
   background-color: rgba(2, 2, 2, 0);

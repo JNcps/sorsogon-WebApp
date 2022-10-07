@@ -41,32 +41,130 @@
             style="
               text-align: right;
               padding-right: 20px;
-              padding-bottom: 20px;
               padding-top: 10px;
+              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
+              position: fixed;
+              width: 96%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
             "
           >
-            X
-          </h3>
+            x
+          </h3><br><br>
         </a>
         <img src="assets/image/hotel1.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-        <a target="_blank" href="assets/image/bed1.jpg">
-          <img src="assets/image/bed1.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed2.jpg">
-          <img src="assets/image/bed2.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed3.jpg">
-          <img src="assets/image/bed3.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed4.jpg">
-          <img src="assets/image/bed4.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed5.jpg">
-          <img src="assets/image/bed5.jpg" alt="" />
-        </a>
+          <img src="assets/image/bed1.jpg" alt="" (click)="toogleTagimg1()"/>
+          <img src="assets/image/bed2.jpg" alt="" (click)="toogleTagimg2()"/>
+          <img src="assets/image/bed3.jpg" alt="" (click)="toogleTagimg3()"/>
+          <img src="assets/image/bed4.jpg" alt="" (click)="toogleTagimg4()"/>
+          <img src="assets/image/bed5.jpg" alt="" (click)="toogleTagimg5()"/>
+          <div class="viewpic" *ngIf="img1">
+            <h3
+              (click)="toogleTagimg1()"
+              style="
+                text-align: right;
+                padding-right: 20px;
+                padding-top: 10px;
+                background-color: rgba(0, 0, 0, 0.783);
+                position: fixed;
+                top: 0%;
+                width: 100%;
+                height: 3%;
+                border-radius: 10px 10px 0px 0px;
+                color: white;
+              "
+            >
+              x
+            </h3>
+            <img src="assets/image/bed1.jpg" alt="" class="bed" />
+          </div>
+          <div class="viewpic" *ngIf="img2">
+            <h3
+              (click)="toogleTagimg2()"
+              style="
+                text-align: right;
+                padding-right: 20px;
+                padding-top: 10px;
+                background-color: rgba(0, 0, 0, 0.783);
+                position: fixed;
+                top: 0%;
+                width: 100%;
+                height: 3%;
+                border-radius: 10px 10px 0px 0px;
+                color: white;
+              "
+            >
+              x
+            </h3>
+            <br /><br />
+            <img src="assets/image/bed2.jpg" alt="" class="bed"/>
+          </div>
+          <div class="viewpic" *ngIf="img3">
+            <h3
+              (click)="toogleTagimg3()"
+              style="
+                text-align: right;
+                padding-right: 20px;
+                padding-top: 10px;
+                background-color: rgba(0, 0, 0, 0.783);
+                position: fixed;
+                top: 0%;
+                width: 100%;
+                height: 3%;
+                border-radius: 10px 10px 0px 0px;
+                color: white;
+              "
+            >
+              x
+            </h3>
+            <br /><br />
+            <img src="assets/image/bed3.jpg" alt="" class="bed"/>
+          </div>
+          <div class="viewpic" *ngIf="img4">
+            <h3
+              (click)="toogleTagimg4()"
+              style="
+                text-align: right;
+                padding-right: 20px;
+                padding-top: 10px;
+                background-color: rgba(0, 0, 0, 0.783);
+                position: fixed;
+                top: 0%;
+                width: 100%;
+                height: 3%;
+                border-radius: 10px 10px 0px 0px;
+                color: white;
+              "
+            >
+              x
+            </h3>
+            <br /><br />
+            <img src="assets/image/bed4.jpg" alt="" class="bed" />
+          </div>
+          <div class="viewpic" *ngIf="img5">
+            <h3
+              (click)="toogleTagimg5()"
+              style="
+                text-align: right;
+                padding-right: 20px;
+                padding-top: 10px;
+                background-color: rgba(0, 0, 0, 0.783);
+                position: fixed;
+                top: 0%;
+                width: 100%;
+                height: 3%;
+                border-radius: 10px 10px 0px 0px;
+                color: white;
+              "
+            >
+              x
+            </h3>
+            <br /><br />
+            <img src="assets/image/bed5.jpg" alt="" class="bed"/>
+          </div>
       </div>
       <br />
       <h3
@@ -286,33 +384,131 @@
             style="
               text-align: right;
               padding-right: 20px;
-              padding-bottom: 20px;
               padding-top: 10px;
+              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
+              position: fixed;
+              width: 96%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
             "
           >
-            X
-          </h3>
+            x
+          </h3><br><br>
         </a>
         <img src="assets/image/hotel2.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-        <a target="_blank" href="assets/image/bed1.jpg">
-          <img src="assets/image/bed1.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed2.jpg">
-          <img src="assets/image/bed2.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed3.jpg">
-          <img src="assets/image/bed3.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed4.jpg">
-          <img src="assets/image/bed4.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed5.jpg">
-          <img src="assets/image/bed5.jpg" alt="" />
-        </a>
-      </div>
+        <img src="assets/image/bed1.jpg" alt="" (click)="toogleTagimg1()"/>
+        <img src="assets/image/bed2.jpg" alt="" (click)="toogleTagimg2()"/>
+        <img src="assets/image/bed3.jpg" alt="" (click)="toogleTagimg3()"/>
+        <img src="assets/image/bed4.jpg" alt="" (click)="toogleTagimg4()"/>
+        <img src="assets/image/bed5.jpg" alt="" (click)="toogleTagimg5()"/>
+        <div class="viewpic" *ngIf="img1">
+          <h3
+            (click)="toogleTagimg1()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <img src="assets/image/bed1.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img2">
+          <h3
+            (click)="toogleTagimg2()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed2.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img3">
+          <h3
+            (click)="toogleTagimg3()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed3.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img4">
+          <h3
+            (click)="toogleTagimg4()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed4.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img5">
+          <h3
+            (click)="toogleTagimg5()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed5.jpg" alt="" class="bed"/>
+        </div>
+    </div>
       <br />
       <h3
         style="
@@ -532,33 +728,131 @@
             style="
               text-align: right;
               padding-right: 20px;
-              padding-bottom: 20px;
               padding-top: 10px;
+              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
+              position: fixed;
+              width: 96%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
             "
           >
-            X
-          </h3>
+            x
+          </h3><br><br>
         </a>
         <img src="assets/image/hotel3.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-        <a target="_blank" href="assets/image/bed1.jpg">
-          <img src="assets/image/bed1.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed2.jpg">
-          <img src="assets/image/bed2.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed3.jpg">
-          <img src="assets/image/bed3.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed4.jpg">
-          <img src="assets/image/bed4.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed5.jpg">
-          <img src="assets/image/bed5.jpg" alt="" />
-        </a>
-      </div>
+        <img src="assets/image/bed1.jpg" alt="" (click)="toogleTagimg1()"/>
+        <img src="assets/image/bed2.jpg" alt="" (click)="toogleTagimg2()"/>
+        <img src="assets/image/bed3.jpg" alt="" (click)="toogleTagimg3()"/>
+        <img src="assets/image/bed4.jpg" alt="" (click)="toogleTagimg4()"/>
+        <img src="assets/image/bed5.jpg" alt="" (click)="toogleTagimg5()"/>
+        <div class="viewpic" *ngIf="img1">
+          <h3
+            (click)="toogleTagimg1()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <img src="assets/image/bed1.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img2">
+          <h3
+            (click)="toogleTagimg2()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed2.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img3">
+          <h3
+            (click)="toogleTagimg3()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed3.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img4">
+          <h3
+            (click)="toogleTagimg4()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed4.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img5">
+          <h3
+            (click)="toogleTagimg5()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed5.jpg" alt="" class="bed"/>
+        </div>
+    </div>
       <br />
       <h3
         style="
@@ -777,33 +1071,131 @@
             style="
               text-align: right;
               padding-right: 20px;
-              padding-bottom: 20px;
               padding-top: 10px;
+              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
+              position: fixed;
+              width: 96%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
             "
           >
-            X
-          </h3>
+            x
+          </h3><br><br>
         </a>
         <img src="assets/image/hotel4.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-        <a target="_blank" href="assets/image/bed1.jpg">
-          <img src="assets/image/bed1.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed2.jpg">
-          <img src="assets/image/bed2.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed3.jpg">
-          <img src="assets/image/bed3.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed4.jpg">
-          <img src="assets/image/bed4.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed5.jpg">
-          <img src="assets/image/bed5.jpg" alt="" />
-        </a>
-      </div>
+        <img src="assets/image/bed1.jpg" alt="" (click)="toogleTagimg1()"/>
+        <img src="assets/image/bed2.jpg" alt="" (click)="toogleTagimg2()"/>
+        <img src="assets/image/bed3.jpg" alt="" (click)="toogleTagimg3()"/>
+        <img src="assets/image/bed4.jpg" alt="" (click)="toogleTagimg4()"/>
+        <img src="assets/image/bed5.jpg" alt="" (click)="toogleTagimg5()"/>
+        <div class="viewpic" *ngIf="img1">
+          <h3
+            (click)="toogleTagimg1()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <img src="assets/image/bed1.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img2">
+          <h3
+            (click)="toogleTagimg2()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed2.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img3">
+          <h3
+            (click)="toogleTagimg3()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed3.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img4">
+          <h3
+            (click)="toogleTagimg4()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed4.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img5">
+          <h3
+            (click)="toogleTagimg5()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed5.jpg" alt="" class="bed"/>
+        </div>
+    </div>
       <br />
       <h3
         style="
@@ -1022,33 +1414,131 @@
             style="
               text-align: right;
               padding-right: 20px;
-              padding-bottom: 20px;
               padding-top: 10px;
+              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
+              position: fixed;
+              width: 96%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
             "
           >
-            X
-          </h3>
+            x
+          </h3><br><br>
         </a>
         <img src="assets/image/hotel5.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-        <a target="_blank" href="assets/image/bed1.jpg">
-          <img src="assets/image/bed1.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed2.jpg">
-          <img src="assets/image/bed2.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed3.jpg">
-          <img src="assets/image/bed3.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed4.jpg">
-          <img src="assets/image/bed4.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed5.jpg">
-          <img src="assets/image/bed5.jpg" alt="" />
-        </a>
-      </div>
+        <img src="assets/image/bed1.jpg" alt="" (click)="toogleTagimg1()"/>
+        <img src="assets/image/bed2.jpg" alt="" (click)="toogleTagimg2()"/>
+        <img src="assets/image/bed3.jpg" alt="" (click)="toogleTagimg3()"/>
+        <img src="assets/image/bed4.jpg" alt="" (click)="toogleTagimg4()"/>
+        <img src="assets/image/bed5.jpg" alt="" (click)="toogleTagimg5()"/>
+        <div class="viewpic" *ngIf="img1">
+          <h3
+            (click)="toogleTagimg1()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <img src="assets/image/bed1.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img2">
+          <h3
+            (click)="toogleTagimg2()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed2.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img3">
+          <h3
+            (click)="toogleTagimg3()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed3.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img4">
+          <h3
+            (click)="toogleTagimg4()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed4.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img5">
+          <h3
+            (click)="toogleTagimg5()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed5.jpg" alt="" class="bed"/>
+        </div>
+    </div>
       <br />
       <h3
         style="
@@ -1267,33 +1757,131 @@
             style="
               text-align: right;
               padding-right: 20px;
-              padding-bottom: 20px;
               padding-top: 10px;
+              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
+              position: fixed;
+              width: 96%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
             "
           >
-            X
-          </h3>
+            x
+          </h3><br><br>
         </a>
         <img src="assets/image/hotel6.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-        <a target="_blank" href="assets/image/bed1.jpg">
-          <img src="assets/image/bed1.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed2.jpg">
-          <img src="assets/image/bed2.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed3.jpg">
-          <img src="assets/image/bed3.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed4.jpg">
-          <img src="assets/image/bed4.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed5.jpg">
-          <img src="assets/image/bed5.jpg" alt="" />
-        </a>
-      </div>
+        <img src="assets/image/bed1.jpg" alt="" (click)="toogleTagimg1()"/>
+        <img src="assets/image/bed2.jpg" alt="" (click)="toogleTagimg2()"/>
+        <img src="assets/image/bed3.jpg" alt="" (click)="toogleTagimg3()"/>
+        <img src="assets/image/bed4.jpg" alt="" (click)="toogleTagimg4()"/>
+        <img src="assets/image/bed5.jpg" alt="" (click)="toogleTagimg5()"/>
+        <div class="viewpic" *ngIf="img1">
+          <h3
+            (click)="toogleTagimg1()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <img src="assets/image/bed1.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img2">
+          <h3
+            (click)="toogleTagimg2()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed2.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img3">
+          <h3
+            (click)="toogleTagimg3()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed3.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img4">
+          <h3
+            (click)="toogleTagimg4()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed4.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img5">
+          <h3
+            (click)="toogleTagimg5()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed5.jpg" alt="" class="bed"/>
+        </div>
+    </div>
       <br />
       <h3
         style="
@@ -1512,33 +2100,131 @@
             style="
               text-align: right;
               padding-right: 20px;
-              padding-bottom: 20px;
               padding-top: 10px;
+              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
+              position: fixed;
+              width: 96%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
             "
           >
-            X
-          </h3>
+            x
+          </h3><br><br>
         </a>
         <img src="assets/image/hotel7.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-        <a target="_blank" href="assets/image/bed1.jpg">
-          <img src="assets/image/bed1.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed2.jpg">
-          <img src="assets/image/bed2.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed3.jpg">
-          <img src="assets/image/bed3.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed4.jpg">
-          <img src="assets/image/bed4.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed5.jpg">
-          <img src="assets/image/bed5.jpg" alt="" />
-        </a>
-      </div>
+        <img src="assets/image/bed1.jpg" alt="" (click)="toogleTagimg1()"/>
+        <img src="assets/image/bed2.jpg" alt="" (click)="toogleTagimg2()"/>
+        <img src="assets/image/bed3.jpg" alt="" (click)="toogleTagimg3()"/>
+        <img src="assets/image/bed4.jpg" alt="" (click)="toogleTagimg4()"/>
+        <img src="assets/image/bed5.jpg" alt="" (click)="toogleTagimg5()"/>
+        <div class="viewpic" *ngIf="img1">
+          <h3
+            (click)="toogleTagimg1()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <img src="assets/image/bed1.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img2">
+          <h3
+            (click)="toogleTagimg2()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed2.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img3">
+          <h3
+            (click)="toogleTagimg3()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed3.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img4">
+          <h3
+            (click)="toogleTagimg4()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed4.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img5">
+          <h3
+            (click)="toogleTagimg5()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed5.jpg" alt="" class="bed"/>
+        </div>
+    </div>
       <br />
       <h3
         style="
@@ -1757,33 +2443,131 @@
             style="
               text-align: right;
               padding-right: 20px;
-              padding-bottom: 20px;
               padding-top: 10px;
+              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
+              position: fixed;
+              width: 96%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
             "
           >
-            X
-          </h3>
+            x
+          </h3><br><br>
         </a>
         <img src="assets/image/hotel8.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-        <a target="_blank" href="assets/image/bed1.jpg">
-          <img src="assets/image/bed1.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed2.jpg">
-          <img src="assets/image/bed2.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed3.jpg">
-          <img src="assets/image/bed3.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed4.jpg">
-          <img src="assets/image/bed4.jpg" alt="" />
-        </a>
-        <a target="_blank" href="assets/image/bed5.jpg">
-          <img src="assets/image/bed5.jpg" alt="" />
-        </a>
-      </div>
+        <img src="assets/image/bed1.jpg" alt="" (click)="toogleTagimg1()"/>
+        <img src="assets/image/bed2.jpg" alt="" (click)="toogleTagimg2()"/>
+        <img src="assets/image/bed3.jpg" alt="" (click)="toogleTagimg3()"/>
+        <img src="assets/image/bed4.jpg" alt="" (click)="toogleTagimg4()"/>
+        <img src="assets/image/bed5.jpg" alt="" (click)="toogleTagimg5()"/>
+        <div class="viewpic" *ngIf="img1">
+          <h3
+            (click)="toogleTagimg1()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <img src="assets/image/bed1.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img2">
+          <h3
+            (click)="toogleTagimg2()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed2.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img3">
+          <h3
+            (click)="toogleTagimg3()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed3.jpg" alt="" class="bed"/>
+        </div>
+        <div class="viewpic" *ngIf="img4">
+          <h3
+            (click)="toogleTagimg4()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed4.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img5">
+          <h3
+            (click)="toogleTagimg5()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/bed5.jpg" alt="" class="bed"/>
+        </div>
+    </div>
       <br />
       <h3
         style="

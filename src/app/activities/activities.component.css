@@ -56,7 +56,7 @@ body {
 
 .gal{
   display: block;
-  background: linear-gradient(to right,#d39a3100, #e19136a5, #d39a3102);
+  background: linear-gradient(to right,#407fd700, #c906f0, #407fd700);
   width: 70%;
   height: 50px;
   padding-top: 10px;
@@ -80,7 +80,7 @@ body {
   margin-bottom: 20px;
   height: 70px;
   width: 90%;
-  background:  linear-gradient(to right,#e228baa0 20%, #12121200);
+  background: linear-gradient(to right, #5650a4 20%, #407fd700);
   border-radius: 10px;
 }
 

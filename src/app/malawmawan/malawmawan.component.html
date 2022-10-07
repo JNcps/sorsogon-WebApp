@@ -24,7 +24,13 @@
         <h4>Malawmawan Island</h4>
         <h5>Photo courtesy</h5>
         <br />
-        <p>
+        <p style="
+        background-color: rgba(143, 204, 215, 0.642);
+        padding:10px;
+        border-radius:10px;
+        text-align: justify;
+        text-indent: 50px;
+        ">
           <b>Malawmawan Island</b>
           Malawmawan Island is an underdeveloped, isolated island off the port
           of Macalaya town. The island features long stretches of beaches, a
@@ -61,12 +67,30 @@
 
           <img src="assets/image/malawmawan5.jpg" alt="" />
         </div>
-        <a
-          href="https://www.google.com/maps/place/Malawmawan+Beach/@12.8548354,123.7541946,14.27z/data=!4m9!1m2!2m1!1smalawmawan+island+sorsogon!3m5!1s0x33a120c250000001:0xc003b32481914717!8m2!3d12.8415059!4d123.7664382!15sChptYWxhd21hd2FuIGlzbGFuZCBzb3Jzb2dvblocIhptYWxhd21hd2FuIGlzbGFuZCBzb3Jzb2dvbpIBBWJlYWNomgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVJYZW5JMmJXOTNSUkFC4AEA?hl=en"
-        >
+        <a (click)="toogleTagmap()">
           <button class="button1">VIEW MAP</button>
         </a>
       </div>
+    </div>
+
+    <div class="map" *ngIf="map">
+      <a (click)="toogleTagmap()">
+        <h3 style="
+        text-align: right;
+        padding-right: 20px;
+        padding-top: 10px;
+        background: linear-gradient(
+          rgb(0, 0, 0),
+          rgba(72, 73, 74, 0.169)
+        );
+        position: fixed;
+        width: 96%;
+        height: 3%;
+        border-radius: 10px 10px 0px 0px;
+        color: white;
+      ">x</h3><br><br>
+      </a>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15560.108327302649!2d123.75768341126634!3d12.84152647618344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a120c250000001%3A0xc003b32481914717!2sMalawmawan%20Beach!5e0!3m2!1sen!2sph!4v1665061533934!5m2!1sen!2sph" width="100%" height="96%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </body>
 </html>

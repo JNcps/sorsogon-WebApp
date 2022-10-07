@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VenuesComponent implements OnInit {
 
+  map:boolean=false
   venue1:boolean=false
 
   constructor() { }
@@ -17,4 +18,7 @@ export class VenuesComponent implements OnInit {
     this.venue1=!this.venue1
    }
 
+   toogleTagmap(){
+    this.map=!this.map
+   }
 }

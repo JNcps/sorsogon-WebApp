@@ -22,69 +22,199 @@
       <h3>Sorsogon Tourist Spot</h3>
       <p><em>September 09,2022</em></p>
       <div class="box">
-        <div class="gallery">
-          <a target="_blank" href="assets/image/baybay5.jpg">
+        <div class="gallery" (click)="toogleTagimg1()">
             <img src="assets/image/baybay5.jpg" alt="" />
-          </a>
           <div class="desc">Add a description here</div>
         </div>
+        <div class="viewpic" *ngIf="img1">
+          <h3 (click)="toogleTagimg1()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top:0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3><br><br>
+          <img src="assets/image/baybay5.jpg" alt="" >
+        </div>
 
-        <div class="gallery">
-          <a target="_blank" href="assets/image/baybay5.jpg">
+        <div class="gallery" (click)="toogleTagimg2()">
             <img src="assets/image/baybay4.jpg" alt="" />
-          </a>
           <div class="desc">Add a description here</div>
         </div>
-
-        <div class="gallery">
-          <a target="_blank" href="assets/image/baybay5.jpg">
-            <img
-              src="assets/image/baybay5.jpg"
-              alt=""
-            />
-          </a>
-          <div class="desc">Add a description here</div>
+        <div class="viewpic" *ngIf="img2">
+          <h3 (click)="toogleTagimg2()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top:0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3><br><br>
+          <img src="assets/image/baybay4.jpg" alt="" >
         </div>
 
-        <div class="gallery">
-          <a target="_blank" href="assets/image/baybay5.jpg">
+        <div class="gallery" (click)="toogleTagimg3()">
             <img src="assets/image/baybay5.jpg" alt="" />
-          </a>
           <div class="desc">Add a description here</div>
+        </div>
+        <div class="viewpic" *ngIf="img3">
+          <h3 (click)="toogleTagimg3()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top:0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3><br><br>
+          <img src="assets/image/baybay5.jpg" alt="" >
+        </div>
+
+        <div class="gallery" (click)="toogleTagimg4()">
+            <img src="assets/image/baybay5.jpg" alt="" />
+          <div class="desc">Add a description here</div>
+        </div>
+        <div class="viewpic" *ngIf="img4">
+          <h3 (click)="toogleTagimg4()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              width: 100%;
+              top:0%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3><br><br>
+          <img src="assets/image/baybay5.jpg" alt="" >
         </div>
       </div>
       <h3>Meeting Venues</h3>
       <p><em>September 10,2022</em></p>
       <div class="box">
-        <div class="gallery">
-          <a target="_blank" href="assets/image/eat1.jpg">
+        <div class="gallery" (click)="toogleTagimg5()">
             <img src="assets/image/eat1.jpg" alt="" />
-          </a>
           <div class="desc">Add a description here</div>
         </div>
+        <div class="viewpic" *ngIf="img5">
+          <h3 (click)="toogleTagimg5()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top:0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3><br><br>
+          <img src="assets/image/eat1.jpg" alt="" >
+        </div>
 
-        <div class="gallery">
-          <a target="_blank" href="assets/image/eat2.jpg">
+        <div class="gallery" (click)="toogleTagimg6()">
             <img src="assets/image/eat2.jpg" alt="" />
-          </a>
           <div class="desc">Add a description here</div>
         </div>
-
-        <div class="gallery">
-          <a target="_blank" href="assets/image/eat3.jpg">
-            <img
-              src="assets/image/eat3.jpg"
-              alt=""
-            />
-          </a>
-          <div class="desc">Add a description here</div>
+        <div class="viewpic" *ngIf="img6">
+          <h3 (click)="toogleTagimg6()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top:0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3><br><br>
+          <img src="assets/image/eat2.jpg" alt="" >
         </div>
 
-        <div class="gallery">
-          <a target="_blank" href="assets/image/eat5.jpg">
+        <div class="gallery" (click)="toogleTagimg7()">
+            <img src="assets/image/eat3.jpg" alt="" />
+          <div class="desc">Add a description here</div>
+        </div>
+        <div class="viewpic" *ngIf="img7">
+          <h3 (click)="toogleTagimg7()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top:0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3><br><br>
+          <img src="assets/image/eat4.jpg" alt="" >
+        </div>
+
+        <div class="gallery" (click)="toogleTagimg8()">
             <img src="assets/image/eat5.jpg" alt="" />
-          </a>
           <div class="desc">Add a description here</div>
+        </div>
+        <div class="viewpic" *ngIf="img8">
+          <h3 (click)="toogleTagimg8()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top:0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3><br><br>
+          <img src="assets/image/eat5.jpg" alt="" >
         </div>
       </div>
     </div>

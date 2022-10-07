@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MalawmawanComponent implements OnInit {
 
+  map:boolean=false
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toogleTagmap(){
+    this.map=!this.map
+   }
 }

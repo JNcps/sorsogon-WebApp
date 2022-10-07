@@ -41,19 +41,30 @@ p {
   margin-bottom: 50px;
   margin-top: 50px;
 }
+
+.container p{
+  text-indent: 50px;
+  text-align: justify;
+  padding-right: 10px;
+}
+
 .button {
-  background-color: #4caf50; /* Green */
+  background: linear-gradient(#5650a4, #407ed7);
   border: none;
   color: white;
-  padding: 15px 32px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 50px;
   display: inline-block;
-  margin-left: auto;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  margin-left:100px ;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
+
 .button a {
   color: white;
   text-decoration: none;

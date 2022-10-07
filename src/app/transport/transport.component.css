@@ -65,7 +65,7 @@ body {
   margin-bottom: 20px;
   height: 60%;
   width: 90%;
-  background:  linear-gradient(to right,#e13a0caf 20%, #be9c1eb5);
+  background:  linear-gradient(to right,#5650a4 20%, #407ed7);
   border-radius: 10px;
 }
 
@@ -88,11 +88,11 @@ body {
 
 /*===========================show =================================*/
 .hotel1{
-  width: 90%;
-  left: 5%;
-  right: 5%;
-  top: 5%;
-  bottom: 5%;
+  width: 96%;
+  left: 2%;
+  right: 2%;
+  top: 2%;
+  bottom: 1%;
   background-color: aliceblue;
   position: fixed;
   border-radius: 10px;
@@ -101,7 +101,9 @@ body {
   overflow: scroll;
 }
 
-
+.hotel1 p{
+  text-align: justify;
+}
 
 .img2{
   display: block;
@@ -117,6 +119,24 @@ body {
   padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.viewpic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.836);
+  position: fixed;
+  z-index: 1;
+}
+
+.viewpic img{
+  width: 100%;
 }
 
 .plane6{

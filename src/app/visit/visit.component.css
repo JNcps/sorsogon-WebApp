@@ -1,9 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
-html, body{
+
+html,
+body {
   height: 100%;
 }
 
@@ -13,21 +15,30 @@ html, body{
   padding: 10px 10px;
 }
 
-.header a i{
+.header a i {
   padding-left: 10px;
 }
-.header span{
+
+.header span {
   text-align: center;
   padding-left: 20px;
   color: white;
   font-weight: 550;
 }
-.container {
-  height: 100vh;
-  background-image: url('src/assets/image/map2.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+.img img {
+  display: block;
+  width: 90%;
+  height: 400px;
+  border-radius: 10px;
+
 }
 
 .container .btn1 {
@@ -150,4 +161,3 @@ html, body{
 .container .btn6:hover {
   background-color: black;
 }
-

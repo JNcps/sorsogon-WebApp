@@ -16,7 +16,8 @@
         ><i class="fa fa-arrow-left" style="font-size: 20px; color: white"></i
       ></a>
       <span>Transport Service</span>
-    </div><br><br>
+    </div>
+    <br /><br />
     <div class="logo">
       <img src="assets/image/transport1.jpg" alt="" class="img" />
       <div class="text">
@@ -71,33 +72,136 @@
             style="
               text-align: right;
               padding-right: 20px;
-              padding-bottom: 20px;
               padding-top: 10px;
+              background: linear-gradient(
+                aliceblue,
+                rgba(240, 248, 255, 0.338)
+              );
+              position: fixed;
+              width: 96%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
             "
           >
-            X
+            x
           </h3>
+          <br /><br />
         </a>
         <img src="assets/image/transport2.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-        <a target="_blank" href="assets/image/plane1.jpg">
-          <img src="assets/image/plane1.jpg" alt="" >
-        </a>
-        <a target="_blank" href="assets/image/plane2.jpg">
-          <img src="assets/image/plane2.jpg" alt="" >
-        </a>
-        <a target="_blank" href="assets/image/plane3.jpg">
-          <img src="assets/image/plane3.jpg" alt="" >
-        </a>
-        <a target="_blank" href="assets/image/plane4.jpg">
-          <img src="assets/image/plane4.jpg" alt="" >
-        </a>
-        <a target="_blank" href="assets/image/plane5.jpg">
-          <img src="assets/image/plane5.jpg" alt="" >
-        </a>
-      </div><br>
+        <img src="assets/image/plane1.jpg" alt="" (click)="toogleTagimg1()" />
+        <img src="assets/image/plane2.jpg" alt="" (click)="toogleTagimg2()" />
+        <img src="assets/image/plane3.jpg" alt="" (click)="toogleTagimg3()" />
+        <img src="assets/image/plane4.jpg" alt="" (click)="toogleTagimg4()" />
+        <img src="assets/image/plane5.jpg" alt="" (click)="toogleTagimg5()" />
+        <div class="viewpic" *ngIf="img1">
+          <h3
+            (click)="toogleTagimg1()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <img src="assets/image/plane1.jpg" alt="" />
+        </div>
+        <div class="viewpic" *ngIf="img2">
+          <h3
+            (click)="toogleTagimg2()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/plane2.jpg" alt="" />
+        </div>
+        <div class="viewpic" *ngIf="img3">
+          <h3
+            (click)="toogleTagimg3()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/plane3.jpg" alt="" />
+        </div>
+        <div class="viewpic" *ngIf="img4">
+          <h3
+            (click)="toogleTagimg4()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/plane4.jpg" alt="" />
+        </div>
+        <div class="viewpic" *ngIf="img5">
+          <h3
+            (click)="toogleTagimg5()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/plane5.jpg" alt="" />
+        </div>
+      </div>
+      <br />
       <h3
         style="
           padding-left: 20px;
@@ -107,27 +211,63 @@
           text-decoration: underline;
         "
       >
-      OVERVIEW
+        OVERVIEW
       </h3>
-      <h4 style="padding-left: 20px; padding-bottom: 20px;padding-top: 10px;">Philippine Airlines</h4>
-      <h5 style="padding-left: 20px;padding-bottom: 10px;">Introduction</h5>
-      <p style="padding-left:20px;color:gray;padding-right:20px; text-indent:50px;font-size:15px;">
-        Philippine Airlines (PR) is a full flight airline operating domestic & international routes. The airline gives the passenger with a cabin baggage allowance of 7 kg and maximum size of 45 inch (L + W + H). The passengers flying international route with Philippine Airlines will get free checked baggage allowance of 30 kg. Passengers can check in at the airport 180 minutes prior to the departure time. Check in online is possible for flights with the airline on Philippine Airlines official website. It can be processed 1 days prior to flight departure time.
+      <h4 style="padding-left: 20px; padding-bottom: 20px; padding-top: 10px">
+        Philippine Airlines
+      </h4>
+      <h5 style="padding-left: 20px; padding-bottom: 10px">Introduction</h5>
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
+        Philippine Airlines (PR) is a full flight airline operating domestic &
+        international routes. The airline gives the passenger with a cabin
+        baggage allowance of 7 kg and maximum size of 45 inch (L + W + H). The
+        passengers flying international route with Philippine Airlines will get
+        free checked baggage allowance of 30 kg. Passengers can check in at the
+        airport 180 minutes prior to the departure time. Check in online is
+        possible for flights with the airline on Philippine Airlines official
+        website. It can be processed 1 days prior to flight departure time.
       </p>
 
-      <h5 style="padding:20px;padding-bottom: 10px;">How to Book</h5>
+      <h5 style="padding: 20px; padding-bottom: 10px">How to Book</h5>
       <ul>
-        <li>1. Visit Airpaz.com, or access the Airpaz application (Android/iOS) on your handphone.</li>
+        <li>
+          1. Visit Airpaz.com, or access the Airpaz application (Android/iOS) on
+          your handphone.
+        </li>
         <li>2. Fill in the details in the flight search box.</li>
         <li>3. Choose the best flight.</li>
-        <li>4. Fill in the passenger and contact details on the booking page.</li>
+        <li>
+          4. Fill in the passenger and contact details on the booking page.
+        </li>
         <li>5. Process your payment through the selected method.</li>
-        <li>6. Receive your Philippine Airlines flight e-itinerary in the My Booking page, or in your registered email.</li>
+        <li>
+          6. Receive your Philippine Airlines flight e-itinerary in the My
+          Booking page, or in your registered email.
+        </li>
       </ul>
 
-      <h5 style="padding:20px; padding-bottom: 10px;">How to Pay</h5>
-      <p style="padding-left:20px;color:gray;padding-right:20px; text-indent:50px;font-size:15px; padding-bottom: 20px;" >
-        Payment for your Philippine Airlines ticket on Airpaz can be made via bank bank transfer, credit card, PayPal, and over the counter methods. For the complete information, visit Airpaz.com Payment Guide page.
+      <h5 style="padding: 20px; padding-bottom: 10px">How to Pay</h5>
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          text-indent: 50px;
+          font-size: 15px;
+          padding-bottom: 20px;
+        "
+      >
+        Payment for your Philippine Airlines ticket on Airpaz can be made via
+        bank bank transfer, credit card, PayPal, and over the counter methods.
+        For the complete information, visit Airpaz.com Payment Guide page.
       </p>
       <h3
         style="
@@ -138,31 +278,76 @@
           text-decoration: underline;
         "
       >
-      ABOUT
+        ABOUT
       </h3>
-      <h4 style="padding-left: 20px;padding-top: 10px;">Philippine Airlines</h4>
-      <h5 style="padding:20px; padding-bottom: 10px;">Company Profile</h5>
-      <p style="padding-left:20px;color:gray;padding-right:20px; text-indent:50px;font-size:15px; " >
-        Philippine Airlines which operates with IATA code (PR) and ICAO code PAL, is a full flight airline that flies domestic & international routes. The airline flies to destinations all over the world with its main hub located in Ninoy Aquino International Airport (MNL).
+      <h4 style="padding-left: 20px; padding-top: 10px">Philippine Airlines</h4>
+      <h5 style="padding: 20px; padding-bottom: 10px">Company Profile</h5>
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
+        Philippine Airlines which operates with IATA code (PR) and ICAO code
+        PAL, is a full flight airline that flies domestic & international
+        routes. The airline flies to destinations all over the world with its
+        main hub located in Ninoy Aquino International Airport (MNL).
       </p>
-      <h5 style="padding:20px; padding-bottom: 10px;">History</h5>
-      <p style="padding-left:20px;color:gray;padding-right:20px; text-indent:50px;font-size:15px; padding-bottom: 20px;" >
-        Philippine Airlines operating with IATA code (PR) and ICAO code (PAL) runs under the management of PAL Holdings, Inc.. In 1941, this airline was established. Throughout the years, Philippine Airlines continued to flourish its business by maintaining a worthwhile and pleasant experience for their passengers. This airline was first flown on 15-03-1941. Philippine Airlines has been awarded Skytrax Award in 2018.
+      <h5 style="padding: 20px; padding-bottom: 10px">History</h5>
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          text-indent: 50px;
+          font-size: 15px;
+          padding-bottom: 20px;
+        "
+      >
+        Philippine Airlines operating with IATA code (PR) and ICAO code (PAL)
+        runs under the management of PAL Holdings, Inc.. In 1941, this airline
+        was established. Throughout the years, Philippine Airlines continued to
+        flourish its business by maintaining a worthwhile and pleasant
+        experience for their passengers. This airline was first flown on
+        15-03-1941. Philippine Airlines has been awarded Skytrax Award in 2018.
       </p>
-      <h5 style="padding:20px; padding-bottom: 10px;">Flight Attendant</h5>
-      <a target="_blank" href="assets/image/plane6.jpg">
-        <img src="assets/image/plane6.jpg" alt="" class="plane6" >
-      </a>
-      <p style="padding-left:20px;color:gray;padding-right:20px; padding-top: 10px; text-indent:50px;font-size:15px; " >
-        Philippine Airlines cabin crew wears a uniform in black and white. For male flight attendants, they wear white shirt, black suit, tie and black trousers. For female flight attendants, they wear white shirt, black suit, scarf and black skirt. The uniform itself has been beautifully laid out, making the crew look more refined.
+      <h5 style="padding: 20px; padding-bottom: 10px">Flight Attendant</h5>
+      <img src="assets/image/plane6.jpg" alt="" class="plane6" />
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          padding-top: 10px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
+        Philippine Airlines cabin crew wears a uniform in black and white. For
+        male flight attendants, they wear white shirt, black suit, tie and black
+        trousers. For female flight attendants, they wear white shirt, black
+        suit, scarf and black skirt. The uniform itself has been beautifully
+        laid out, making the crew look more refined.
       </p>
-      <h5 style="padding:20px; padding-bottom: 10px;">Fleet</h5>
-      <a target="_blank" href="assets/image/transport2.jpg">
-        <img src="assets/image/transport2.jpg" alt="" class="plane6" >
-      </a>
-      <p style="padding-left:20px;color:gray;padding-right:20px; padding-top: 10px; text-indent:50px;font-size:15px; " >
-        Philippine Airlines has a number of aircrafts, all of which can be checked in the following table:
-      </p><br>
+      <h5 style="padding: 20px; padding-bottom: 10px">Fleet</h5>
+      <img src="assets/image/transport2.jpg" alt="" class="plane6" />
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          padding-top: 10px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
+        Philippine Airlines has a number of aircrafts, all of which can be
+        checked in the following table:
+      </p>
+      <br />
       <table>
         <tr>
           <th>Type</th>
@@ -181,14 +366,35 @@
           <td>8</td>
         </tr>
       </table>
-      <h5 style="padding:20px; padding-bottom: 10px;">Call Center</h5>
-      <p style="padding-left:20px;color:gray;padding-right:20px; padding-top: 10px; text-indent:50px;font-size:15px; " >
-        If you have inquiry for the airline or are facing issues on your flight such as lost baggage or delayed flights, you can contact the airline. To contact the airline is by sending an email to wecare@pal.com.ph.
+      <h5 style="padding: 20px; padding-bottom: 10px">Call Center</h5>
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          padding-top: 10px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
+        If you have inquiry for the airline or are facing issues on your flight
+        such as lost baggage or delayed flights, you can contact the airline. To
+        contact the airline is by sending an email to wecare@pal.com.ph.
       </p>
-      <p style="padding-left:20px;color:gray;padding-right:20px; padding-top: 10px; text-indent:50px;font-size:15px; " >
-        The Philippine Airlines contact support can be contacted on one of the following numbers :
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          padding-top: 10px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
+        The Philippine Airlines contact support can be contacted on one of the
+        following numbers :
       </p>
-      <br>
+      <br />
       <table>
         <tr>
           <th>Country</th>
@@ -208,64 +414,132 @@
         </tr>
       </table>
       <h3
-      style="
-        padding-left: 20px;
-        font-weight: bold;
-        color: rgb(243, 202, 148);
-        font-size: 20px;
-        text-decoration: underline;
-        padding-top: 30px;
-      "
-    >
-    FACILITIES AND SERVICES
-    </h3>
-    <h4 style="padding-left: 20px;padding-top: 10px;">Philippine Airlines</h4>
-      <h5 style="padding:20px; padding-bottom: 10px;">Cabin Baggage</h5>
-      <p style="padding-left:20px;color:gray;padding-right:20px; padding-top: 10px; text-indent:50px;font-size:15px; " >
-        Passengers of Philippine Airlines are given a cabin baggage allowance included in their ticket fare. The max weight of the baggage is 7 kg, while the max size of the luggage put in the cabin is 45 inch (L + W + H).
+        style="
+          padding-left: 20px;
+          font-weight: bold;
+          color: rgb(243, 202, 148);
+          font-size: 20px;
+          text-decoration: underline;
+          padding-top: 30px;
+        "
+      >
+        FACILITIES AND SERVICES
+      </h3>
+      <h4 style="padding-left: 20px; padding-top: 10px">Philippine Airlines</h4>
+      <h5 style="padding: 20px; padding-bottom: 10px">Cabin Baggage</h5>
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          padding-top: 10px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
+        Passengers of Philippine Airlines are given a cabin baggage allowance
+        included in their ticket fare. The max weight of the baggage is 7 kg,
+        while the max size of the luggage put in the cabin is 45 inch (L + W +
+        H).
       </p>
-      <h5 style="padding:20px; padding-bottom: 10px;">Checked Baggage</h5>
-      <p style="padding-left:20px;color:gray;padding-right:20px; padding-top: 10px; text-indent:50px;font-size:15px; " >
-        Free checked baggage allowance is given to the passengers flying on Philippine Airlines. Passengers flying domestic route do not get checked baggage allowance, but passengers on international flights will get 30 kg free checked baggage allowance.
+      <h5 style="padding: 20px; padding-bottom: 10px">Checked Baggage</h5>
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          padding-top: 10px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
+        Free checked baggage allowance is given to the passengers flying on
+        Philippine Airlines. Passengers flying domestic route do not get checked
+        baggage allowance, but passengers on international flights will get 30
+        kg free checked baggage allowance.
       </p>
-      <h5 style="padding:20px; padding-bottom: 10px;">Excess Baggage</h5>
-      <p style="padding-left:20px;color:gray;padding-right:20px; padding-top: 10px; text-indent:50px;font-size:15px; " >
+      <h5 style="padding: 20px; padding-bottom: 10px">Excess Baggage</h5>
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          padding-top: 10px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
         Excess checked baggage allowance weight can be purchased on Airpaz.com.
-        Disclaimer: Information stated above is intended for general guide only, and may be changed by the airline with no prior notification. Contact the airline for further information.
+        Disclaimer: Information stated above is intended for general guide only,
+        and may be changed by the airline with no prior notification. Contact
+        the airline for further information.
       </p>
-      <h5 style="padding:20px; padding-bottom: 10px;">Seat</h5>
-      <a target="_blank" href="assets/image/plane3.jpg">
-        <img src="assets/image/plane3.jpg" alt="" class="plane7" >
-      </a>
-      <p style="padding-left:20px;color:gray;padding-right:20px; padding-top: 10px; text-indent:50px;font-size:15px; " >
-        The standard seat size of the Philippine Airlines Economy Class fare is 31" - 32" seat pitch and 17"- 18" seat width.
+      <h5 style="padding: 20px; padding-bottom: 10px">Seat</h5>
+      <img src="assets/image/plane3.jpg" alt="" class="plane7" />
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          padding-top: 10px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
+        The standard seat size of the Philippine Airlines Economy Class fare is
+        31" - 32" seat pitch and 17"- 18" seat width.
       </p>
-      <h5 style="padding:20px; padding-bottom: 10px;">Inflight Entertainment</h5>
-      <a target="_blank" href="assets/image/plane1.jpg">
-        <img src="assets/image/plane1.jpg" alt="" class="plane7" >
-      </a>
-      <p style="padding-left:20px;color:gray;padding-right:20px; padding-top: 10px; text-indent:50px;font-size:15px; " >
-        Philippine Airlines provides services and in-flight entertainment for the passengers while flying on their aircraft, such as TV,music ,games.
+      <h5 style="padding: 20px; padding-bottom: 10px">
+        Inflight Entertainment
+      </h5>
+      <img src="assets/image/plane1.jpg" alt="" class="plane7" />
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          padding-top: 10px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
+        Philippine Airlines provides services and in-flight entertainment for
+        the passengers while flying on their aircraft, such as TV,music ,games.
       </p>
-      <h5 style="padding:20px; padding-bottom: 10px;">Inflight Free Snack</h5>
-      <a target="_blank" href="assets/image/plane2.jpg">
-        <img src="assets/image/plane2.jpg" alt="" class="plane7" >
-      </a>
-      <p style="padding-left:20px;color:gray;padding-right:20px; padding-top: 10px; text-indent:50px;font-size:15px; " >
-        Passengers can order food to enjoy in their flight according to the availability. For the airline's beverages and meals menu,
+      <h5 style="padding: 20px; padding-bottom: 10px">Inflight Free Snack</h5>
+      <img src="assets/image/plane2.jpg" alt="" class="plane7" />
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          padding-top: 10px;
+          text-indent: 50px;
+          font-size: 15px;
+        "
+      >
+        Passengers can order food to enjoy in their flight according to the
+        availability. For the airline's beverages and meals menu,
       </p>
-      <h5 style="padding:20px; padding-bottom: 10px;">Inflight Wifi</h5>
-      <a target="_blank" href="assets/image/plane4.jpg">
-        <img src="assets/image/plane4.jpg" alt="" class="plane7" >
-      </a>
-      <p style="padding-left:20px;color:gray;padding-right:20px; padding-top: 10px; text-indent:50px;font-size:15px; padding-bottom: 50px; " >
+      <h5 style="padding: 20px; padding-bottom: 10px">Inflight Wifi</h5>
+      <img src="assets/image/plane4.jpg" alt="" class="plane7" />
+      <p
+        style="
+          padding-left: 20px;
+          color: gray;
+          padding-right: 20px;
+          padding-top: 10px;
+          text-indent: 50px;
+          font-size: 15px;
+          padding-bottom: 50px;
+        "
+      >
         In-flight WiFi is available during flight with Philippine Airlines.
       </p>
 
       <a routerLink="/booking">
         <button>BOOK NOW</button>
       </a>
-
 
       <h3
         style="
