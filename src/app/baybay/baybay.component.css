@@ -253,10 +253,10 @@ button {
   right: 2%;
   top: 1%;
   bottom: 1%;
-  background-color: rgba(0, 0, 0, 0.452);
+  background-color: rgb(255, 255, 255);
   position: fixed;
   border-radius: 10px;
   margin: 0 auto;
-  z-index: 1;
+  z-index: 1000;
   overflow: scroll;
 }

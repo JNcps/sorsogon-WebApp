@@ -11,7 +11,7 @@ html, body{
 body {
   position: fixed;
   display: block;
-  background-image: url("src/assets/image/bulusan6.jpg");
+  background-image: url("src/assets/image/beach.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;

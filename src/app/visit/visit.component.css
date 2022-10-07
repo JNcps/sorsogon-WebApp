@@ -6,7 +6,14 @@
 
 html,
 body {
+  position: fixed;
+  display: block;
+  background-image: url("src/assets/image/map2.jpg");
   height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -36,7 +43,7 @@ body {
 .img img {
   display: block;
   width: 90%;
-  height: 400px;
+  height: 300px;
   border-radius: 10px;
 
 }

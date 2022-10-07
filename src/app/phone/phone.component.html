@@ -17,14 +17,10 @@
 
   <body>
     <div class="wrapper box">
-      <div class="single-box"><img alt="" src="assets/image/image1.jpg" /></div>
-      <div class="single-box">
-        <img alt="" src="assets/image/image7.webp" />
-      </div>
+      <div class="single-box"><img alt="" src="assets/image/w3.jpg" /></div>
+      <div class="single-box"><img alt="" src="assets/image/image7.webp" /></div>
       <div class="single-box"><img alt="" src="assets/image/image6.jpg" /></div>
-      <div class="single-box">
-        <img alt="" src="assets/image/image5.webp" />
-      </div>
+      <div class="single-box"> <img alt="" src="assets/image/beach.jpg" /></div>
       <div class="text-block">
         <div class="myform">
           <div class="logo">
@@ -38,13 +34,11 @@
                 <input
                   type="text"
                   name="phoneNumber"
-                  placeholder="Phone Number"
                   class="form-control"
                   placeholder="+63 9xx xxx xxxx"
                   [(ngModel)]="phoneNumber"
-                  min="10"
-                  max="15"
-                />
+                  maxlength="15"
+                /><!-- prefix="+63" mask="+000 000 0000"  -->
               </div>
               <br /><br />
               <div class="flex-container">
@@ -52,7 +46,7 @@
                   <a href="sign-up">Create Account</a>
                 </div>
                 <div>
-                  <a href="others">Forgot Credentials</a>
+                  <a>Forgot Credentials</a>
                 </div>
               </div>
               <button class="btn btn-success mt-4 signup" (click)="getOTP()">
