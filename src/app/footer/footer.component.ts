@@ -14,8 +14,8 @@ export class FooterComponent implements OnInit {
   constructor(private afAuth: AngularFireAuth, private router: Router) { }
 
   ngOnInit() {
-    var data = JSON.parse(localStorage.getItem('userData') || '{}');
-    this.userData = data;
+    var data = JSON.parse(localStorage.getItem('user_data') || '{}');
+    this.userData = data.user.phoneNumber;
     console.log(this.userData);
 
   }
@@ -29,9 +29,11 @@ export class FooterComponent implements OnInit {
    }
 
    logOut(){
+    localStorage.clear();//new line storage (weather.ts)
     return this.afAuth.signOut().then(()=>{
-      this.router.navigate(['/phone'])
-    })
+      this.router.navigate(['/phone']);
+      console.log("Logged Out Successfully!");
+    });
   }
 
 }

@@ -11,7 +11,7 @@ html, body{
 body {
   position: fixed;
   display: block;
-  background-image: url("src/assets/image/beach.jpg");
+  background-image: url("src/assets/image/image6.jpg");
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -54,7 +54,8 @@ body {
 }
 
 .box .box2{
-  background-color: rgba(0, 0, 0, 0.445);
+  background-color: rgba(255, 255, 255, 0.763);
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.171);
   width: 50%;
   margin-left: 20px;
   margin-right: 20px;

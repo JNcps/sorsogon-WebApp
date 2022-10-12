@@ -40,26 +40,18 @@ export class WeatherComponent implements OnInit {
 
   handleClick() {
     console.log(this.otp);
-    var credential = firebase.auth.PhoneAuthProvider.credential(
-      this.verify,
-      this.otp
-    );
-
+    var credential = firebase.auth.PhoneAuthProvider.credential(this.verify, this.otp);
     console.log(credential);
-    firebase
-      .auth()
-      .signInWithCredential(credential)
-      .then((response) => {
-        console.log(response);
+
+    firebase.auth().signInWithCredential(credential).then((response) => {
+      console.log(response);
         localStorage.setItem('user_data', JSON.stringify(response));
-
           this.router.navigate(['/background']);
-
       })
-      .catch((error) => {
-
-        alert(error.message);
+      .catch((error) => {alert(error.message);
       });
+    //console.log(localStorage.getItem('user_data'));//new line for storage(footer.ts)
+    //this.router.navigate(['/background']);
   }
 }
 

@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-//import { FooterComponent } from './footer/footer.component';
-//import { HeaderComponent } from './header/header.component';
-//import { HomeComponent } from './home/home.component';
+//import { GuardGuard } from './service/guard.guard';
 import { BeachComponent } from './beach/beach.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { WeatherComponent } from './weather/weather.component';
@@ -53,8 +51,10 @@ import { AddItemComponent } from './add-item/add-item.component';
 import { PhoneComponent } from './phone/phone.component';
 import { Weather2Component } from './weather2/weather2.component';
 
+
 const routes: Routes = [
   {path:'', redirectTo:'phone', pathMatch:'full'},
+  {path:'background', component:BackgroundComponent},
   {path:'sign-in', component:SignInComponent},
   {path:'health', component:HealthComponent},
   {path:'weather', component:WeatherComponent},
@@ -64,7 +64,6 @@ const routes: Routes = [
   {path:'others', component:OthersComponent},
   {path:'sign-up', component:SignUpComponent},
   {path:'beach', component:BeachComponent},
-  {path:'background', component:BackgroundComponent},
   {path:'eat', component:EatComponent},
   {path:'product', component:ProductComponent},
   {path:'stay', component:StayComponent},

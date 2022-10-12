@@ -28,8 +28,8 @@
         <div class="box">
           <img src="assets/image/local4.jpg" alt="" class="img1" />
           <h5>
-            HOTELS
-            <p><em> Insert details about Hotels...</em></p>
+            ABACA
+            <p><em> Insert details about...</em></p>
           </h5>
         </div>
       </div>
@@ -42,7 +42,10 @@
               text-align: right;
               padding-right: 20px;
               padding-top: 10px;
-              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
+              background: linear-gradient(
+                aliceblue,
+                rgba(240, 248, 255, 0.338)
+              );
               position: fixed;
               width: 96%;
               height: 3%;
@@ -50,360 +53,18 @@
             "
           >
             x
-          </h3><br><br>
+          </h3>
+          <br /><br />
         </a>
         <img src="assets/image/local4.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-          <img src="assets/image/local1.jpg" alt="" (click)="toogleTagimg1()"/>
-          <img src="assets/image/local2.jpg" alt="" (click)="toogleTagimg2()"/>
-          <img src="assets/image/local9.jpg" alt="" (click)="toogleTagimg3()"/>
-          <img src="assets/image/local4.jpg" alt="" (click)="toogleTagimg4()"/>
-          <img src="assets/image/local5.jpg" alt="" (click)="toogleTagimg5()"/>
-          <div class="viewpic" *ngIf="img1">
-            <h3
-              (click)="toogleTagimg1()"
-              style="
-                text-align: right;
-                padding-right: 20px;
-                padding-top: 10px;
-                background-color: rgba(0, 0, 0, 0.783);
-                position: fixed;
-                top: 0%;
-                width: 100%;
-                height: 3%;
-                border-radius: 10px 10px 0px 0px;
-                color: white;
-              "
-            >
-              x
-            </h3>
-            <img src="assets/image/local1.jpg" alt="" class="bed" />
-          </div>
-          <div class="viewpic" *ngIf="img2">
-            <h3
-              (click)="toogleTagimg2()"
-              style="
-                text-align: right;
-                padding-right: 20px;
-                padding-top: 10px;
-                background-color: rgba(0, 0, 0, 0.783);
-                position: fixed;
-                top: 0%;
-                width: 100%;
-                height: 3%;
-                border-radius: 10px 10px 0px 0px;
-                color: white;
-              "
-            >
-              x
-            </h3>
-            <br /><br />
-            <img src="assets/image/local2.jpg" alt="" class="bed"/>
-          </div>
-          <div class="viewpic" *ngIf="img3">
-            <h3
-              (click)="toogleTagimg3()"
-              style="
-                text-align: right;
-                padding-right: 20px;
-                padding-top: 10px;
-                background-color: rgba(0, 0, 0, 0.783);
-                position: fixed;
-                top: 0%;
-                width: 100%;
-                height: 3%;
-                border-radius: 10px 10px 0px 0px;
-                color: white;
-              "
-            >
-              x
-            </h3>
-            <br /><br />
-            <img src="assets/image/local9.jpg" alt="" class="bed"/>
-          </div>
-          <div class="viewpic" *ngIf="img4">
-            <h3
-              (click)="toogleTagimg4()"
-              style="
-                text-align: right;
-                padding-right: 20px;
-                padding-top: 10px;
-                background-color: rgba(0, 0, 0, 0.783);
-                position: fixed;
-                top: 0%;
-                width: 100%;
-                height: 3%;
-                border-radius: 10px 10px 0px 0px;
-                color: white;
-              "
-            >
-              x
-            </h3>
-            <br /><br />
-            <img src="assets/image/local4.jpg" alt="" class="bed" />
-          </div>
-          <div class="viewpic" *ngIf="img5">
-            <h3
-              (click)="toogleTagimg5()"
-              style="
-                text-align: right;
-                padding-right: 20px;
-                padding-top: 10px;
-                background-color: rgba(0, 0, 0, 0.783);
-                position: fixed;
-                top: 0%;
-                width: 100%;
-                height: 3%;
-                border-radius: 10px 10px 0px 0px;
-                color: white;
-              "
-            >
-              x
-            </h3>
-            <br /><br />
-            <img src="assets/image/local5.jpg" alt="" class="bed"/>
-          </div>
-      </div>
-      <br />
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 400;
-          color: rgb(243, 202, 148);
-          font-size: 20px;
-          text-decoration: underline;
-        "
-      >
-        ROOM FEATURES
-      </h3>
-      <div class="row">
-        <div class="column1">
-          <li>36 sqm</li>
-          <li>Mayon view</li>
-          <li>King-sized bed</li>
-        </div>
-        <div class="column2">
-          <li>Air-conditioned room</li>
-          <li>Non- smoking</li>
-        </div>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(243, 202, 148);
-            font-size: 20px;
-            text-decoration: underline;
-            padding-bottom: 20px;
-          "
-        >
-          AMENITIES
-        </h3>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-          "
-        >
-          For your Comfort
-        </h3>
-        <div class="column1-1">
-          <li>Toilet amenities</li>
-          <li>Bath linen & towels</li>
-          <li>Hairdryer</li>
-        </div>
-        <div class="column2-2">
-          <li>Hot & cold shower</li>
-          <li>Bidet</li>
-          <li>Slippers</li>
-        </div>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-          "
-        >
-          For your Indulgence
-        </h3>
-        <div class="column1">
-          <li>40” LED flat-screen</li>
-          <li>Cable/Satellite TV</li>
-          <li>Internet access</li>
-          <li>Coffee/tea facilities</li>
-          <li>Bottled water</li>
-        </div>
-        <div class="column2">
-          <li>Mini-refrigerator</li>
-          <li>Dining service</li>
-          <li>Working station</li>
-          <li>Stationery set</li>
-        </div>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-          "
-        >
-          For your Safety and Convenience
-        </h3>
-        <div class="column1-1">
-          <li>Safety deposit box</li>
-          <li>Security key card</li>
-        </div>
-        <div class="column2-2">
-          <li>Elevator access</li>
-          <li>24-hour Front desk</li>
-        </div>
-      </div>
-      <a routerLink="/booking">
-        <button>BOOK NOW</button>
-      </a>
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
-          padding-bottom: 5px;
-        "
-      >
-        LOCATION
-      </h3>
-      <ul>
-        <li>Corner Imelda Roces Avenue,</li>
-        <li>Barangay 38, Gogon,</li>
-        <li>Legazpi City, Albay, Philippines 4500</li>
-      </ul>
-      <br />
-
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
-          padding-bottom: 5px;
-        "
-      >
-        CONTACT NO.
-      </h3>
-      <ul>
-        <li>(+63) 52 732 -7777</li>
-        <li>(+63) 917-886-8168</li>
-      </ul>
-      <br />
-
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
-          padding-bottom: 5px;
-        "
-      >
-        EMAIL ADDRESS
-      </h3>
-      <ul>
-        <li>bookings@themarisonhotel.com</li>
-      </ul>
-      <br />
-
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
-        "
-      >
-        CHECK IN : 2:00 PM
-      </h3>
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
-          padding-bottom: 10px;
-        "
-      >
-        CHECK OUT: 12:00 PM
-      </h3>
-      <br />
-
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
-          padding-bottom: 5px;
-        "
-      >
-        PAYMENT
-      </h3>
-      <ul>
-        <li>We accept the following cards:</li>
-      </ul>
-      <br /><br />
-      <div class="payment">
-        <img src="assets/image/payment1.jpg" alt="" class="gcash" />
-        <img src="assets/image/payment2.jpg" alt="" class="bdo" />
-        <img src="assets/image/payment3.jpg" alt="" class="visa" />
-        <img src="assets/image/payment4.jpg" alt="" class="paypal" />
-        <img src="assets/image/payment5.jpg" alt="" class="paymaya" />
-      </div>
-      <br /><br />
-    </div>
-
-    <!-------------------------------------  HOTEL  2    ----------------------------------------->
-    <a (click)="toogleTag2()">
-      <div class="container">
-        <div class="box">
-          <img src="assets/image/local13.jpg" alt="" class="img1" />
-          <h5>
-            LOGING HOUSES
-            <p><em> Insert details about Hotels...</em></p>
-          </h5>
-        </div>
-      </div>
-    </a>
-
-    <div class="hotel1" *ngIf="hotel2">
-      <div class="box1">
-        <a (click)="toogleTag2()">
-          <h3
-            style="
-              text-align: right;
-              padding-right: 20px;
-              padding-top: 10px;
-              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
-              position: fixed;
-              width: 96%;
-              height: 3%;
-              border-radius: 10px 10px 0px 0px;
-            "
-          >
-            x
-          </h3><br><br>
-        </a>
-        <img src="assets/image/local13.jpg" alt="" class="img2" />
-      </div>
-      <br />
-      <div class="room">
-        <img src="assets/image/local13.jpg" alt="" (click)="toogleTagimg1()"/>
-        <img src="assets/image/local7.jpg" alt="" (click)="toogleTagimg2()"/>
-        <img src="assets/image/local9.jpg" alt="" (click)="toogleTagimg3()"/>
-        <img src="assets/image/local4.jpg" alt="" (click)="toogleTagimg4()"/>
-        <img src="assets/image/local5.jpg" alt="" (click)="toogleTagimg5()"/>
+        <img src="assets/image/local1.jpg" alt="" (click)="toogleTagimg1()" />
+        <img src="assets/image/local2.jpg" alt="" (click)="toogleTagimg2()" />
+        <img src="assets/image/local9.jpg" alt="" (click)="toogleTagimg3()" />
+        <img src="assets/image/local4.jpg" alt="" (click)="toogleTagimg4()" />
+        <img src="assets/image/local5.jpg" alt="" (click)="toogleTagimg5()" />
         <div class="viewpic" *ngIf="img1">
           <h3
             (click)="toogleTagimg1()"
@@ -422,7 +83,7 @@
           >
             x
           </h3>
-          <img src="assets/image/local13.jpg" alt="" class="bed" />
+          <img src="assets/image/local1.jpg" alt="" class="bed" />
         </div>
         <div class="viewpic" *ngIf="img2">
           <h3
@@ -443,7 +104,7 @@
             x
           </h3>
           <br /><br />
-          <img src="assets/image/local7.jpg" alt="" class="bed"/>
+          <img src="assets/image/local2.jpg" alt="" class="bed" />
         </div>
         <div class="viewpic" *ngIf="img3">
           <h3
@@ -464,7 +125,7 @@
             x
           </h3>
           <br /><br />
-          <img src="assets/image/local9.jpg" alt="" class="bed"/>
+          <img src="assets/image/local9.jpg" alt="" class="bed" />
         </div>
         <div class="viewpic" *ngIf="img4">
           <h3
@@ -506,9 +167,9 @@
             x
           </h3>
           <br /><br />
-          <img src="assets/image/local5.jpg" alt="" class="bed"/>
+          <img src="assets/image/local5.jpg" alt="" class="bed" />
         </div>
-    </div>
+      </div>
       <br />
       <h3
         style="
@@ -519,94 +180,297 @@
           text-decoration: underline;
         "
       >
-        ROOM FEATURES
+        ABACA
       </h3>
       <div class="row">
-        <div class="column1">
-          <li>36 sqm</li>
-          <li>Mayon view</li>
-          <li>King-sized bed</li>
-        </div>
-        <div class="column2">
-          <li>Air-conditioned room</li>
-          <li>Non- smoking</li>
-        </div>
-        <h3
+        <P
           style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(243, 202, 148);
-            font-size: 20px;
-            text-decoration: underline;
-            padding-bottom: 20px;
-          "
-        >
-          AMENITIES
-        </h3>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
             font-size: 15px;
+            color: gray;
+            padding: 20px;
+            text-align: justify;
+            text-indent: 50px;
           "
         >
-          For your Comfort
-        </h3>
-        <div class="column1-1">
-          <li>Toilet amenities</li>
-          <li>Bath linen & towels</li>
-          <li>Hairdryer</li>
-        </div>
-        <div class="column2-2">
-          <li>Hot & cold shower</li>
-          <li>Bidet</li>
-          <li>Slippers</li>
-        </div>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-          "
-        >
-          For your Indulgence
-        </h3>
-        <div class="column1">
-          <li>40” LED flat-screen</li>
-          <li>Cable/Satellite TV</li>
-          <li>Internet access</li>
-          <li>Coffee/tea facilities</li>
-          <li>Bottled water</li>
-        </div>
-        <div class="column2">
-          <li>Mini-refrigerator</li>
-          <li>Dining service</li>
-          <li>Working station</li>
-          <li>Stationery set</li>
-        </div>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-          "
-        >
-          For your Safety and Convenience
-        </h3>
-        <div class="column1-1">
-          <li>Safety deposit box</li>
-          <li>Security key card</li>
-        </div>
-        <div class="column2-2">
-          <li>Elevator access</li>
-          <li>24-hour Front desk</li>
-        </div>
+          Abaca products in bicol are very popular. Abaka is a sort or specie of
+          native banana which is being harvested because of its fiber. Abaka is
+          a sort or specie of native banana which is being harvested because of
+          its fiber. With the use of the fiber that people can get from abaka,
+          they can produce more high quality products like lampshades, chairs,
+          accessories, furniture, baskets, slipper and some others.
+        </P>
       </div>
       <a routerLink="/booking">
-        <button>BOOK NOW</button>
+        <button>ORDER NOW</button>
+      </a>
+      <h3
+        style="
+          padding-left: 20px;
+          font-weight: 600;
+          color: rgb(0, 0, 0);
+          font-size: 15px;
+          padding-bottom: 5px;
+        "
+      >
+        LOCATION
+      </h3>
+      <ul>
+        <li>Corner Imelda Roces Avenue,</li>
+        <li>Barangay 38, Gogon,</li>
+        <li>Legazpi City, Albay, Philippines 4500</li>
+      </ul>
+      <br />
+
+      <h3
+        style="
+          padding-left: 20px;
+          font-weight: 600;
+          color: rgb(0, 0, 0);
+          font-size: 15px;
+          padding-bottom: 5px;
+        "
+      >
+        CONTACT NO.
+      </h3>
+      <ul>
+        <li>(+63) 52 732 -7777</li>
+        <li>(+63) 917-886-8168</li>
+      </ul>
+      <br />
+
+      <h3
+        style="
+          padding-left: 20px;
+          font-weight: 600;
+          color: rgb(0, 0, 0);
+          font-size: 15px;
+          padding-bottom: 5px;
+        "
+      >
+        EMAIL ADDRESS
+      </h3>
+      <ul>
+        <li>bookings@themarisonhotel.com</li>
+      </ul>
+      <br />
+      <h3
+        style="
+          padding-left: 20px;
+          font-weight: 600;
+          color: rgb(0, 0, 0);
+          font-size: 15px;
+          padding-bottom: 5px;
+        "
+      >
+        PAYMENT
+      </h3>
+      <ul>
+        <li>We accept the following cards:</li>
+      </ul>
+      <br /><br />
+      <div class="payment">
+        <img src="assets/image/payment1.jpg" alt="" class="gcash" />
+        <img src="assets/image/payment2.jpg" alt="" class="bdo" />
+        <img src="assets/image/payment3.jpg" alt="" class="visa" />
+        <img src="assets/image/payment4.jpg" alt="" class="paypal" />
+        <img src="assets/image/payment5.jpg" alt="" class="paymaya" />
+      </div>
+      <br /><br />
+    </div>
+
+    <!-------------------------------------  HOTEL  2    ----------------------------------------->
+    <a (click)="toogleTag2()">
+      <div class="container">
+        <div class="box">
+          <img src="assets/image/local13.jpg" alt="" class="img1" />
+          <h5>
+            PILI
+            <p><em> Insert details about...</em></p>
+          </h5>
+        </div>
+      </div>
+    </a>
+
+    <div class="hotel1" *ngIf="hotel2">
+      <div class="box1">
+        <a (click)="toogleTag2()">
+          <h3
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background: linear-gradient(
+                aliceblue,
+                rgba(240, 248, 255, 0.338)
+              );
+              position: fixed;
+              width: 96%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+        </a>
+        <img src="assets/image/local13.jpg" alt="" class="img2" />
+      </div>
+      <br />
+      <div class="room">
+        <img src="assets/image/local13.jpg" alt="" (click)="toogleTagimg1()" />
+        <img src="assets/image/local7.jpg" alt="" (click)="toogleTagimg2()" />
+        <img src="assets/image/local9.jpg" alt="" (click)="toogleTagimg3()" />
+        <img src="assets/image/local4.jpg" alt="" (click)="toogleTagimg4()" />
+        <img src="assets/image/local5.jpg" alt="" (click)="toogleTagimg5()" />
+        <div class="viewpic" *ngIf="img1">
+          <h3
+            (click)="toogleTagimg1()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <img src="assets/image/local13.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img2">
+          <h3
+            (click)="toogleTagimg2()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/local7.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img3">
+          <h3
+            (click)="toogleTagimg3()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/local9.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img4">
+          <h3
+            (click)="toogleTagimg4()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/local4.jpg" alt="" class="bed" />
+        </div>
+        <div class="viewpic" *ngIf="img5">
+          <h3
+            (click)="toogleTagimg5()"
+            style="
+              text-align: right;
+              padding-right: 20px;
+              padding-top: 10px;
+              background-color: rgba(0, 0, 0, 0.783);
+              position: fixed;
+              top: 0%;
+              width: 100%;
+              height: 3%;
+              border-radius: 10px 10px 0px 0px;
+              color: white;
+            "
+          >
+            x
+          </h3>
+          <br /><br />
+          <img src="assets/image/local5.jpg" alt="" class="bed" />
+        </div>
+      </div>
+      <br />
+      <h3
+        style="
+          padding-left: 20px;
+          font-weight: 400;
+          color: rgb(243, 202, 148);
+          font-size: 20px;
+          text-decoration: underline;
+        "
+      >
+        PILI
+      </h3>
+      <div class="row">
+        <P
+          style="
+            font-size: 15px;
+            color: gray;
+            padding: 20px;
+            text-align: justify;
+            text-indent: 50px;
+          "
+        >
+          Pili nut is an ethnic food, especially in the Bicol region, the crop's
+          center of genetic diversity. It yields a kernel, the pili nut, which
+          is precious to the country's food sector.
+        </P>
+        <P
+          style="
+            font-size: 15px;
+            color: gray;
+            padding: 20px;
+            text-align: justify;
+            text-indent: 50px;
+          "
+        >
+          The Philippines and Bicol Region: Where Pili Grows Best;And why ever
+          not; the region is where the best variables for growing Pili converge.
+          Home to at least five active volcanoes, one of which is the
+          perfect-coned and world-admired Mayon Volcano, Bicol's land is a
+          fecund mix of volcanic soil and generous rainfall.
+        </P>
+      </div>
+      <a routerLink="/booking">
+        <button>ORDER NOW</button>
       </a>
       <h3
         style="
@@ -665,29 +529,6 @@
           font-weight: 600;
           color: rgb(0, 0, 0);
           font-size: 15px;
-        "
-      >
-        CHECK IN : 2:00 PM
-      </h3>
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
-          padding-bottom: 10px;
-        "
-      >
-        CHECK OUT: 12:00 PM
-      </h3>
-      <br />
-
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
           padding-bottom: 5px;
         "
       >
@@ -714,8 +555,8 @@
         <div class="box">
           <img src="assets/image/local10.jpg" alt="" class="img1" />
           <h5>
-            CONDOHOTELS
-            <p><em> Insert details about Hotels...</em></p>
+            BAGS
+            <p><em> Insert details about...</em></p>
           </h5>
         </div>
       </div>
@@ -729,7 +570,10 @@
               text-align: right;
               padding-right: 20px;
               padding-top: 10px;
-              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
+              background: linear-gradient(
+                aliceblue,
+                rgba(240, 248, 255, 0.338)
+              );
               position: fixed;
               width: 96%;
               height: 3%;
@@ -737,17 +581,18 @@
             "
           >
             x
-          </h3><br><br>
+          </h3>
+          <br /><br />
         </a>
         <img src="assets/image/local10.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-        <img src="assets/image/local10.jpg" alt="" (click)="toogleTagimg1()"/>
-        <img src="assets/image/local12.jpg" alt="" (click)="toogleTagimg2()"/>
-        <img src="assets/image/local2.jpg" alt="" (click)="toogleTagimg3()"/>
-        <img src="assets/image/local3.jpg" alt="" (click)="toogleTagimg4()"/>
-        <img src="assets/image/local6.jpg" alt="" (click)="toogleTagimg5()"/>
+        <img src="assets/image/local10.jpg" alt="" (click)="toogleTagimg1()" />
+        <img src="assets/image/local12.jpg" alt="" (click)="toogleTagimg2()" />
+        <img src="assets/image/local2.jpg" alt="" (click)="toogleTagimg3()" />
+        <img src="assets/image/local3.jpg" alt="" (click)="toogleTagimg4()" />
+        <img src="assets/image/local6.jpg" alt="" (click)="toogleTagimg5()" />
         <div class="viewpic" *ngIf="img1">
           <h3
             (click)="toogleTagimg1()"
@@ -787,7 +632,7 @@
             x
           </h3>
           <br /><br />
-          <img src="assets/image/local12.jpg" alt="" class="bed"/>
+          <img src="assets/image/local12.jpg" alt="" class="bed" />
         </div>
         <div class="viewpic" *ngIf="img3">
           <h3
@@ -808,7 +653,7 @@
             x
           </h3>
           <br /><br />
-          <img src="assets/image/local2.jpg" alt="" class="bed"/>
+          <img src="assets/image/local2.jpg" alt="" class="bed" />
         </div>
         <div class="viewpic" *ngIf="img4">
           <h3
@@ -850,9 +695,9 @@
             x
           </h3>
           <br /><br />
-          <img src="assets/image/local6.jpg" alt="" class="bed"/>
+          <img src="assets/image/local6.jpg" alt="" class="bed" />
         </div>
-    </div>
+      </div>
       <br />
       <h3
         style="
@@ -863,94 +708,27 @@
           text-decoration: underline;
         "
       >
-        ROOM FEATURES
+        BAGS
       </h3>
       <div class="row">
-        <div class="column1">
-          <li>36 sqm</li>
-          <li>Mayon view</li>
-          <li>King-sized bed</li>
-        </div>
-        <div class="column2">
-          <li>Air-conditioned room</li>
-          <li>Non- smoking</li>
-        </div>
-        <h3
+        <P
           style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(243, 202, 148);
-            font-size: 20px;
-            text-decoration: underline;
-            padding-bottom: 20px;
-          "
-        >
-          AMENITIES
-        </h3>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
             font-size: 15px;
+            color: gray;
+            padding: 20px;
+            text-align: justify;
+            text-indent: 50px;
           "
         >
-          For your Comfort
-        </h3>
-        <div class="column1-1">
-          <li>Toilet amenities</li>
-          <li>Bath linen & towels</li>
-          <li>Hairdryer</li>
-        </div>
-        <div class="column2-2">
-          <li>Hot & cold shower</li>
-          <li>Bidet</li>
-          <li>Slippers</li>
-        </div>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-          "
-        >
-          For your Indulgence
-        </h3>
-        <div class="column1">
-          <li>40” LED flat-screen</li>
-          <li>Cable/Satellite TV</li>
-          <li>Internet access</li>
-          <li>Coffee/tea facilities</li>
-          <li>Bottled water</li>
-        </div>
-        <div class="column2">
-          <li>Mini-refrigerator</li>
-          <li>Dining service</li>
-          <li>Working station</li>
-          <li>Stationery set</li>
-        </div>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-          "
-        >
-          For your Safety and Convenience
-        </h3>
-        <div class="column1-1">
-          <li>Safety deposit box</li>
-          <li>Security key card</li>
-        </div>
-        <div class="column2-2">
-          <li>Elevator access</li>
-          <li>24-hour Front desk</li>
-        </div>
+          Outside the fashion industry, abacá is a species of banana that is
+          native to the Philippines. Its fiber is known to be super durable,
+          flexible and resistant to salt water damage, hence the abaca bags are
+          definitely going to be a functional and strong product to have in the
+          wardrobe.
+        </P>
       </div>
       <a routerLink="/booking">
-        <button>BOOK NOW</button>
+        <button>ORDER NOW</button>
       </a>
       <h3
         style="
@@ -1002,30 +780,6 @@
         <li>bookings@themarisonhotel.com</li>
       </ul>
       <br />
-
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
-        "
-      >
-        CHECK IN : 2:00 PM
-      </h3>
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
-          padding-bottom: 10px;
-        "
-      >
-        CHECK OUT: 12:00 PM
-      </h3>
-      <br />
-
       <h3
         style="
           padding-left: 20px;
@@ -1057,8 +811,8 @@
         <div class="box">
           <img src="assets/image/local12.jpg" alt="" class="img1" />
           <h5>
-            HOMEHOTELS
-            <p><em> Insert details about Hotels...</em></p>
+            ABACA BASKETS
+            <p><em> Insert details about...</em></p>
           </h5>
         </div>
       </div>
@@ -1072,7 +826,10 @@
               text-align: right;
               padding-right: 20px;
               padding-top: 10px;
-              background:linear-gradient(aliceblue, rgba(240, 248, 255, 0.338));
+              background: linear-gradient(
+                aliceblue,
+                rgba(240, 248, 255, 0.338)
+              );
               position: fixed;
               width: 96%;
               height: 3%;
@@ -1080,17 +837,18 @@
             "
           >
             x
-          </h3><br><br>
+          </h3>
+          <br /><br />
         </a>
         <img src="assets/image/local12.jpg" alt="" class="img2" />
       </div>
       <br />
       <div class="room">
-        <img src="assets/image/local12.jpg" alt="" (click)="toogleTagimg1()"/>
-        <img src="assets/image/local8.jpg" alt="" (click)="toogleTagimg2()"/>
-        <img src="assets/image/local13.jpg" alt="" (click)="toogleTagimg3()"/>
-        <img src="assets/image/local10.jpg" alt="" (click)="toogleTagimg4()"/>
-        <img src="assets/image/local3.jpg" alt="" (click)="toogleTagimg5()"/>
+        <img src="assets/image/local12.jpg" alt="" (click)="toogleTagimg1()" />
+        <img src="assets/image/local8.jpg" alt="" (click)="toogleTagimg2()" />
+        <img src="assets/image/local13.jpg" alt="" (click)="toogleTagimg3()" />
+        <img src="assets/image/local10.jpg" alt="" (click)="toogleTagimg4()" />
+        <img src="assets/image/local3.jpg" alt="" (click)="toogleTagimg5()" />
         <div class="viewpic" *ngIf="img1">
           <h3
             (click)="toogleTagimg1()"
@@ -1130,7 +888,7 @@
             x
           </h3>
           <br /><br />
-          <img src="assets/image/local8.jpg" alt="" class="bed"/>
+          <img src="assets/image/local8.jpg" alt="" class="bed" />
         </div>
         <div class="viewpic" *ngIf="img3">
           <h3
@@ -1151,7 +909,7 @@
             x
           </h3>
           <br /><br />
-          <img src="assets/image/local13.jpg" alt="" class="bed"/>
+          <img src="assets/image/local13.jpg" alt="" class="bed" />
         </div>
         <div class="viewpic" *ngIf="img4">
           <h3
@@ -1193,9 +951,9 @@
             x
           </h3>
           <br /><br />
-          <img src="assets/image/local3.jpg" alt="" class="bed"/>
+          <img src="assets/image/local3.jpg" alt="" class="bed" />
         </div>
-    </div>
+      </div>
       <br />
       <h3
         style="
@@ -1209,91 +967,24 @@
         ROOM FEATURES
       </h3>
       <div class="row">
-        <div class="column1">
-          <li>36 sqm</li>
-          <li>Mayon view</li>
-          <li>King-sized bed</li>
-        </div>
-        <div class="column2">
-          <li>Air-conditioned room</li>
-          <li>Non- smoking</li>
-        </div>
-        <h3
+        <p
           style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(243, 202, 148);
-            font-size: 20px;
-            text-decoration: underline;
-            padding-bottom: 20px;
-          "
-        >
-          AMENITIES
-        </h3>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
             font-size: 15px;
+            color: gray;
+            padding: 20px;
+            text-align: justify;
+            text-indent: 50px;
           "
         >
-          For your Comfort
-        </h3>
-        <div class="column1-1">
-          <li>Toilet amenities</li>
-          <li>Bath linen & towels</li>
-          <li>Hairdryer</li>
-        </div>
-        <div class="column2-2">
-          <li>Hot & cold shower</li>
-          <li>Bidet</li>
-          <li>Slippers</li>
-        </div>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-          "
-        >
-          For your Indulgence
-        </h3>
-        <div class="column1">
-          <li>40” LED flat-screen</li>
-          <li>Cable/Satellite TV</li>
-          <li>Internet access</li>
-          <li>Coffee/tea facilities</li>
-          <li>Bottled water</li>
-        </div>
-        <div class="column2">
-          <li>Mini-refrigerator</li>
-          <li>Dining service</li>
-          <li>Working station</li>
-          <li>Stationery set</li>
-        </div>
-        <h3
-          style="
-            padding-left: 20px;
-            font-weight: 400;
-            color: rgb(0, 0, 0);
-            font-size: 15px;
-          "
-        >
-          For your Safety and Convenience
-        </h3>
-        <div class="column1-1">
-          <li>Safety deposit box</li>
-          <li>Security key card</li>
-        </div>
-        <div class="column2-2">
-          <li>Elevator access</li>
-          <li>24-hour Front desk</li>
-        </div>
+          Handwoven in the Philippines out of abaca, a tree fiber that's tough
+          yet surprisingly soft to the touch, this basket's chunky weave
+          contrasts with braided handles to show off its natural assets. Subtle
+          variations are part of its inherent natural beauty. Available in three
+          sizes.
+        </p>
       </div>
       <a routerLink="/booking">
-        <button>BOOK NOW</button>
+        <button>ORDER NOW</button>
       </a>
       <h3
         style="
@@ -1345,30 +1036,6 @@
         <li>bookings@themarisonhotel.com</li>
       </ul>
       <br />
-
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
-        "
-      >
-        CHECK IN : 2:00 PM
-      </h3>
-      <h3
-        style="
-          padding-left: 20px;
-          font-weight: 600;
-          color: rgb(0, 0, 0);
-          font-size: 15px;
-          padding-bottom: 10px;
-        "
-      >
-        CHECK OUT: 12:00 PM
-      </h3>
-      <br />
-
       <h3
         style="
           padding-left: 20px;
@@ -1393,6 +1060,6 @@
       </div>
       <br /><br />
     </div>
-      <br /><br />
+    <br /><br />
   </body>
 </html>

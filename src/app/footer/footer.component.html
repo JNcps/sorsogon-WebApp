@@ -49,6 +49,13 @@
   <div class="wrapper1" *ngIf="showMe">
     <div class="logo">
       <img src="assets/image/logo2.jpg" alt="">
+      <div class="bottom">
+        <h5 style="
+          background:linear-gradient(to right, #a158b9ce, #4378c3d4);
+          padding: 5px 10px 5px 10px;
+          border-radius: 50px;
+          ">{{ userData }}</h5>
+      </div>
     </div>
     <ul>
       <li><i class="material-icons" style="font-size:20px">language</i><a routerLink="/talk">Sorsogon Talk</a></li><br>
@@ -70,15 +77,17 @@
       <li><i class="material-icons" style="font-size:20px">error_outline</i><a routerLink="/about">About</a></li><br>
       <li><i class="material-icons" style="font-size:20px">help_outline</i><a routerLink="/help1">Help</a></li><br>
       <li><i class="material-icons" style="font-size:20px">settings</i><a routerLink="/settings">Settings</a></li><br>
-      <li><i class="material-icons" style="font-size:20px">arrow_forward</i><a (click)="logOut()">Log Out</a></li><br>
+      <li><i class="material-icons" style="font-size:20px">arrow_forward</i><a (click)="toogleTag2()">Log Out</a></li><br>
     </ul>
   </div>
 
-  <div class="wrapper2" *ngIf="logout"><br>
+  <div class="wrapper2" *ngIf="logout">
+   <div class="logout">
     <span>Are you sure you want to Log Out?</span><br><br>
-    <a routerLink="/sign-in"><button class="btn1">Yes</button></a>
+    <a (click)="logOut()"><button class="btn1">Yes</button></a>
       &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-    <button class="btn2" *ngIf="showMe">No</button>
+    <button class="btn2" (click)="toogleTag2()">No</button>
+   </div>
   </div>
 
 </html>

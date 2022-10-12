@@ -4,6 +4,7 @@ import 'firebase/auth';
 import 'firebase/firestore';
 import { Router } from '@angular/router';
 
+
 var config = {
   projectId: 'sorsogon-db-system',
    appId: '1:828386328406:web:3401566eb8f3f8b08720f7',
@@ -22,11 +23,16 @@ export class PhoneComponent implements OnInit {
 
   phoneNumber: any;
   reCaptchaVerifier: any;
+  verificationCode: any;
+  verificationId: any;
+  show:boolean=false
 
   constructor(private router: Router, private ngZone: NgZone) {}
 
+
   ngOnInit() {
     firebase.initializeApp(config)
+
   }
 
   getOTP() {
@@ -59,4 +65,27 @@ export class PhoneComponent implements OnInit {
         }, 5000);
       });
   }
+
+  autoLogin(){
+    let user_data:{
+      phoneNumber: any;
+      reCaptchaVerifier: any;
+      verificationCode: any;
+      verificationId: any;
+    } = JSON.parse(localStorage.getItem('user_data') || '{}');
+    if (!user_data){
+      return;
+    }
+
+  }
+  //signIn(){
+  //  var credential = firebase.auth.PhoneAuthProvider.credential( this.phoneNumber, this.verificationId);
+  //  firebase.auth().signInWithCredential(credential);
+  //}
+
+  toogleTag(){
+    this.show=!this.show
+  }
+
+
 }
