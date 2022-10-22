@@ -1,9 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
-html, body{
+
+html,
+body {
   height: 100%;
 }
 
@@ -15,36 +17,38 @@ html, body{
   padding: 10px 10px;
 }
 
-.header a i{
+.header a i {
   padding-left: 10px;
 }
-.header span{
+
+.header span {
   text-align: center;
   padding-left: 20px;
   color: white;
   font-weight: 550;
 }
 
-.rainbow-text{
+.rainbow-text {
   display: block;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.img01{
+.img01 {
   width: 20%;
   height: 20%;
   margin-top: 10px;
 
 }
 
-.block-line{
+.block-line {
   width: 90%;
   margin-left: auto;
   margin-right: 0%;
 }
-.img02{
+
+.img02 {
   display: block;
   width: 100%;
   margin-left: auto;
@@ -56,7 +60,8 @@ html, body{
   width: 90%;
   border-radius: 10px;
 }
- .but1{
+
+.but1 {
   display: block;
   width: 100%;
   height: 40px;
@@ -68,51 +73,590 @@ html, body{
   border: none;
 }
 
-.text1{
+
+.img {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: block;
+}
+
+.viewpic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.836);
+  position: fixed;
+  z-index: 1;
+}
+
+.viewpic .bed {
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  height: 90px;
+  width: 90%;
+  background: linear-gradient(rgb(121, 175, 220), rgba(216, 188, 160, 0.537));
+  border-radius: 10px;
+}
+
+.box .img1 {
+  display: block;
+  width: 30%;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.box h5 {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: rgba(5, 5, 5, 0.731);
+}
+
+
+.hotel1 {
+  width: 96%;
+  left: 2%;
+  right: 2%;
+  top: 1%;
+  bottom: 1%;
+  background-color: aliceblue;
+  position: fixed;
+  border-radius: 10px;
+  margin: 0 auto;
+  z-index: 1;
+  overflow: scroll;
+}
+
+
+.img20 {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+}
+
+.room img {
+  width: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px 0px 0px 20px;
+  /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding-top: 10px;
+  border-radius: 0px 20px 20px 0px;
+  /* Should be removed. Only for demonstration */
+}
+
+.column1-1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px 0px 0px 20px;
+  height: 50px;
+  /* Should be removed. Only for demonstration */
+  margin-bottom: 30px;
+}
+
+.column2-2 {
+  float: left;
+  width: 50%;
+  padding-top: 10px;
+  border-radius: 0px 20px 20px 0px;
+  height: 50px;
+  /* Should be removed. Only for demonstration */
+  margin-bottom: 30px;
+}
+
+.row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 100%;
+}
+
+.row li {
+  font-size: 15px;
+  color: gray;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hotel1 a button {
+  color: green;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #ffffff00;
+  border-radius: 20px;
+  border-color: rgb(210, 138, 45);
+  text-align: center;
+}
+
+.hotel1 ul li {
+  padding-left: 20px;
+  color: gray;
+  font-size: 15px;
+}
+
+.hotel1 .payment {
   display: block;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.link1{
-text-decoration: none;
+.gcash {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.bdo {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.visa {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.paypal {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.paymaya {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.css-text-mask {
+  font-size: 30px;
+  font-family: Impact, Charcoal, sans-serif;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapksuY6JWs83sZj_RJpbKHkBhi4lTfk6znY57YIeTMdPZHNWUBblACIhYsxf89UxTE1M&usqp=CAU');
+  background-position: 0px 0px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0000;
+}
+
+.text-shadow {
+  font-size: 30px;
+  font-family: Impact, Charcoal, sans-serif;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapksuY6JWs83sZj_RJpbKHkBhi4lTfk6znY57YIeTMdPZHNWUBblACIhYsxf89UxTE1M&usqp=CAU');
+  background-position: 0px 0px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0000;
+}
+
+/* =========================        AIRPLANE             ============================ */
+.event-container {
+  font-family: "Roboto", sans-serif;
+  width: 90%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+.event-container .event {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  margin: 32px 0;
 }
 
 
-.gate1{
+.event .event-right h3.event-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  text-transform: uppercase;
+  color: #5650a4;
+}
+
+.event .event-right .event-timing {
+  background: #fff8ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.event .event-right .event-timing img {
+  height: 20px;
+  padding-right: 8px;
+}
+
+.travel-four {
+  top: 50px;
+  position: relative;
+  width: 5px;
+  height: 100px;
+  background-color: blue;
+  display: inline-block;
+}
+
+.time {
+  position: relative;
+
+  left: 5px;
+
+}
+
+.plane {
+  position: relative;
+  top: 5px;
+}
+
+.plane i {
+  position: relative;
+  font-size: 30px;
+  left: 10px;
+}
+
+.item-num {
+  position: relative;
+  left: 25px;
+  top: 10px;
+}
+
+.price-book {
+  position: relative;
+  top: 30px;
+  right: 20px;
+}
+
+.price-book span {
+  right: 400px;
+}
+
+.planebuttom{
+  display: block;
+  width: 50%;
+}
+
+.price button {
+  background: linear-gradient(#5650a4, #407ed7);
+  padding: 10px;
+  color: #F5F5F5;
+  border-radius: 50px;
+  position: relative;
+  border: none;
+  bottom: 10px;
+
+}
+
+.badge {
+  position: relative;
+  bottom: 120px;
+  left: 13px;
+}
+
+.bus {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 625px;
+  left: 10px;
+}
+
+.bus1 {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 890px;
+  left: 10px;
+}
+
+.bus2 {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 1145px;
+  left: 10px;
+}
+
+.bus3 {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 1410px;
+  left: 10px;
+}
+
+.bus4 {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 1665px;
+  left: 10px;
+}
+
+.bus-one {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 610px;
+  left: 10px;
+}
+
+.bus-two {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 845px;
+  left: 10px;
+}
+
+.bus-tree {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 1080px;
+  left: 10px;
+}
+
+.bus-four {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 1315px;
+  left: 10px;
+}
+
+.bus-five {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 1550px;
+  left: 10px;
+}
+
+.bus img {
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.bus1 img {
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.bus-one img {
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.bus2 img {
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.bus3 img {
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.bus4 img {
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.bus-one img {
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.bus-two img {
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.bus-tree img {
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.bus-four img {
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.bus-five img {
+  width: 60px;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+
+@media (max-width: 550px) {
+  .event {
+    flex-direction: column;
+  }
+
+  .event .event-left {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .event .event-left .event-date .date,
+  .event .event-left .event-date .month {
+    padding: 0;
+  }
+}
+
+
+
+
+.text1 {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link1 {
+  text-decoration: none;
+}
+
+
+.gate1 {
   text-align: center;
 }
 
-.map_one .plane_one{
+.map_one .plane_one {
   height: 100px;
   width: 100px;
 
 }
- :root{
-   --color-1:#0000ff;
-   --color-2: #ffd633;
-   --color-3: #ff471a;
-   --color-4: #4dff4d;
-   --color-5: #ff66ff;
-   --color-6: #ff9933;
- }
 
- .rainbow-text {
-   font-family: 'Abhaya Libre', serif;
-   font-weight: bold;
-   font-size: 15px;
-   letter-spacing: 3px;
-   text-shadow: #A3A3A3 0px 1px 0px;
- }
- .rainbow-text .block-line  span {
-   display: inline-block;
- }
- .img2{
-   width: 60px;
-   height: 60px;
- }
- .post1{
-   margin-left: -22px;
-   margin-top: -20px;
- }
+:root {
+  --color-1: #0000ff;
+  --color-2: #ffd633;
+  --color-3: #ff471a;
+  --color-4: #4dff4d;
+  --color-5: #ff66ff;
+  --color-6: #ff9933;
+}
+
+.rainbow-text {
+  font-family: 'Abhaya Libre', serif;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-shadow: #A3A3A3 0px 1px 0px;
+}
+
+.rainbow-text .block-line span {
+  display: inline-block;
+}
+
+.img2 {
+  width: 60px;
+  height: 60px;
+}
+
+.post1 {
+  margin-left: -22px;
+  margin-top: -20px;
+}

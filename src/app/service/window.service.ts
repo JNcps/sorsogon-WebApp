@@ -9,4 +9,9 @@ export class WindowService {
   get windowRef(){
     return window;
   }
+  IsLoggedIn(){
+    return !!localStorage.getItem('user_data');
+
+  }
+
 }

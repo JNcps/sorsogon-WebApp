@@ -35,6 +35,7 @@ export class PhoneComponent implements OnInit {
 
   }
 
+
   getOTP() {
     this.reCaptchaVerifier = new firebase.auth.RecaptchaVerifier(
       'sign-in-button',
@@ -66,18 +67,7 @@ export class PhoneComponent implements OnInit {
       });
   }
 
-  autoLogin(){
-    let user_data:{
-      phoneNumber: any;
-      reCaptchaVerifier: any;
-      verificationCode: any;
-      verificationId: any;
-    } = JSON.parse(localStorage.getItem('user_data') || '{}');
-    if (!user_data){
-      return;
-    }
 
-  }
   //signIn(){
   //  var credential = firebase.auth.PhoneAuthProvider.credential( this.phoneNumber, this.verificationId);
   //  firebase.auth().signInWithCredential(credential);

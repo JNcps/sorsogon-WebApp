@@ -11,6 +11,10 @@ import { Router } from '@angular/router';
 })
 export class WeatherComponent implements OnInit {
 
+  //phoneNumber: any;
+  //reCaptchaVerifier: any;
+  //verificationCode: any;
+  //verificationId: any;
   otp!: string;
   verify: any;
   constructor(private router: Router, private ngZone: NgZone) {}
@@ -38,6 +42,7 @@ export class WeatherComponent implements OnInit {
 
   }
 
+
   handleClick() {
     console.log(this.otp);
     var credential = firebase.auth.PhoneAuthProvider.credential(this.verify, this.otp);
@@ -53,5 +58,6 @@ export class WeatherComponent implements OnInit {
     //console.log(localStorage.getItem('user_data'));//new line for storage(footer.ts)
     //this.router.navigate(['/background']);
   }
+
 }
 

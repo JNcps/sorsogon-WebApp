@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-//import { GuardGuard } from './service/guard.guard';
+import { GuardGuard } from './service/guard.guard';
 import { BeachComponent } from './beach/beach.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { WeatherComponent } from './weather/weather.component';
@@ -54,7 +54,7 @@ import { Weather2Component } from './weather2/weather2.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'phone', pathMatch:'full'},
-  {path:'background', component:BackgroundComponent},
+  {path:'background', component:BackgroundComponent, canActivate:[GuardGuard]},// canActivate:[GuardGuard]
   {path:'sign-in', component:SignInComponent},
   {path:'health', component:HealthComponent},
   {path:'weather', component:WeatherComponent},

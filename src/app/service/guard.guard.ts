@@ -1,28 +1,21 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, Router } from '@angular/router';
+import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot, Router, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
+import { WindowService } from './window.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GuardGuard implements CanActivate {
-  constructor(private router: Router) { }
-     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-        if (this.isLoggedIn()) {
+  constructor(private windowService:WindowService, private router: Router) { }
+     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree>{
+        if (this.windowService.IsLoggedIn()) {
         return true;
         }
+        //alert("Please sign in!")
         // navigate to login page as user is not authenticated
-     this.router.navigate(['/login']);
+     this.router.navigate(['/phone']);
   return false;
   }
-  public isLoggedIn(): boolean {
-     let status = false;
-     if (localStorage.getItem('isLoggedIn') == "true") {
-        status = true;
-     }
-       else {
-        status = false;
-        }
-     return status;
-     }
+
   }

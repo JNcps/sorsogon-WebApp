@@ -24,14 +24,32 @@
           <form class="col-md-6">
             <div class="card px-5 py-5">
               <div class="form-input">
+
                 <input
+                  type="tel"
+                  id="output"
+                  name="phoneNumber"
+                  class="form-control"
+                  [(ngModel)]="phoneNumber"
+                  maxlength="16"
+                  placeholder="+63"
+                />
+
+                <!-- prefix="+63" mask="+000 000 0000"
+                  <input
                   type="text"
                   name="phoneNumber"
                   class="form-control"
                   placeholder="+63 9xx xxx xxxx"
                   [(ngModel)]="phoneNumber"
                   maxlength="15"
-                /><!-- prefix="+63" mask="+000 000 0000"  -->
+                />
+                <select  id="country" onchange="country_code()">
+                  <option value="select country">Select Country </option>
+                  <option value="ph">&#x1F1F5;&#x1F1ED;</option>
+                  <option value="us">&#x1F1FA;&#x1F1F8;</option>
+              </select>
+                -->
               </div>
               <br /><br />
               <div class="flex-container">
@@ -42,7 +60,7 @@
                   <a href="sign-up">Forgot Credentials</a>
                 </div>
               </div>
-              <button class="btn btn-success mt-4 signup" (click)="getOTP()">
+              <button class="btn btn-success mt-4 signup" (click)="getOTP()" click="submit">
                 SIGN-IN
               </button>
               <div id="sign-in-button"></div>
@@ -51,5 +69,27 @@
         </div>
       </div>
     </div>
+    <!--
+      <script>
+      function country_code(){
+          var val = document.getElementById("country").value;
+          if (val === "select country"){
+              document.getElementById("output").value = "";
+          }
+          else if (val === "ph"){
+              document.getElementById("output").value = "+63";
+          }
+          else if (val === "us"){
+              document.getElementById("output").value = "+1";
+          }
+
+      }
+      document.getElementById("signup").click=function(submit){
+              var maxlenght = 15;
+              var numbers = document.getElementById("output").value;
+              console.log(numbers);
+          }
+  </script>
+    -->
   </body>
 </html>

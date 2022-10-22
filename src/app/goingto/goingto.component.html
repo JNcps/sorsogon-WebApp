@@ -20,10 +20,11 @@
         ><i class="fa fa-arrow-left" style="font-size: 20px; color: white"></i
       ></a>
       <span>Going to Sorsogon</span>
-    </div><br><br>
+    </div>
+    <br /><br />
 
-<br>
-    <div class="rainbow-text" style="text-align: center; font-size: 20px;">
+    <br />
+    <div class="rainbow-text" style="text-align: center; font-size: 20px">
       <img src="assets/image/going3.gif" alt="" class="img01" />
       <span class="block-line"
         ><span
@@ -51,20 +52,14 @@
           ><span style="color: #ff9700">g</span
           ><span style="color: #ff00b1">o</span
           ><span style="color: #00fff1">n</span>
-
         </span>
       </span>
-
-    </div><br>
+    </div>
+    <br />
     <br />
     <div class="head">
-      <p
-        style="
-          font-size: 15px;
-          text-align: center;"
-        class="post1"
-      >
-       <!-- Adventure starts at Sorsogon -->
+      <p style="font-size: 15px; text-align: center" class="post1">
+        <!-- Adventure starts at Sorsogon -->
       </p>
     </div>
 
@@ -78,57 +73,1134 @@
       </div>
       <br />
       <div class="text1">
-        <button class="but1">AIRPLANE</button><br>
-        <p style="font-size: 15px;"><b style="font-size: 15px;">Departure : </b> Manila (MNL) to Sorsogon City (LGP)</p>
+        <button class="but1" (click)="toogleTag1()">AIRPLANE</button><br />
 
-        <p><b style="font-size: 15px;">Travel Time :</b> 1h 15m ( Nonstop flight )</p>
+        <!------------------------------       AIRPLANE      ------------------------------------------->
 
-        <p><b style="font-size: 15px;">Schedule :</b> 6:00 AM - 7:20 AM</p>
+        <div class="hotel1" *ngIf="airplane">
+          <div class="box1">
+            <a (click)="toogleTag1()">
+              <h3
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background: linear-gradient(
+                    aliceblue,
+                    rgba(240, 248, 255, 0.338)
+                  );
+                  position: fixed;
+                  width: 96%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                "
+              >
+                x
+              </h3>
+              <br /><br />
+            </a>
+            <div class="css-text-mask" style="text-align: center">
+              Bicol International Airport
+            </div>
+            <br />
+            <img src="assets/image/airport.jpg" alt="" class="img20" />
+          </div>
+          <br />
+          <div class="room">
+            <img
+              src="assets/image/local1.jpg"
+              alt=""
+              (click)="toogleTagimg1()"
+            />
+            <img
+              src="assets/image/local2.jpg"
+              alt=""
+              (click)="toogleTagimg2()"
+            />
+            <img
+              src="assets/image/local9.jpg"
+              alt=""
+              (click)="toogleTagimg3()"
+            />
+            <img
+              src="assets/image/local4.jpg"
+              alt=""
+              (click)="toogleTagimg4()"
+            />
+            <img
+              src="assets/image/local5.jpg"
+              alt=""
+              (click)="toogleTagimg5()"
+            />
+            <div class="viewpic" *ngIf="img1">
+              <h3
+                (click)="toogleTagimg1()"
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background-color: rgba(0, 0, 0, 0.783);
+                  position: fixed;
+                  top: 0%;
+                  width: 100%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                  color: white;
+                "
+              >
+                x
+              </h3>
+              <img src="assets/image/local1.jpg" alt="" class="bed" />
+            </div>
+            <div class="viewpic" *ngIf="img2">
+              <h3
+                (click)="toogleTagimg2()"
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background-color: rgba(0, 0, 0, 0.783);
+                  position: fixed;
+                  top: 0%;
+                  width: 100%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                  color: white;
+                "
+              >
+                x
+              </h3>
+              <br /><br />
+              <img src="assets/image/local2.jpg" alt="" class="bed" />
+            </div>
+            <div class="viewpic" *ngIf="img3">
+              <h3
+                (click)="toogleTagimg3()"
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background-color: rgba(0, 0, 0, 0.783);
+                  position: fixed;
+                  top: 0%;
+                  width: 100%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                  color: white;
+                "
+              >
+                x
+              </h3>
+              <br /><br />
+              <img src="assets/image/local9.jpg" alt="" class="bed" />
+            </div>
+            <div class="viewpic" *ngIf="img4">
+              <h3
+                (click)="toogleTagimg4()"
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background-color: rgba(0, 0, 0, 0.783);
+                  position: fixed;
+                  top: 0%;
+                  width: 100%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                  color: white;
+                "
+              >
+                x
+              </h3>
+              <br /><br />
+              <img src="assets/image/local4.jpg" alt="" class="bed" />
+            </div>
+            <div class="viewpic" *ngIf="img5">
+              <h3
+                (click)="toogleTagimg5()"
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background-color: rgba(0, 0, 0, 0.783);
+                  position: fixed;
+                  top: 0%;
+                  width: 100%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                  color: white;
+                "
+              >
+                x
+              </h3>
+              <br /><br />
+              <img src="assets/image/local5.jpg" alt="" class="bed" />
+            </div>
+          </div>
+          <br />
 
-        <p><b style="font-size: 15px;">Fare :</b> Starts at ₱2,601</p><br>
+          <!-----------    START  1       ------------->
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                  04:15 MNL Airport
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >1 25m flight with Philippine Airlines in <b>Economy</b>
+                  </li>
+                  <li>5:40 LGP Bicol International Airport</li>
+                  <li><b>₱ 2,235</b> per Adult</li>
+                </ul>
+              </div>
+
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
+
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                  08:25 MNL Airport
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >1 25m flight with Philippine Airlines in <b>Economy</b>
+                  </li>
+                  <li>9:40 LGP Bicol International Airport</li>
+                  <li><b>₱  2,793</b> per Adult</li>
+                </ul>
+              </div>
+
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
+
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                  07:05 MNL Airport
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >1 25m flight with Philippine Airlines in <b>Economy</b>
+                  </li>
+                  <li>04:40 LGP Bicol International Airport</li>
+                  <li><b>₱ 2,148</b> per Adult</li>
+                </ul>
+              </div>
+
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
+
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                  06:40 MNL Airport
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >1 25m flight with Philippine Airlines in <b>Economy</b>
+                  </li>
+                  <li>05:40 LGP Bicol International Airport</li>
+                  <li><b>₱ 2,588</b> per Adult</li>
+                </ul>
+              </div>
+
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
+
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                  09:20 MNL Airport
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >1 25m flight with Philippine Airlines in <b>Economy</b>
+                  </li>
+                  <li>10:35 LGP Bicol International Airport</li>
+                  <li><b>₱ 2,235</b> per Adult</li>
+                </ul>
+              </div>
+
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
+
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                  10:00 MNL Airport
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >1 25m flight with Philippine Airlines in <b>Economy</b>
+                  </li>
+                  <li>11:35 LGP Bicol International Airport</li>
+                  <li><b>₱ 2,535</b> per Adult</li>
+                </ul>
+              </div>
+
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
+
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!----------------    END 1     ---------------->
+
+
+          <a routerLink="/booking">
+            <button>BOOK NOW</button>
+          </a>
+          <h3
+            style="
+              padding-left: 20px;
+              font-weight: 600;
+              color: rgb(0, 0, 0);
+              font-size: 15px;
+              padding-bottom: 5px;
+            "
+          >
+            LOCATION
+          </h3>
+          <ul>
+            <li>Bicol International Airport,</li>
+            <li>Barangay, Tabon-tabon,</li>
+            <li>Legazpi City, Albay, Philippines 4500</li>
+          </ul>
+          <br />
+
+          <h3
+            style="
+              padding-left: 20px;
+              font-weight: 600;
+              color: rgb(0, 0, 0);
+              font-size: 15px;
+              padding-bottom: 5px;
+            "
+          >
+            CONTACT NO.
+          </h3>
+          <ul>
+            <li>(+63) 52 732 -7777</li>
+            <li>(+63) 917-886-8168</li>
+          </ul>
+          <br />
+
+          <h3
+            style="
+              padding-left: 20px;
+              font-weight: 600;
+              color: rgb(0, 0, 0);
+              font-size: 15px;
+              padding-bottom: 5px;
+            "
+          >
+            EMAIL ADDRESS
+          </h3>
+          <ul>
+            <li>bookings@themarisonhotel.com</li>
+          </ul>
+          <br />
+          <h3
+            style="
+              padding-left: 20px;
+              font-weight: 600;
+              color: rgb(0, 0, 0);
+              font-size: 15px;
+              padding-bottom: 5px;
+            "
+          >
+            PAYMENT
+          </h3>
+          <ul>
+            <li>We accept the following cards:</li>
+          </ul>
+          <br /><br />
+          <div class="payment">
+            <img src="assets/image/payment1.jpg" alt="" class="gcash" />
+            <img src="assets/image/payment2.jpg" alt="" class="bdo" />
+            <img src="assets/image/payment3.jpg" alt="" class="visa" />
+            <img src="assets/image/payment4.jpg" alt="" class="paypal" />
+            <img src="assets/image/payment5.jpg" alt="" class="paymaya" />
+          </div>
+          <br /><br />
+        </div>
+
+        <!------------------------------     END  AIRPLANE      ------------------------------------------->
+
+        <p style="font-size: 15px">
+          <b style="font-size: 15px">Departure : </b> Manila (MNL) to Sorsogon
+          City (LGP)
+        </p>
+
+        <p>
+          <b style="font-size: 15px">Travel Time :</b> 1h 15m ( Nonstop flight )
+        </p>
+
+        <p><b style="font-size: 15px">Schedule :</b> 6:00 AM - 7:20 AM</p>
+
+        <p><b style="font-size: 15px">Fare :</b> Starts at ₱2,601</p>
+        <br />
 
         <img src="assets/image/going1.jpg" alt="" class="img02" />
         <br />
         <p style="font-size: 14px; font-family: Courgette">
-          <em>You can book regular flights from Manila going to Legazpi City just
-            within 1 hour and 15 minutes and fare starts at Php 2,601.00.</em>
+          <em
+            >You can book regular flights from Manila going to Legazpi City just
+            within 1 hour and 15 minutes and fare starts at Php 2,601.00.</em
+          >
         </p>
         <br />
-        <h3 style="font-weight:500;">For more information, visit :</h3><br>
+        <h3 style="font-weight: 500">For more information, visit :</h3>
+        <br />
         <a href="https://www.philippineairlines.com/" class="link1"
-          ><h5 style="color: green;font-weight: 500;"><em>www.philippineairlines.com</em></h5></a
+          ><h5 style="color: green; font-weight: 500">
+            <em>www.philippineairlines.com</em>
+          </h5></a
         >
         <a href="https://www.cebupacificair.com/" class="link1"
-          ><h5 style="color: green;font-weight:500;"><em>www.cebupacificair.com</em></h5></a
+          ><h5 style="color: green; font-weight: 500">
+            <em>www.cebupacificair.com</em>
+          </h5></a
         >
       </div>
       <br /><br />
       <div class="text1">
-        <button class="but1">BUS</button>
         <br /><br />
-        <p><b style="font-size: 15px;">Departure : </b> Araneta Center Bus Station, Ali Mall Cubao, Alabang,
-          EDSA Pasay, etc.</p>
+        <button class="but1" (click)="toogleTag2()">BUS</button><br />
+        <div class="hotel1" *ngIf="bus">
+          <div class="box1">
+            <a (click)="toogleTag2()">
+              <h3
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background: linear-gradient(
+                    aliceblue,
+                    rgba(240, 248, 255, 0.338)
+                  );
+                  position: fixed;
+                  width: 96%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                "
+              >
+                x
+              </h3>
+              <br /><br />
+            </a>
+            <div class="css-text-mask" style="text-align: center">
+              BUS
+            </div>
+            <br />
+            <img src="assets/image/airport.jpg" alt="" class="img20" />
+          </div>
+          <br />
+          <div class="room">
+            <img
+              src="assets/image/local1.jpg"
+              alt=""
+              (click)="toogleTagimg1()"
+            />
+            <img
+              src="assets/image/local2.jpg"
+              alt=""
+              (click)="toogleTagimg2()"
+            />
+            <img
+              src="assets/image/local9.jpg"
+              alt=""
+              (click)="toogleTagimg3()"
+            />
+            <img
+              src="assets/image/local4.jpg"
+              alt=""
+              (click)="toogleTagimg4()"
+            />
+            <img
+              src="assets/image/local5.jpg"
+              alt=""
+              (click)="toogleTagimg5()"
+            />
+            <div class="viewpic" *ngIf="img1">
+              <h3
+                (click)="toogleTagimg1()"
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background-color: rgba(0, 0, 0, 0.783);
+                  position: fixed;
+                  top: 0%;
+                  width: 100%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                  color: white;
+                "
+              >
+                x
+              </h3>
+              <img src="assets/image/local1.jpg" alt="" class="bed" />
+            </div>
+            <div class="viewpic" *ngIf="img2">
+              <h3
+                (click)="toogleTagimg2()"
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background-color: rgba(0, 0, 0, 0.783);
+                  position: fixed;
+                  top: 0%;
+                  width: 100%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                  color: white;
+                "
+              >
+                x
+              </h3>
+              <br /><br />
+              <img src="assets/image/local2.jpg" alt="" class="bed" />
+            </div>
+            <div class="viewpic" *ngIf="img3">
+              <h3
+                (click)="toogleTagimg3()"
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background-color: rgba(0, 0, 0, 0.783);
+                  position: fixed;
+                  top: 0%;
+                  width: 100%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                  color: white;
+                "
+              >
+                x
+              </h3>
+              <br /><br />
+              <img src="assets/image/local9.jpg" alt="" class="bed" />
+            </div>
+            <div class="viewpic" *ngIf="img4">
+              <h3
+                (click)="toogleTagimg4()"
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background-color: rgba(0, 0, 0, 0.783);
+                  position: fixed;
+                  top: 0%;
+                  width: 100%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                  color: white;
+                "
+              >
+                x
+              </h3>
+              <br /><br />
+              <img src="assets/image/local4.jpg" alt="" class="bed" />
+            </div>
+            <div class="viewpic" *ngIf="img5">
+              <h3
+                (click)="toogleTagimg5()"
+                style="
+                  text-align: right;
+                  padding-right: 20px;
+                  padding-top: 10px;
+                  background-color: rgba(0, 0, 0, 0.783);
+                  position: fixed;
+                  top: 0%;
+                  width: 100%;
+                  height: 3%;
+                  border-radius: 10px 10px 0px 0px;
+                  color: white;
+                "
+              >
+                x
+              </h3>
+              <br /><br />
+              <img src="assets/image/local5.jpg" alt="" class="bed" />
+            </div>
+          </div>
+          <br />
 
-        <p><b style="font-size: 15px;">Travel Time :</b> Approximately 14h 29m</p>
+          <!-----------    start  1       ------------->
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                09:00    MNL Paranaque Integrated Terminal, Manila
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >13h 40m bus ride with Isarog Line <b>Regular WC</b>
+                  </li>
+                  <li>22:40  Legazpi Grand Central Terminal</li>
+                  <li><b>₱ 1,324</b> per Adult</li>
+                </ul>
+              </div>
 
-        <p><b style="font-size: 15px;">Schedule : </b></p>
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
 
-        <p><b style="font-size: 15px;">Fare :</b> Php 800 - Php 1,300</p>
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                09:30   Alabang, Manila
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >13h 16m bus ride with Isarog Line <b>Regular WC</b>
+                  </li>
+                  <li>22:46  Legazpi Grand Central Terminal</li>
+                  <li><b>₱ 1,324</b> per Adult</li>
+                </ul>
+              </div>
+
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
+
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                18:00    MNL Paranaque Integrated Terminal, Manila
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >13h 40m bus ride with Isarog Line <b>Regular WC</b>
+                  </li>
+                  <li>07:40  Legazpi Grand Central Terminal</li>
+                  <li><b>₱ 1,651</b> per Adult</li>
+                </ul>
+              </div>
+
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
+
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                19:00    MNL Paranaque Integrated Terminal, Manila
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >13h 40m bus ride with Isarog Line <b>Regular WC</b>
+                  </li>
+                  <li>08:40  Legazpi Grand Central Terminal</li>
+                  <li><b>₱ 1,324</b> per Adult</li>
+                </ul>
+              </div>
+
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
+
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                19:30    MNL Paranaque Integrated Terminal, Manila
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >13h 40m bus ride with Isarog Line <b>Regular WC</b>
+                  </li>
+                  <li>08:40  Legazpi Grand Central Terminal</li>
+                  <li><b>₱ 1,278</b> per Adult</li>
+                </ul>
+              </div>
+
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
+
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="event-container">
+            <div class="event">
+              <div class="event-right">
+                <br />
+                <h3
+                  style="
+                    padding-left: 50px;
+                    font-weight: 400;
+                    color: rgb(243, 202, 148);
+                    font-size: 20px;
+                    text-decoration: underline;
+                    padding-bottom: 10px;
+                  "
+                >
+                09:00    MNL Paranaque Integrated Terminal, Manila
+                </h3>
+                <ul style="list-style-type: none">
+                  <li>
+                    <i
+                      class="fa fa-plane"
+                      style="
+                        color: rgb(98, 183, 196);
+                        font-size: 20px;
+                        padding-right: 10px;
+                      "
+                    ></i
+                    >13h 40m bus ride with Isarog Line <b>Regular WC</b>
+                  </li>
+                  <li>22:40  Legazpi Grand Central Terminal</li>
+                  <li><b>₱ 1,324</b> per Adult</li>
+                </ul>
+              </div>
+
+              <!--
+                <div class="bus-one">
+                <img src="assets/image/plane.jpg" alt="" />
+                <img src="assets/image/plane-sits.jpg" alt="" />
+              </div>
+               -->
+
+              <div class="price" style="text-align: right; margin: 10px">
+                <button>Find Tickets</button>
+              </div>
+            </div>
+          </div>
+
+          <!----------  end    1       ------------->
+          <a routerLink="/booking">
+            <button>BOOK NOW</button>
+          </a>
+          <h3
+            style="
+              padding-left: 20px;
+              font-weight: 600;
+              color: rgb(0, 0, 0);
+              font-size: 15px;
+              padding-bottom: 5px;
+            "
+          >
+            LOCATION
+          </h3>
+          <ul>
+            <li>Corner Imelda Roces Avenue,</li>
+            <li>Barangay 38, Gogon,</li>
+            <li>Legazpi City, Albay, Philippines 4500</li>
+          </ul>
+          <br />
+
+          <h3
+            style="
+              padding-left: 20px;
+              font-weight: 600;
+              color: rgb(0, 0, 0);
+              font-size: 15px;
+              padding-bottom: 5px;
+            "
+          >
+            CONTACT NO.
+          </h3>
+          <ul>
+            <li>(+63) 52 732 -7777</li>
+            <li>(+63) 917-886-8168</li>
+          </ul>
+          <br />
+
+          <h3
+            style="
+              padding-left: 20px;
+              font-weight: 600;
+              color: rgb(0, 0, 0);
+              font-size: 15px;
+              padding-bottom: 5px;
+            "
+          >
+            EMAIL ADDRESS
+          </h3>
+          <ul>
+            <li>bookings@themarisonhotel.com</li>
+          </ul>
+          <br />
+          <h3
+            style="
+              padding-left: 20px;
+              font-weight: 600;
+              color: rgb(0, 0, 0);
+              font-size: 15px;
+              padding-bottom: 5px;
+            "
+          >
+            PAYMENT
+          </h3>
+          <ul>
+            <li>We accept the following cards:</li>
+          </ul>
+          <br /><br />
+          <div class="payment">
+            <img src="assets/image/payment1.jpg" alt="" class="gcash" />
+            <img src="assets/image/payment2.jpg" alt="" class="bdo" />
+            <img src="assets/image/payment3.jpg" alt="" class="visa" />
+            <img src="assets/image/payment4.jpg" alt="" class="paypal" />
+            <img src="assets/image/payment5.jpg" alt="" class="paymaya" />
+          </div>
+          <br /><br />
+        </div>
+        <p>
+          <b style="font-size: 15px">Departure : </b> Araneta Center Bus
+          Station, Ali Mall Cubao, Alabang, EDSA Pasay, etc.
+        </p>
+
+        <p>
+          <b style="font-size: 15px">Travel Time :</b> Approximately 14h 29m
+        </p>
+
+        <p><b style="font-size: 15px">Schedule : </b></p>
+
+        <p><b style="font-size: 15px">Fare :</b> Php 800 - Php 1,300</p>
         <img src="assets/image/going2.jpg" alt="" class="img1" />
 
         <p style="font-size: 14px; font-family: Courgette">
           <em>
             If you want a long distance or overnight trip, from Araneta Bus
-          Terminal going to Sorsogon City Terminal you can enjoy the ride with
-          the fare start at Php 800 and travel is about 14 hours and 29 minutes.
+            Terminal going to Sorsogon City Terminal you can enjoy the ride with
+            the fare start at Php 800 and travel is about 14 hours and 29
+            minutes.
           </em>
         </p>
         <br />
-        <h3 style="font-weight:500;">For more information, visit :</h3><br>
-        <a href="https://www.aranetacitybusport.com/"  class="link1"
-          ><h5 style="color: green;font-weight:500;"><em>www.aranetacenterbusport.com</em></h5></a
+        <h3 style="font-weight: 500">For more information, visit :</h3>
+        <br />
+        <a href="https://www.aranetacitybusport.com/" class="link1"
+          ><h5 style="color: green; font-weight: 500">
+            <em>www.aranetacenterbusport.com</em>
+          </h5></a
         >
-
       </div>
     </div>
     <br /><br />
